@@ -1,7 +1,7 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 
-const Header = ({ currentUser, logout }) => {
+const Header = ({ currentUser, logout, clearErrors }) => {
   const userInfo = currentUser ? (
     <div className="user-info">
       <p> {currentUser.username} </p>
@@ -9,8 +9,8 @@ const Header = ({ currentUser, logout }) => {
     </div>
   ) : (
     <div className="user-info">
-      <NavLink to="/login" className="nav-button"> Log In </NavLink>
-      <NavLink to="/signup" className="nav-button"> Sign Up </NavLink>
+      <NavLink to="/login" className="nav-button" onClick={clearErrors}> Log In </NavLink>
+      <NavLink to="/signup" className="nav-button" onClick={clearErrors}> Sign Up </NavLink>
     </div>
   );
 
