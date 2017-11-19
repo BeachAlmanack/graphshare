@@ -7,4 +7,8 @@ const mapDispatchToProps = dispatch => ({
   login: user => dispatch(login(user)),
 });
 
-export default connect(null, mapDispatchToProps)(Login);
+const mapStateToProps = state => ({
+  errors: state.errors.session,
+});
+
+export default connect(mapStateToProps, mapDispatchToProps)(Login);

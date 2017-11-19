@@ -8,6 +8,7 @@ class Login extends React.Component {
       username: '',
       password: '',
     };
+    console.log(props.errors);
     this.handleChange = this.handleChange.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
   }
@@ -27,15 +28,20 @@ class Login extends React.Component {
 
   render() {
     return (
-      <form className="login-form">
-        <label htmlFor="username"> Username:
-          <input id="username" type="text" value={this.state.username} onChange={this.handleChange('username')} />
-        </label>
-        <label htmlFor="password"> Password:
-          <input id="password" type="password" value={this.state.password} onChange={this.handleChange('password')} />
-        </label>
-        <button onClick={this.handleSubmit}>Log In</button>
-      </form>
+      <div className="form-page">
+        <ul className="errors">
+          { this.props.errors.map(error => <li key={error}>{ error }</li>) }
+        </ul>
+        <form className="login-form">
+          <label htmlFor="username"> Username:
+            <input id="username" type="text" value={this.state.username} onChange={this.handleChange('username')} />
+          </label>
+          <label htmlFor="password"> Password:
+            <input id="password" type="password" value={this.state.password} onChange={this.handleChange('password')} />
+          </label>
+          <button onClick={this.handleSubmit}>Log In</button>
+        </form>
+      </div>
     );
   }
 }
