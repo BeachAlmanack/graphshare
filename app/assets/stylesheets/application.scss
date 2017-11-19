@@ -10,6 +10,20 @@
  * files in this directory. Styles in this file should be added after the last require_* statement.
  * It is generally better to create a new file per style scope.
  *
- *= require_tree .
  *= require_self
  */
+
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,700');
+
+ @import 'base/reset.scss';
+ @import 'base/colors.scss';
+ @import 'base/mixins.scss';
+ @import 'base/general.scss';
+ @import 'base/animations.scss';
+
+ @import 'pages/signup.scss';
+ @import 'pages/login.scss';
+
+ @import 'components/forms.scss';
+
+ @import 'layout/header.scss';

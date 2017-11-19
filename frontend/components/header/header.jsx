@@ -4,19 +4,19 @@ import { NavLink } from 'react-router-dom';
 const Header = ({ currentUser, logout }) => {
   const userInfo = currentUser ? (
     <div className="user-info">
-      <p> Username </p>
-      <button onClick={logout}>Logout</button>
+      <p> {currentUser.username} </p>
+      <button onClick={logout} className="nav-button">Logout</button>
     </div>
   ) : (
     <div className="user-info">
-      <NavLink to="/login"> Log In </NavLink>
-      <NavLink to="/signup"> Sign Up </NavLink>
+      <NavLink to="/login" className="nav-button"> Log In </NavLink>
+      <NavLink to="/signup" className="nav-button"> Sign Up </NavLink>
     </div>
   );
 
   return (
     <header className="header">
-      <h1>Graph Share</h1>
+      <h1 className="logo">Graph Share</h1>
       { userInfo }
     </header>
   );
