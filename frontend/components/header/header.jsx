@@ -15,10 +15,12 @@ const Header = ({ currentUser, logout, clearErrors }) => {
   );
 
   return (
-    <header className="header">
-      <h1 className="logo">Graph Share</h1>
-      { userInfo }
-    </header>
+    <div className="header-container">
+      <header className="header">
+        <NavLink to="/" className="logo" />
+        { userInfo }
+      </header>
+    </div>
   );
 };
 

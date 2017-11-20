@@ -65,8 +65,7 @@
 .form-errors {
   left: 100%;
   top: 0px;
-  height: 100%;
-  width: 300px;
+  width: 100%;
   border: 1px solid $light-gray;
   background: white;
   position: absolute;
@@ -87,5 +86,24 @@
 
 .form-errors li:first-child {
   border-bottom: 1px solid $dark-gray;
+  padding: 20px 10px;
   color: black;
+}
+
+@media screen and (max-width: 1024px) {
+    .form-errors {
+      left: 0;
+      top: 100%;
+      animation-name: slideInTop;
+      animation-duration: 1s;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .form-container {
+      top: 100px;
+      transform: translateY(0);
+      width:90%;
+    }
+
 }

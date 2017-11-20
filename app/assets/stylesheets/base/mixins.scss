@@ -1,5 +1,7 @@
-@mixin box($color) {
-  // box-shadow: 0 4px 8px 0 transparentize($color, 0.6);
+@mixin box($color, $shadow: false) {
+  @if $shadow == true {
+    box-shadow: 0 4px 8px 0 transparentize($color, 0.6);
+  }
   border: 1px solid $color;
 }
 
