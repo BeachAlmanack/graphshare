@@ -8,6 +8,30 @@
   
 }
 
+input[type='text'], input[type='password'], textarea {
+  padding: 15px;
+  border: 1px solid $light-gray;
+  width: 96%;
+  margin: 5px 0px 10px 5px;
+  color: $dark-gray;
+  font-size: 16px;
+}
+
+input:focus, textarea:focus {
+  border: 1px solid $blue;
+}
+
+input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
+  color: #ccc;
+  font-size: 0.875em;
+}
+
+label {
+  padding: 10px 0px 0px 10px;
+  font-size: 12px;
+  color: $dark-gray;
+}
+
 .form {
   font-size: 18px;
   background: white;
@@ -15,30 +39,10 @@
   padding: 20px;
   
   input[type='text'], input[type='password'], textarea {
-    padding: 15px;
-    border: 1px solid $light-gray;
     width: 96%;
-    margin: 5px 0px 10px 5px;
-    color: $dark-gray;
-    font-size: 16px;
   }
-
-  input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
-    color: #ccc;
-    font-size: 0.875em;
-  }
-
-  input:focus, textarea:focus {
-    border: 1px solid $blue;
-  }
-
-  label {
-    padding: 10px 0px 0px 10px;
-    font-size: 12px;
-    color: $dark-gray;
-  }
-
 }
+
 
 .form-button {
   background: $blue;

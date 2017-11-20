@@ -17,6 +17,9 @@
   a {
     margin: 0px 10px;
     color: $dark-gray;
+    &:hover {
+      color: $blue;
+    }
   }
 }
 
