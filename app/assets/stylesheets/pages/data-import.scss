@@ -34,6 +34,15 @@
     text-align: center;
     width: 100px;
   }
+
+  .data-import-message {
+    margin-left: 20px;
+    display: block;
+  }
+
+  .error {
+    color: red;
+  }
 }
 
 .drop-zone {
