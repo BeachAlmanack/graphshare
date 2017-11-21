@@ -64,3 +64,22 @@
     background-color: lighten($blue, 30%);
   }
 }
+
+.dataset {
+  @extend .page;
+  @include box($light-gray, true);
+  margin-top: 10px;
+  padding: 10px;
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+
+  td {
+    padding: 5px;
+  }
+
+  tr:nth-child(even) {
+    background-color: lighten($light-gray, 5%);
+  }
+}

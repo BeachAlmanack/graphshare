@@ -6,7 +6,7 @@ const removeTrailingAndLeadingSpaces = (string) => {
   return string.replace(/^\s+|\s+$/g, '');
 };
 
-export const rowsToColumns = (data) => {
+const rowsToColumns = (data) => {
   const dataset = {};
   const keys = Object.keys(data[0]);
   keys.forEach((key, idx) => {
@@ -43,21 +43,52 @@ export const verifyDateColumn = (column) => {
   return null;
 };
 
-export const addColumnsTypes = (data) => {
-  const columnNames = Object.keys(data);
-  const dataWithType = data;
-  columnNames.forEach((column) => {
+export const formatData = (rows) => {
+  const arrayData = rowsToColumns(rows);
+  const columnIds = Object.keys(arrayData);
+  const header = {};
+  
+  columnIds.forEach((column) => {
+    let name = '';
     switch (null) {
-      case verifyNumberColumn(dataWithType[column].data):
-        dataWithType[column].type = NUMERICAL;
+      case verifyNumberColumn(arrayData[column].data):
+        name = arrayData[columnIds[column]].name;
+        header[name] = NUMERICAL;
         break;
-      case verifyDateColumn(dataWithType[column].data):
-        dataWithType[column].type = DATE;
+      case verifyDateColumn(arrayData[column].data):
+        name = arrayData[columnIds[column]].name;
+        header[name] = DATE;
         break;
       default:
-        dataWithType[column].type = CATEGORICAL;
+        name = arrayData[columnIds[column]].name;
+        header[name] = CATEGORICAL;
         break;
     }
   });
-  return dataWithType;
+
+  return {
+    rows,
+    header,
+  };
 };
+
+// export const addColumnsTypes = (data) => {
+//   const arrayData = rowsToColumns(data);
+//   const columnNames = Object.keys(arrayData);
+//   const dataWithType = arrayData;
+//   const dataTypes = {};
+//   columnNames.forEach((column) => {
+//     switch (null) {
+//       case verifyNumberColumn(dataWithType[column].data):
+//         data[column].type = NUMERICAL;
+//         break;
+//       case verifyDateColumn(dataWithType[column].data):
+//         dataWithType[column].type = DATE;
+//         break;
+//       default:
+//         dataWithType[column].type = CATEGORICAL;
+//         break;
+//     }
+//   });
+//   return dataWithType;
+// };

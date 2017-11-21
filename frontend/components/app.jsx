@@ -4,7 +4,7 @@ import { AuthRoute, ProtectedRoute } from '../utils/routes_util';
 import HeaderContainer from './header/header_container';
 import LoginContainer from './users/login_container';
 import SignupContainer from './users/signup_container';
-import DataImportContainer from './data/data-import/data_import_container';
+import DataImportPage from './data/data_import_page';
 import Footer from './footer/footer';
 
 const App = () => (
@@ -13,7 +13,7 @@ const App = () => (
     <Switch>
       <ProtectedRoute exact path="/" component={() => <h1>Feed</h1>} />
       <ProtectedRoute path="/feed" component={() => <h1>Feed</h1>} />
-      <ProtectedRoute path="/datasets/new" component={DataImportContainer} />
+      <ProtectedRoute path="/datasets/new" component={DataImportPage} />
       <AuthRoute path="/login" component={LoginContainer} />
       <AuthRoute path="/signup" component={SignupContainer} />
     </Switch>

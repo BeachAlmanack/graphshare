@@ -1,7 +1,7 @@
 import React from 'react';
 import Dropzone from 'react-dropzone';
 import { csvData } from '../../../utils/data/file_import_util';
-import { rowsToColumns, addColumnsTypes } from '../../../utils/data/data_analyzer_util';
+import { formatData } from '../../../utils/data/data_analyzer_util';
 
 const ACCEPTED_TYPES = ['text/csv', ' text/tab-separated-values', 'application/json'];
 
@@ -42,7 +42,7 @@ class DataImport extends React.Component {
   }
 
   processData(data) {
-    const dataWithType = addColumnsTypes(rowsToColumns(data));
+    const dataWithType = formatData(data);
     this.props.receiveDataset(dataWithType);
   }
 
@@ -86,7 +86,6 @@ class DataImport extends React.Component {
               <span className="data-import-message error"> {this.state.error} </span>
             </div> : ''
           }
-
           <button className="data-save">Save</button>
         </div>
       </div>
