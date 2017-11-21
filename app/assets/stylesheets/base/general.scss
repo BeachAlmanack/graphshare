@@ -2,5 +2,6 @@ body {
   font-family: 'Roboto', sans-serif;
   font-weight: 300;
   background-color: rgb(250, 250, 250);
+  padding-bottom:60px;
   @include border-box;
 }

@@ -1,8 +1,8 @@
 .footer-container {
-  // @include box($light-gray, true);
+  // @include box($light-gray, true)
+  position: fixed;
   background-color: white;
   width: 100%;
-  position: absolute;
   bottom: 0;
 }
 
