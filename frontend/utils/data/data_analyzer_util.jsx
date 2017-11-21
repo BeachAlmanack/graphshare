@@ -2,22 +2,16 @@ export const NUMERICAL = 'Numerical';
 export const DATE = 'Date';
 export const CATEGORICAL = 'Categorical';
 
-const removeTrailingAndLeadingSpaces = (string) => {
-  return string.replace(/^\s+|\s+$/g, '');
-};
-
 const rowsToColumns = (data) => {
   const dataset = {};
   const keys = Object.keys(data[0]);
   keys.forEach((key, idx) => {
     dataset[idx] = { data: [] };
-    const keyString = removeTrailingAndLeadingSpaces(key);
-    dataset[idx].name = keyString;
+    dataset[idx].name = key;
   });
   data.forEach((d) => {
     keys.forEach((key, idx) => {
-      const dataString = removeTrailingAndLeadingSpaces(d[key]);
-      dataset[idx].data.push(dataString);
+      dataset[idx].data.push(d[key]);
     });
   });
   return dataset;
@@ -43,8 +37,20 @@ export const verifyDateColumn = (column) => {
   return null;
 };
 
+const removeTrailingAndLeadingSpaces = (string) => {
+  return string.replace(/^\s+|\s+$/g, '').replace(/['"]+/g, '');
+};
+
+const cleanRow = (row) => {
+  return Object.keys(row).reduce((acc, key) => {
+    acc[removeTrailingAndLeadingSpaces(key)] = removeTrailingAndLeadingSpaces(row[key]);
+    return acc;
+  }, {});
+};
+
 export const formatData = (rows) => {
-  const arrayData = rowsToColumns(rows);
+  const cleanedRows = rows.map(row => cleanRow(row));
+  const arrayData = rowsToColumns(cleanedRows);
   const columnIds = Object.keys(arrayData);
   const header = {};
   
@@ -52,43 +58,22 @@ export const formatData = (rows) => {
     let name = '';
     switch (null) {
       case verifyNumberColumn(arrayData[column].data):
-        name = arrayData[columnIds[column]].name;
+        name = removeTrailingAndLeadingSpaces(arrayData[columnIds[column]].name);
         header[name] = NUMERICAL;
         break;
       case verifyDateColumn(arrayData[column].data):
-        name = arrayData[columnIds[column]].name;
+        name = removeTrailingAndLeadingSpaces(arrayData[columnIds[column]].name);
         header[name] = DATE;
         break;
       default:
-        name = arrayData[columnIds[column]].name;
+        name = removeTrailingAndLeadingSpaces(arrayData[columnIds[column]].name);
         header[name] = CATEGORICAL;
         break;
     }
   });
 
   return {
-    rows,
+    rows: cleanedRows,
     header,
   };
 };
-
-// export const addColumnsTypes = (data) => {
-//   const arrayData = rowsToColumns(data);
-//   const columnNames = Object.keys(arrayData);
-//   const dataWithType = arrayData;
-//   const dataTypes = {};
-//   columnNames.forEach((column) => {
-//     switch (null) {
-//       case verifyNumberColumn(dataWithType[column].data):
-//         data[column].type = NUMERICAL;
-//         break;
-//       case verifyDateColumn(dataWithType[column].data):
-//         dataWithType[column].type = DATE;
-//         break;
-//       default:
-//         dataWithType[column].type = CATEGORICAL;
-//         break;
-//     }
-//   });
-//   return dataWithType;
-// };
