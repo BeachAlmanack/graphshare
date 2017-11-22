@@ -44,6 +44,7 @@ class DataImport extends React.Component {
   processData(data) {
     const dataWithType = formatData(data);
     this.props.receiveDataset(dataWithType);
+    console.log(JSON.stringify(dataWithType));
   }
 
   handleTitle(event) {
@@ -86,7 +87,7 @@ class DataImport extends React.Component {
               <span className="data-import-message error"> {this.state.error} </span>
             </div> : ''
           }
-          <button className="data-save">Save</button>
+          <button className="data-save" onClick={this.saveDataset}>Save</button>
         </div>
       </div>
     );

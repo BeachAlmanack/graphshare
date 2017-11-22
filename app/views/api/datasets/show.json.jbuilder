@@ -1,0 +1,1 @@
+json.extract! @dataset, :id, :title, :file_name, :rows, :header, :author_id

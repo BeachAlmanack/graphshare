@@ -38,7 +38,7 @@ export const verifyDateColumn = (column) => {
 };
 
 const removeTrailingAndLeadingSpaces = (string) => {
-  return string.replace(/^\s+|\s+$/g, '').replace(/['"]+/g, '');
+  return string.replace(/^\s+|\"|\s+$/g, '');
 };
 
 const cleanRow = (row) => {
