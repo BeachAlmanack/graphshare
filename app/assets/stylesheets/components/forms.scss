@@ -45,20 +45,35 @@ label {
 
 
 .form-button {
-  background: $blue;
-  color: white;
-  border-radius: 0px;
-  padding: 10px;
+  @extend .button;
   width: 96%;
   text-align: center;
   margin: 5px;
   display: block;
-  border: 1px solid #ccc;
 
   &:hover {
     animation-name: pulse;
     animation-duration: 0.5s;
   }
+}
+
+
+.form-button-outline {
+  @extend .button-outline;
+  width: 96%;
+  text-align: center;
+  margin: 5px;
+  display: block;
+
+  &:hover {
+    animation-name: pulse;
+    animation-duration: 0.5s;
+  }
+}
+
+hr {
+  border-top: 0.5px solid $light-gray;
+  width: 90%;
 }
 
 .form-title {

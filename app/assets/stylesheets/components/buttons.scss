@@ -1,0 +1,15 @@
+.button {
+  background: $blue;
+  color: white;
+  border-radius: 0px;
+  border: 1px solid $blue;
+  padding: 10px;
+}
+
+.button-outline {
+  background: white;
+  color: $blue;
+  border-radius: 0px;
+  border: 1px solid $blue;
+  padding: 10px;
+}

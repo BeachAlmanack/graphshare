@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 class Login extends React.Component {
   constructor(props) {
@@ -10,6 +11,7 @@ class Login extends React.Component {
     };
     this.handleChange = this.handleChange.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
+    this.handleDemoLogin = this.handleDemoLogin.bind(this);
   }
 
   handleChange(type) {
@@ -23,6 +25,14 @@ class Login extends React.Component {
   handleSubmit(event) {
     event.preventDefault();
     this.props.login(this.state);
+  }
+
+  handleDemoLogin(event) {
+    event.preventDefault();
+    this.props.login({
+      username: 'demo',
+      password: 'password',
+    });
   }
 
   render() {
@@ -50,6 +60,10 @@ class Login extends React.Component {
               />
             </label>
             <button onClick={this.handleSubmit} className="form-button">Log In</button>
+            <hr />
+            <label>New to the website?</label>
+            <button onClick={this.handleDemoLogin} className="form-button-outline">Demo Log In</button>
+            <Link to="/signup" className="form-button-outline">Sign Up</Link>
           </form>
           {
             (this.props.errors.length > 0) ? (
