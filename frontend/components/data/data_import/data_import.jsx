@@ -8,16 +8,21 @@ const ACCEPTED_TYPES = ['text/csv', ' text/tab-separated-values', 'application/j
 class DataImport extends React.Component {
   constructor(props) {
     super(props);
-
     this.state = {
+      id: 'new',
       title: '',
-      fileName: '',
+      file_name: '',
       error: '',
     };
 
     this.handleTitle = this.handleTitle.bind(this);
     this.onDrop = this.onDrop.bind(this);
     this.processData = this.processData.bind(this);
+    this.saveDataset = this.saveDataset.bind(this);
+  }
+
+  componentDidMount() {
+    this.props.receiveDataset(this.props.dataset);
   }
 
   onDrop(acceptedFiles, rejectedFiles) {
@@ -26,7 +31,7 @@ class DataImport extends React.Component {
     if ((files.length) === 1) {
       if (ACCEPTED_TYPES.includes(files[0].type)) {
         this.setState({
-          fileName: files[0].name,
+          file_name: files[0].name,
         });
         error = '';
         csvData(window.URL.createObjectURL(files[0]), this.processData);
@@ -43,6 +48,8 @@ class DataImport extends React.Component {
 
   processData(data) {
     const dataWithType = formatData(data);
+    dataWithType.id = 'new';
+    dataWithType.file_name = this.state.file_name;
     this.props.receiveDataset(dataWithType);
   }
 
@@ -50,6 +57,11 @@ class DataImport extends React.Component {
     this.setState({
       title: event.target.value,
     });
+    this.props.updateDatasetTitle(this.state.id, this.state.title);
+  }
+
+  saveDataset(event) {
+    this.props.saveDataset(this.state.id).then(() => this.props.history.push('/datasets'));
   }
 
   render() {

@@ -1,9 +1,7 @@
 export const postDataset = (dataset) => {
   return $.ajax({
-    url: '/api/users',
+    url: '/api/datasets',
     method: 'POST',
-    data: { 
-      dataset
-     },
+    data: { dataset },
   });
 };

@@ -4,13 +4,14 @@ import _ from 'lodash';
 class Dataset extends React.Component {
   constructor(props) {
     super(props);
+
   }
   render() {
     let columnNames = [];
     let dataTypes = [];
     let rows = [];
     let rowIds = [];
-    if(this.props.dataset) {
+    if (this.props.dataset) {
       columnNames = _.keys(this.props.dataset.header);
       dataTypes = _.values(this.props.dataset.header);
       rows = _.values(this.props.dataset.rows);
@@ -22,12 +23,12 @@ class Dataset extends React.Component {
         <table>
           <thead>
             <tr>
-              {columnNames.map(columnName => <th>{columnName}</th>)}
+              {columnNames.map(columnName => <th key={columnName}>{columnName}</th>)}
             </tr>
           </thead>
           <tbody>
             <tr>
-              { dataTypes.map(dataType => <td className={`datatype-${dataType}`}>{dataType}</td>) }
+              { dataTypes.map((dataType, idx) => <td key={columnNames[idx]} className={`datatype-${dataType}`}>{dataType}</td>) }
             </tr>
             { rows.map((row, idx) =>
               <tr key={rowIds[idx]}>{columnNames.map(cName => <td key={cName}>{row[cName]}</td>)}</tr>

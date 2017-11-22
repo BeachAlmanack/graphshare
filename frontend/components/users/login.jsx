@@ -61,7 +61,7 @@ class Login extends React.Component {
             </label>
             <button onClick={this.handleSubmit} className="form-button">Log In</button>
             <hr />
-            <label>New to the website?</label>
+            <label>New to GraphShare?</label>
             <button onClick={this.handleDemoLogin} className="form-button-outline">Demo Log In</button>
             <Link to="/signup" className="form-button-outline">Sign Up</Link>
           </form>
