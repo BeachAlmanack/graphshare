@@ -77,9 +77,31 @@
 
   td {
     padding: 5px;
+    text-align: center;
   }
 
   tr:nth-child(even) {
     background-color: lighten($light-gray, 5%);
   }
+}
+
+[class^="datatype-"] {
+  text-align: center;
+  border-right: 1px solid white;
+  color: white;
+  &:last-child {
+    border-right: 0;
+  }
+}
+
+.datatype-Numerical {
+  background-color: rgb(241, 141, 59);
+}
+
+.datatype-Date {
+  background-color: #3D9970;
+}
+
+.datatype-Categorical {
+  background: $blue;
 }

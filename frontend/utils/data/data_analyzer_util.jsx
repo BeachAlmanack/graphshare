@@ -72,8 +72,13 @@ export const formatData = (rows) => {
     }
   });
 
+  const rowDictionary = cleanedRows.reduce((acc, el, idx) => {
+    acc[idx] = el;
+    return acc;
+  }, {});
+
   return {
-    rows: cleanedRows,
+    rows: rowDictionary,
     header,
   };
 };

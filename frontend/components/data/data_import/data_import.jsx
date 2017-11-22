@@ -44,7 +44,6 @@ class DataImport extends React.Component {
   processData(data) {
     const dataWithType = formatData(data);
     this.props.receiveDataset(dataWithType);
-    console.log(JSON.stringify(dataWithType));
   }
 
   handleTitle(event) {
