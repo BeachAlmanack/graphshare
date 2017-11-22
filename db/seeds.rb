@@ -1,7 +1,10 @@
-# This file should contain all the record creation needed to seed the database with its default values.
-# The data can then be loaded with the rails db:seed command (or created alongside the database with db:setup).
-#
-# Examples:
-#
-#   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
-#   Character.create(name: 'Luke', movie: movies.first)
+# Create 100 users generated from https://www.mockaroo.com 
+# and 1 demo user with a password of password
+
+
+json = ActiveSupport::JSON.decode(File.read('db/seeds/users.json'))
+users = []
+json.each do |row|
+  users << User.create!(row)
+end
+
