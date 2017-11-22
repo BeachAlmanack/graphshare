@@ -5,3 +5,11 @@ export const postDataset = (dataset) => {
     data: { dataset },
   });
 };
+
+export const getDatasets = (author_id) => {
+  return $.ajax({
+    url: '/api/datasets',
+    method: 'GET',
+    data: { author_id },
+  });
+};

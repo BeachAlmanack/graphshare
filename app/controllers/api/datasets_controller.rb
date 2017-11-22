@@ -9,6 +9,11 @@ class Api::DatasetsController < ApplicationController
     end
   end
 
+  def index
+    @datasets = Dataset.where(author_id: params[:author_id])
+    render :index
+  end
+
   private
   def dataset_params
     params.require(:dataset).permit(:title, :file_name, :author_id, rows: {}, header: {})
