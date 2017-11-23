@@ -38,7 +38,7 @@ export const verifyDateColumn = (column) => {
 };
 
 const removeTrailingAndLeadingSpaces = (string) => {
-  return string.replace(/^\s+|\"|\s+$/g, '');
+  return string.replace(/^\s+|"|\s+$/g, '');
 };
 
 const cleanRow = (row) => {
@@ -55,18 +55,15 @@ export const formatData = (rows) => {
   const header = {};
   
   columnIds.forEach((column) => {
-    let name = '';
+    const { name } = arrayData[columnIds[column]];
     switch (null) {
       case verifyNumberColumn(arrayData[column].data):
-        name = removeTrailingAndLeadingSpaces(arrayData[columnIds[column]].name);
         header[name] = NUMERICAL;
         break;
       case verifyDateColumn(arrayData[column].data):
-        name = removeTrailingAndLeadingSpaces(arrayData[columnIds[column]].name);
         header[name] = DATE;
         break;
       default:
-        name = removeTrailingAndLeadingSpaces(arrayData[columnIds[column]].name);
         header[name] = CATEGORICAL;
         break;
     }

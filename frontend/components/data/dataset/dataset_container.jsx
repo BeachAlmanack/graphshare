@@ -1,7 +1,7 @@
 import { connect } from 'react-redux';
 import { withRouter } from 'react-router-dom';
 import Dataset from './dataset';
-import {fetchDataset} from '../../../actions/datasets_actions';
+import { fetchDataset } from '../../../actions/datasets_actions';
 
 const mapStateToProps = (state, ownProps) => {
   let dataset = state.entities.datasets.new;

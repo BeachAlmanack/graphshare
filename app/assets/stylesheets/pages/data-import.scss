@@ -23,10 +23,7 @@
     position: relative;
   }
   .data-save {
-    display: block;
-    padding: 10px;
-    background-color: $blue;
-    color: white;
+    @extend .button;
     margin-bottom: 0px;
     position: absolute;
     bottom: 0px;
@@ -95,13 +92,56 @@
 }
 
 .datatype-Numerical {
-  background-color: rgb(241, 141, 59);
+  background-color: $orange;
 }
 
 .datatype-Date {
-  background-color: #3D9970;
+  background-color: $green;
 }
 
 .datatype-Categorical {
   background: $blue;
+}
+
+
+// https://github.com/tobiasahlin/SpinKit
+
+.spinner {
+  margin: 100px auto;
+  width: 200px;
+  height: 100px;
+  text-align: center;
+  font-size: 10px;
+}
+
+.spinner > div {
+  background-color: $blue;
+  height: 100%;
+  width: 6px;
+  display: inline-block;
+  margin: 3px;
+  -webkit-animation: sk-stretchdelay 1.2s infinite ease-in-out;
+  animation: sk-stretchdelay 1.2s infinite ease-in-out;
+}
+
+.spinner .rect2 {
+  -webkit-animation-delay: -1.1s;
+  animation-delay: -1.1s;
+  background-color: $green;
+}
+
+.spinner .rect3 {
+  -webkit-animation-delay: -1.0s;
+  animation-delay: -1.0s;
+}
+
+.spinner .rect4 {
+  -webkit-animation-delay: -0.9s;
+  animation-delay: -0.9s;
+  background-color: $orange;
+}
+
+.spinner .rect5 {
+  -webkit-animation-delay: -0.8s;
+  animation-delay: -0.8s;
 }
