@@ -14,6 +14,10 @@ class Login extends React.Component {
     this.handleDemoLogin = this.handleDemoLogin.bind(this);
   }
 
+  componentDidMount() {
+    this.props.clearErrors();
+  }
+
   handleChange(type) {
     return (event) => {
       this.setState({
