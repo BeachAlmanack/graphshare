@@ -1,18 +1,20 @@
-import { postDataset, getDatasets, getDataset } from '../utils/api/datasets_utils';
+import { postDataset, getDatasets, getDataset, deleteDataset } from '../utils/api/datasets_utils';
 import { receiveErrors } from './errors_actions';
 
 export const RECEIVE_DATASET = 'RECEIVE_DATASET';
 export const RECEIVE_DATASETS = 'RECEIVE_DATASETS';
 export const RECEIVE_DATASET_TITLE = 'RECEIVE_DATASET_TITLE';
 
-export const receiveDataset = dataset => ({
+export const receiveDataset = payload => ({
   type: RECEIVE_DATASET,
-  dataset,
+  dataset: payload.dataset,
+  user: payload.user,
 });
 
-export const receiveDatasets = datasets => ({
+export const receiveDatasets = payload => ({
   type: RECEIVE_DATASETS,
-  datasets,
+  datasets: payload.datasets,
+  users: payload.users,
 });
 
 export const updateDatasetTitle = (id, title) => ({
@@ -29,15 +31,19 @@ export const saveDataset = id => (dispatch, getState) => {
   }
   return postDataset(dataset)
     .fail(errors => dispatch(receiveErrors(errors.responseJSON)))
-    .then(newDataset => dispatch(receiveDataset(newDataset)));
+    .then(payload => dispatch(receiveDataset(payload)));
 };
 
 export const fetchDatasets = authorId => (dispatch) => {
   return getDatasets(authorId)
-    .then(datasets => dispatch(receiveDatasets(datasets)));
+    .then(payload => dispatch(receiveDatasets(payload)));
 };
 
 export const fetchDataset = id => (dispatch) => {
   return getDataset(id)
-    .then(dataset => dispatch(receiveDataset(dataset)));
+    .then(payload => dispatch(receiveDataset(payload)));
+};
+
+export const removeDataset = id => (dispatch) => {
+  return deleteDataset(id);
 };

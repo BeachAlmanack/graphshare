@@ -21,4 +21,9 @@ export const getDataset = (id) => {
   });
 };
 
-window.getDataset = getDataset;
+export const deleteDataset = (id) => {
+  return $.ajax({
+    url: `/api/datasets/${id}`,
+    method: 'DELETE',
+  });
+};

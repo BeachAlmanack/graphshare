@@ -19,6 +19,12 @@ class Api::DatasetsController < ApplicationController
     render :show
   end
 
+  def destroy
+    @dataset = Dataset.find(params[:id])
+    @dataset.destroy
+    render :show
+  end
+
   private
   def dataset_params
     params.require(:dataset).permit(:title, :file_name, :author_id, rows: {}, header: {})

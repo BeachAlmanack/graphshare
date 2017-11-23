@@ -1,14 +1,19 @@
 import { connect } from 'react-redux';
 import { withRouter } from 'react-router-dom';
+import { removeDataset } from '../../../actions/datasets_actions';
 import DatasetMenu from './data_show_menu';
 
 const mapStateToProps = (state, ownProps) => {
-  console.log(ownProps);
   const dataset = state.entities.datasets[ownProps.match.params.id];
-  console.log(state);
+  const userId = state.session.currentUser.id;
   return {
     dataset,
+    userId,
   };
 };
 
-export default withRouter(connect(mapStateToProps)(DatasetMenu));
+const mapDispatchToProps = dispatch => ({
+  deleteDataset: id => dispatch(removeDataset(id)),
+});
+
+export default withRouter(connect(mapStateToProps, mapDispatchToProps)(DatasetMenu));
