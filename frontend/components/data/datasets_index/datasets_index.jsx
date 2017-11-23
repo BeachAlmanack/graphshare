@@ -15,7 +15,7 @@ class DatasetsIndex extends React.Component {
       <div className="dataset-index">
         <div className="menu-bar">
           <h1>My Datasets</h1>
-          <Link className="button-outline" to="/datasets/new">Upload new dataset</Link>
+          <Link className="button-text" to="/datasets/new">Upload new dataset</Link>
         </div>
         {datasetsId.map(datasetId => <DatasetItem key={datasetId} dataset={this.props.datasets[datasetId]} />) }
       </div>

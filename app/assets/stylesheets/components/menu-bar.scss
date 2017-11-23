@@ -1,0 +1,20 @@
+
+.menu-bar {
+  @extend .page;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 35px;
+}
+
+.left-menu {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.right-menu {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}

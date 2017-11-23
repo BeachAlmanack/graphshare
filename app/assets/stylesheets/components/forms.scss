@@ -109,7 +109,7 @@ hr {
   color: black;
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: $large-screen) {
     .form-errors {
       left: 0;
       top: 100%;

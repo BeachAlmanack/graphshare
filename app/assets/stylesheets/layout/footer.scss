@@ -4,16 +4,17 @@
   background-color: white;
   width: 100%;
   bottom: 0;
+  border-top: 1px solid $light-gray;
 }
 
 .footer {
-  max-width: 1024px;
+  max-width: $large-screen;
   margin: auto;
   display: flex;
   justify-content: flex-start;
   align-items: center;
   padding: 5px;
-
+  
   a {
     margin: 0px 10px;
     color: $dark-gray;

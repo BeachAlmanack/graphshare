@@ -5,7 +5,7 @@
 }
 
 .header {
-  max-width: 1024px;
+  max-width: $large-screen;
   margin: auto;
   display: flex;
   justify-content: space-between;

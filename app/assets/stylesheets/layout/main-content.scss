@@ -1,9 +1,9 @@
 .page {
-  max-width: 1024px;
+  max-width: $large-screen;
   margin: auto;
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: $large-screen) {
     .page {
       margin: 0px 10px;
     }

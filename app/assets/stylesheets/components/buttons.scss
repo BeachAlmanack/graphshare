@@ -6,10 +6,35 @@
   padding: 10px;
 }
 
+.button-red {
+  @extend .button;
+  background: $red;
+  color: white;
+  border: 1px solid $red;
+}
+
 .button-outline {
   background: white;
   color: $blue;
   border-radius: 0px;
   border: 1px solid $blue;
   padding: 10px;
+}
+
+.button-text {
+  color: $blue;
+  border-radius: 0px;
+  padding: 10px;
+  border: 1px solid transparent;
+  &:hover {
+    @extend .button;
+  }
+}
+
+.button-text-red {
+  @extend .button-text;
+  color: $red;
+  &:hover {
+    @extend .button-red;
+  }
 }
