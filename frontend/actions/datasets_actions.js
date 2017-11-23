@@ -1,4 +1,4 @@
-import { postDataset, getDatasets } from '../utils/api/datasets_utils';
+import { postDataset, getDatasets, getDataset } from '../utils/api/datasets_utils';
 import { receiveErrors } from './errors_actions';
 
 export const RECEIVE_DATASET = 'RECEIVE_DATASET';
@@ -35,4 +35,9 @@ export const saveDataset = id => (dispatch, getState) => {
 export const fetchDatasets = authorId => (dispatch) => {
   return getDatasets(authorId)
     .then(datasets => dispatch(receiveDatasets(datasets)));
+};
+
+export const fetchDataset = id => (dispatch) => {
+  return getDataset(id)
+    .then(dataset => dispatch(receiveDataset(dataset)));
 };

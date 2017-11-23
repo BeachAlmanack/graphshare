@@ -4,7 +4,12 @@ import _ from 'lodash';
 class Dataset extends React.Component {
   constructor(props) {
     super(props);
+  }
 
+  componentDidMount() {
+    if (this.props.datasetId !== 'new') {
+      this.props.fetchDataset(this.props.datasetId);
+    }
   }
   render() {
     let columnNames = [];

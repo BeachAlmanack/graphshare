@@ -14,6 +14,11 @@ class Api::DatasetsController < ApplicationController
     render :index
   end
 
+  def show
+    @dataset = Dataset.find(params[:id])
+    render :show
+  end
+
   private
   def dataset_params
     params.require(:dataset).permit(:title, :file_name, :author_id, rows: {}, header: {})

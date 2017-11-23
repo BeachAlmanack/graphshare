@@ -6,6 +6,7 @@ import LoginContainer from './users/login_container';
 import SignupContainer from './users/signup_container';
 import DataImportPage from './data/data_import_page';
 import DatasetIndex from './data/datasets_index/datasets_index_container';
+import DatasetContainer from './data/dataset/dataset_container';
 import Footer from './footer/footer';
 
 const App = () => (
@@ -16,6 +17,7 @@ const App = () => (
       <ProtectedRoute path="/feed" component={() => <h1>Feed</h1>} />
       <ProtectedRoute exact path="/datasets" component={DatasetIndex} />
       <ProtectedRoute path="/datasets/new" component={DataImportPage} />
+      <ProtectedRoute exact path="/datasets/:id" component={DatasetContainer} />
       <AuthRoute path="/login" component={LoginContainer} />
       <AuthRoute path="/signup" component={SignupContainer} />
     </Switch>
