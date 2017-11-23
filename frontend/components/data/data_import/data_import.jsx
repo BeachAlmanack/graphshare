@@ -1,9 +1,9 @@
 import React from 'react';
 import Dropzone from 'react-dropzone';
-import { csvData } from '../../../utils/data/file_import_util';
+import fileReader from '../../../utils/data/file_import_util';
 import { formatData } from '../../../utils/data/data_analyzer_util';
 
-const ACCEPTED_TYPES = ['text/csv', ' text/tab-separated-values', 'application/json'];
+const ACCEPTED_TYPES = ['text/csv', 'text/tab-separated-values', 'application/json'];
 
 class DataImport extends React.Component {
   constructor(props) {
@@ -29,12 +29,13 @@ class DataImport extends React.Component {
     let error = '';
     const files = acceptedFiles.concat(rejectedFiles);
     if ((files.length) === 1) {
+      console.log(files[0].type);
       if (ACCEPTED_TYPES.includes(files[0].type)) {
         this.setState({
           file_name: files[0].name,
         });
         error = '';
-        csvData(window.URL.createObjectURL(files[0]), this.processData);
+        fileReader(window.URL.createObjectURL(files[0]), files[0].type, this.processData);
       } else {
         error = `${files[0].name} is not a valid file`;
       }
@@ -88,10 +89,10 @@ class DataImport extends React.Component {
             placeholder="Title"
           />
         </label>
-          { this.state.fileName ?
+          { this.state.file_name ?
             <div>
             <label> Current File: </label>
-              <span className="data-import-message">  {this.state.fileName}</span> </div> : ''
+              <span className="data-import-message">  {this.state.file_name}</span> </div> : ''
           }
           { this.state.error ?
             <div>
