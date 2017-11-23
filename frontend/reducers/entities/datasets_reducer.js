@@ -12,7 +12,7 @@ const datasetsReducer = (state = initialState, action) => {
       newState = action.datasets.reduce((acc, el) => {
         acc[el.id] = el;
         return acc;
-      });
+      }, {});
       return newState;
     case RECEIVE_DATASET_TITLE:
       newState = state;

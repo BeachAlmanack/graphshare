@@ -50,14 +50,15 @@ class DataImport extends React.Component {
     const dataWithType = formatData(data);
     dataWithType.id = 'new';
     dataWithType.file_name = this.state.file_name;
+    dataWithType.title = this.state.title;
     this.props.receiveDataset(dataWithType);
   }
 
   handleTitle(event) {
+    this.props.updateDatasetTitle(this.state.id, event.target.value);
     this.setState({
       title: event.target.value,
     });
-    this.props.updateDatasetTitle(this.state.id, this.state.title);
   }
 
   saveDataset(event) {

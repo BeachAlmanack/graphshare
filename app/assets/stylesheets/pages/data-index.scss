@@ -1,0 +1,60 @@
+.dataset-index {
+  @extend .page;
+  h1 {
+    font-size: 40px;
+    font-weight: 300;
+    margin: 20px;
+  }
+  h2 {
+    font-size: 18px;
+    font-weight: 700;
+    display: inline;
+  }
+  p {
+    display: inline;
+  }
+}
+
+.dataset-item {
+  @include box($light-gray, true);
+  width: 30%;
+  float: left;
+  padding: 10px;
+  margin: 10px;
+  cursor: pointer;
+
+  ul {
+    display: flex;
+    align-items: center;
+  }
+
+  li {
+    width: 100%;
+    margin: 2px;
+  }
+
+
+  [class^="datatype-"] {
+    text-align: center;
+    padding: 1px;
+    width: 120px;
+    color: white;
+    border: 0;
+    float: right;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+    .dataset-item {
+      width: 47%;
+    }
+
+}
+
+@media screen and (max-width: 700px) {
+    .dataset-item {
+      width: 97%;
+    }
+
+}
+

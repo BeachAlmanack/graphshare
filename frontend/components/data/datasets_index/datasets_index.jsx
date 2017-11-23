@@ -1,4 +1,25 @@
 import React from 'react';
+import _ from 'lodash';
+
+const DatasetItem = ({dataset}) => {
+  const columnNames = Object.keys(dataset.header);
+  const dataTypes = _.values(dataset.header);
+  return (
+    <div className="dataset-item">
+      <h2> {dataset.title} </h2><p>   - {dataset.file_name} </p>
+      
+      { 
+      dataTypes.map((dataType, idx) => (
+        <ul key={columnNames[idx]}>
+          <li>{columnNames[idx]}</li>
+          <li className={`datatype-${dataType}`}>{dataType}</li>
+        </ul>
+      ))
+    }
+      
+    </div>
+  );
+};
 
 class DatasetsIndex extends React.Component {
   constructor(props) {
@@ -9,11 +30,12 @@ class DatasetsIndex extends React.Component {
   }
 
   render() {
+    const datasetsId = Object.keys(this.props.datasets);
 
-    const test = JSON.stringify(this.props.datasets);
     return (
-      <div>
-        {test}
+      <div className="dataset-index">
+        <h1> My Datasets </h1>
+        {datasetsId.map(datasetId => <DatasetItem key={datasetId} dataset={this.props.datasets[datasetId]} />) }
       </div>
     );
   }
