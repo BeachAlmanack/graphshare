@@ -4,7 +4,7 @@ import { NavLink } from 'react-router-dom';
 const Header = ({ currentUser, logout, clearErrors }) => {
   const userInfo = currentUser ? (
     <div className="user-info">
-      <p> {currentUser.username} </p>
+      <NavLink to={`/users/${currentUser.id}`} className="button-text">{currentUser.username}</NavLink>
       <button onClick={logout} className="nav-button">Logout</button>
     </div>
   ) : (

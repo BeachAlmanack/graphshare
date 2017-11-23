@@ -5,7 +5,7 @@ import { receiveDataset, updateDatasetTitle, saveDataset } from '../../../action
 
 
 const mapDispatchToProps = dispatch => ({
-  receiveDataset: dataset => dispatch(receiveDataset(dataset)),
+  receiveDataset: dataset => dispatch(receiveDataset({ dataset })),
   updateDatasetTitle: (id, title) => dispatch(updateDatasetTitle(id, title)),
   saveDataset: id => dispatch(saveDataset(id)),
 });

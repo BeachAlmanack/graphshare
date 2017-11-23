@@ -20,3 +20,10 @@ export const deleteSession = () => {
     method: 'DELETE',
   });
 };
+
+export const getUser = (userId) => {
+  return $.ajax({
+    url: `/api/users/${userId}`,
+    method: 'GET',
+  });
+};

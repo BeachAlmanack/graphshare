@@ -10,7 +10,7 @@ class Api::DatasetsController < ApplicationController
   end
 
   def index
-    @datasets = Dataset.where(author_id: params[:author_id])
+    @datasets = Dataset.includes(:user).where(author_id: params[:author_id])
     render :index
   end
 

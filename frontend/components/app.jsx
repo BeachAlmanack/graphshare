@@ -6,6 +6,7 @@ import LoginContainer from './users/login_container';
 import SignupContainer from './users/signup_container';
 import DataImportPage from './data/data_import_page';
 import DataShowPage from './data/data_show_page';
+import ProfilePageContainer from './users/profile_page_container';
 import DatasetIndex from './data/datasets_index/datasets_index_container';
 import Footer from './footer/footer';
 
@@ -18,6 +19,7 @@ const App = () => (
       <ProtectedRoute exact path="/datasets" component={DatasetIndex} />
       <ProtectedRoute path="/datasets/new" component={DataImportPage} />
       <ProtectedRoute path="/datasets/:id" component={DataShowPage} />
+      <ProtectedRoute path="/users/:id" component={ProfilePageContainer} />
       <AuthRoute path="/login" component={LoginContainer} />
       <AuthRoute path="/signup" component={SignupContainer} />
     </Switch>

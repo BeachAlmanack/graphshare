@@ -24,7 +24,7 @@ class DatasetShowMenu extends React.Component {
             <button onClick={this.deleteDataset(dataset.id)} className="button-text-red"> Delete </button>
             
             </div> : <div className="right-menu">
-              Author Name to be put here
+              Created by { this.props.users[dataset.author_id].username }
             </div>}
         </div>
       );

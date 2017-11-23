@@ -4,7 +4,6 @@ const initialState = {};
 
 const datasetsReducer = (state = initialState, action) => {
   Object.freeze(state);
-  console.log(action.user);
   let newState = {};
   switch (action.type) {
     case RECEIVE_DATASET:

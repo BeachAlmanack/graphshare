@@ -6,9 +6,11 @@ import DatasetMenu from './data_show_menu';
 const mapStateToProps = (state, ownProps) => {
   const dataset = state.entities.datasets[ownProps.match.params.id];
   const userId = state.session.currentUser.id;
+  const users = state.entities.users;
   return {
     dataset,
     userId,
+    users,
   };
 };
 
