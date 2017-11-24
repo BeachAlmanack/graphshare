@@ -28,12 +28,15 @@
  @import 'layout/footer.scss';
  @import 'layout/main-content.scss';
 
- @import 'pages/signup.scss';
- @import 'pages/login.scss';
- @import 'pages/data-import.scss';
- @import 'pages/data-index.scss';
-
  @import 'components/menu-bar.scss';
  @import 'components/buttons.scss';
  @import 'components/dataset.scss';
  @import 'components/forms.scss';
+
+ @import 'pages/signup.scss';
+ @import 'pages/login.scss';
+ @import 'pages/data-import.scss';
+ @import 'pages/data-index.scss';
+ @import 'pages/feed.scss';
+
+

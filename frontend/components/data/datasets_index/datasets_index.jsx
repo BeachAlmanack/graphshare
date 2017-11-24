@@ -17,14 +17,14 @@ class DatasetsIndex extends React.Component {
         <Link className="button-text" to="/datasets/new">Upload new dataset</Link>
       </div>
     ) : (
-        <div className="menu-bar">
-          <h1>Datasets</h1>
-        </div>
+      <div className="menu-bar">
+        <h1>Datasets</h1>
+      </div>
     );
 
     return (
       <div className="dataset-index">
-         {title}
+        { title }
         {datasetsId.map(datasetId => <DatasetItem key={datasetId} dataset={this.props.datasets[datasetId]} />) }
       </div>
     );
@@ -34,6 +34,7 @@ class DatasetsIndex extends React.Component {
 DatasetsIndex.propTypes = {
   datasets: PropTypes.objectOf(Object).isRequired,
   userId: PropTypes.number.isRequired,
+  currentUserId: PropTypes.number.isRequired,
   fetchDatasets: PropTypes.func.isRequired,
 };
 

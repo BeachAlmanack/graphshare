@@ -1,0 +1,55 @@
+.feed {
+  @extend .page;
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.left-feed-menu {
+  @include box($light-gray, true);
+  padding: 20px;
+  h2 {
+    font-size: 18px;
+    font-weight: 400;
+    padding-bottom: 10px;
+  }
+  .left-menu-button {
+    @extend .button-outline;
+    display: block;
+    text-align: center;
+    margin-top: 10px;
+    width: 100%;
+  }
+}
+
+.left-feed-menu-item {
+  width: 230px;
+  display: flex;
+  padding: 10px 0px;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid $light-gray;
+  -webkit-backface-visibility: hidden;
+  p {
+    width: 150px;
+    padding: 0px 10px;
+    overflow-wrap: break-word;
+  }
+
+  &:hover i {
+    animation-name: slideRightAndBack;
+    animation-duration: 0.5s;
+  }
+}
+
+
+
+.feed-items {
+  width: 600px;
+  height: 400px;
+}
+
+.right-feed-menu {
+  
+}

@@ -33,10 +33,16 @@ class Login extends React.Component {
 
   handleDemoLogin(event) {
     event.preventDefault();
-    this.props.login({
+    this.setState({
       username: 'demo',
       password: 'password',
     });
+    setTimeout(() => {
+      this.props.login({
+        username: 'demo',
+        password: 'password',
+      });
+    }, 500);
   }
 
   render() {
