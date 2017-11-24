@@ -1,0 +1,10 @@
+.line {
+  stroke: black;
+  fill: none;
+  stroke-width: 1px;
+}
+
+.chart {
+  @include box($light-gray, true);
+  padding: 20px;
+}
