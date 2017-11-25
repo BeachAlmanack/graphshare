@@ -8,3 +8,32 @@
   @include box($light-gray, true);
   padding: 20px;
 }
+
+
+// Chart colors
+.color-fill-0 {
+  fill: $blue;
+}
+
+.color-fill-1 {
+  fill: $green;
+}
+
+.color-fill-2 {
+  fill: $orange;
+}
+
+.color-stroke-0 {
+  stroke: $blue;
+  fill: none;
+}
+
+.color-stroke-1 {
+  stroke: $green;
+  fill: none;
+}
+
+.color-stroke-2 {
+  stroke: $orange;
+  fill: none;
+}

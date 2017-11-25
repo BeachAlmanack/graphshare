@@ -14,7 +14,7 @@ class Dataset extends React.Component {
       let dataTypes = [];
       let rows = [];
       let rowIds = [];
-
+      console.log(JSON.stringify(this.props.dataset));
       columnNames = _.keys(this.props.dataset.header);
       dataTypes = _.values(this.props.dataset.header);
       rows = _.values(this.props.dataset.rows);

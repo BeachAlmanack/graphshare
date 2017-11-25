@@ -7,6 +7,7 @@ import SignupContainer from './users/signup_container';
 import DataImportPage from './data/data_import_page';
 import DataShowPage from './data/data_show_page';
 import Feed from './feed/feed';
+import ChartCreatorPage from './charts/chart_creator_page';
 import ProfilePageContainer from './users/profile_page_container';
 import DatasetIndex from './data/datasets_index/datasets_index_container';
 import Footer from './footer/footer';
@@ -17,6 +18,7 @@ const App = () => (
     <Switch>
       <ProtectedRoute exact path="/" component={Feed} />
       <ProtectedRoute path="/feed" component={Feed} />
+      <ProtectedRoute path="/charts/new" component={ChartCreatorPage} />
       <ProtectedRoute exact path="/datasets" component={DatasetIndex} />
       <ProtectedRoute path="/datasets/new" component={DataImportPage} />
       <ProtectedRoute path="/datasets/:id" component={DataShowPage} />

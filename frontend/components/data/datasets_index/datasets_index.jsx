@@ -10,7 +10,6 @@ class DatasetsIndex extends React.Component {
 
   render() {
     const datasetsId = Object.keys(this.props.datasets);
-
     const title = this.props.userId === this.props.currentUserId ? (
       <div className="menu-bar">
         <h1>My Datasets</h1>

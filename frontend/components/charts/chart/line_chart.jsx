@@ -13,13 +13,13 @@ class LineChart extends React.Component {
 
     const [scaleX, scaleY] = Scale(this.props.data);
     
-    this.props.data.axis.y.forEach((columName) => {
+    this.props.data.axis.y.forEach((columName, idx) => {
       const lineFunction = line()
         .x(d => scaleX(d[this.props.data.axis.x]))
         .y(d => scaleY(d[columName]))
         .curve(curveCatmullRom.alpha(0.5));
       
-      const path = (<path d={lineFunction(rows)} className="line" key={columName} transform="translate(20, 0)" />);
+      const path = (<path d={lineFunction(rows)} className="line" key={columName} transform="translate(20, 0)" className={`color-stroke-${idx}`} />);
       this.paths.push(path);
     });
 

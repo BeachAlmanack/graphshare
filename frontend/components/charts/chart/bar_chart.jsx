@@ -6,7 +6,7 @@ import Scale from './scale';
 const Rects = (rows, bandWidth, xcb, ycb, index) => {
   console.log(index * bandWidth);
   return rows.map(row => (
-    <rect width={bandWidth} height={ycb(row)} transform={`translate(${(xcb(row) + (bandWidth * index)) + 20}, ${190 - ycb(row)})`} />
+    <rect width={bandWidth} height={ycb(row)} transform={`translate(${(xcb(row) + (bandWidth * index)) + 20}, ${190 - ycb(row)})`} className={`color-fill-${index}`} />
   ));
 }
 

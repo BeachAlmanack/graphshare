@@ -13,7 +13,7 @@ export default function Chart() {
       },
       axis: {
         x: 'Categorical Data',
-        y: ['data1', 'data2'],
+        y: ['data1', 'data2', 'data2'],
       },
       rows: {
         0: {
@@ -51,7 +51,6 @@ export default function Chart() {
   return (
     <div>
       { ChartFactory.build(exampleChart) }
-      { ChartFactory.build(exampleChart2) }
     </div>
   );
 }

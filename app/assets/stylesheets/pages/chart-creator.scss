@@ -1,0 +1,61 @@
+
+.chart-creator {
+  @extend .page;
+  margin-top: 20px;
+  display: flex;
+}
+
+.chart-creator-menu {
+  display: flex;
+  margin-right: 20px;
+}
+
+.dataset-chooser {
+  @include box($light-gray);
+  margin-left: 10px;
+  width: 250px;
+  height: 100%;
+  padding: 10px;
+  overflow: none;
+  h2 {
+    margin: 10px 0px;
+  }
+}
+
+.column-names {
+  padding: 0px;
+  min-height: 400px;
+  margin-bottom: 5px;
+  li {
+    margin: 3px 0px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    // border: 1px solid $light-gray;
+    background-color: $lightest-gray;
+    color: black;
+    cursor: pointer;
+  }
+}
+
+// Override React-select style
+.Select {
+  width: 100%;
+  margin: auto;
+}
+
+.Select-control {
+  border: 1px solid $light-gray;
+  border-radius: 0px;
+  color: $dark-gray;
+}
+
+.Select-clear {
+  margin-top: 0px;
+  font-size: 25px;
+  line-height: 30px;
+}
+
+.Select-input input {
+  border: none;
+}
