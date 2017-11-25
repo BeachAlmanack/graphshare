@@ -1,3 +1,5 @@
+import React from 'react';
+import _ from 'lodash';
 import ChartFactory from './chart/chart_factory';
 
 export default function Chart() {
@@ -10,8 +12,8 @@ export default function Chart() {
         'data2': 'Numerical',
       },
       axis: {
-        x: 'data2',
-        y: ['data1'],
+        x: 'Categorical Data',
+        y: ['data1', 'data2'],
       },
       rows: {
         0: {
@@ -43,8 +45,14 @@ export default function Chart() {
     },
   };
 
+  const exampleChart2 = _.clone(exampleChart, true);
+  exampleChart2.type = 'Bar';
+
   return (
-    ChartFactory.build(exampleChart)
+    <div>
+      { ChartFactory.build(exampleChart) }
+      { ChartFactory.build(exampleChart2) }
+    </div>
   );
 }
 

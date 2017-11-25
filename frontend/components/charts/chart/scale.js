@@ -1,11 +1,16 @@
-import { scaleOrdinal, scaleLinear } from 'd3-scale';
+import { scaleOrdinal, scaleLinear, scaleBand } from 'd3-scale';
 import { max, min } from 'd3-array';
+import _ from 'lodash';
 
-export default function scales(data) {
-  
+const scales = (data, band = false) => {
+
   const rows = _.values(data.rows);
   let scaleX;
-  if (data.header[data.axis.x] !== 'Numerical')  {
+
+  if (band) {
+    const domain = rows.map(row => row[data.axis.x]);
+    scaleX = scaleBand().domain(domain).range([10, 500]).padding(0.1);
+  } else if (data.header[data.axis.x] !== 'Numerical') {
     const ordinalRange = [];
     for (let i = 10; i < 500; i += (500 / rows.length)) {
       ordinalRange.push(i);
@@ -34,5 +39,6 @@ export default function scales(data) {
   const scaleY = scaleLinear().domain([lowestMin, biggestMax]).range([190, 10]);
 
   return [scaleX, scaleY];
+};
 
-}
+export default scales;
