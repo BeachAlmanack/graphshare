@@ -8,15 +8,16 @@
 .chart-creator-menu {
   display: flex;
   margin-right: 20px;
+  height: 100%;
 }
 
 .dataset-chooser {
   @include box($light-gray);
   margin-left: 10px;
   width: 250px;
-  height: 100%;
   padding: 10px;
-  overflow: none;
+  max-height: 600px;
+  overflow: scroll;
   h2 {
     margin: 10px 0px;
   }

@@ -14,7 +14,17 @@ class Dataset extends React.Component {
       let dataTypes = [];
       let rows = [];
       let rowIds = [];
-      console.log(JSON.stringify(this.props.dataset));
+      const jsonData = JSON.stringify(this.props.dataset);
+      
+      function download(text, name, type) {
+        var a = document.createElement("a");
+        var file = new Blob([text], { type: type });
+        a.href = URL.createObjectURL(file);
+        a.download = name;
+        a.click();
+      }
+      // download(jsonData, 'test.txt', 'text/plain');
+
       columnNames = _.keys(this.props.dataset.header);
       dataTypes = _.values(this.props.dataset.header);
       rows = _.values(this.props.dataset.rows);

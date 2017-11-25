@@ -19,7 +19,7 @@ const rowsToColumns = (data) => {
 
 export const verifyNumberColumn = (column) => {
   for (let i = 0; i < column.length; i += 1) {
-    const matches = column[i].match(/-?\d+[.|,]?\d*/);
+    const matches = column[i].match(/-?\d+[.|,]?\d*,?\d*/);
     if (!matches || (matches && matches[0] !== column[i])) {
       return column[i];
     }

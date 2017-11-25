@@ -1,0 +1,67 @@
+{
+  "title": "World poverty",
+  "file_name": "worldbank_poverty_headcount.csv",
+  "rows": {
+    "0": {
+      "Year": "1981",
+      "Poverty headcount(%)": "42.2"
+    },
+    "1": {
+      "Year": "1984",
+      "Poverty headcount(%)": "39.3"
+    },
+    "2": {
+      "Year": "1987",
+      "Poverty headcount(%)": "35.2"
+    },
+    "3": {
+      "Year": "1990",
+      "Poverty headcount(%)": "35.3"
+    },
+    "4": {
+      "Year": "1993",
+      "Poverty headcount(%)": "34"
+    },
+    "5": {
+      "Year": "1996",
+      "Poverty headcount(%)": "29.3"
+    },
+    "6": {
+      "Year": "1999",
+      "Poverty headcount(%)": "28.6"
+    },
+    "7": {
+      "Year": "2002",
+      "Poverty headcount(%)": "25.8"
+    },
+    "8": {
+      "Year": "2005",
+      "Poverty headcount(%)": "20.8"
+    },
+    "9": {
+      "Year": "2008",
+      "Poverty headcount(%)": "18"
+    },
+    "10": {
+      "Year": "2010",
+      "Poverty headcount(%)": "15.7"
+    },
+    "11": {
+      "Year": "2011",
+      "Poverty headcount(%)": "13.7"
+    },
+    "12": {
+      "Year": "2012",
+      "Poverty headcount(%)": "12.5"
+    },
+    "13": {
+      "Year": "2013",
+      "Poverty headcount(%)": "10.7"
+    }
+  },
+  "header": {
+    "Year": "Date",
+    "Poverty headcount(%)": "Numerical"
+  },
+  "author_id": 30
+}

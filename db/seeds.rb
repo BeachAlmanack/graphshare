@@ -2,9 +2,15 @@
 # and 1 demo user with a password of password
 
 
-json = ActiveSupport::JSON.decode(File.read('db/seeds/users.json'))
+userJson = ActiveSupport::JSON.decode(File.read('db/seeds/users.json'))
 users = []
-json.each do |row|
+userJson.each do |row|
   users << User.create!(row)
 end
 
+aaplJson = ActiveSupport::JSON.decode(File.read('db/seeds/AAPL.json'))
+europeanCountriesJson = ActiveSupport::JSON.decode(File.read('db/seeds/european_countries.json'))
+worldPovertyJson = ActiveSupport::JSON.decode(File.read('db/seeds/world_poverty.json'))
+Dataset.create(aaplJson)
+Dataset.create(europeanCountriesJson)
+Dataset.create(worldPovertyJson)
