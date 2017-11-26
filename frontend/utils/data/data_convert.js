@@ -1,7 +1,10 @@
+import {clone} from 'lodash';
+
 const convert = (dataItem, type) => {
+
   switch (type) {
     case 'Numerical':
-      return Number(dataItem);
+      return Number(dataItem.replace(/,/g, ''));
     default:
       return String(dataItem);
   }
@@ -10,7 +13,7 @@ const convert = (dataItem, type) => {
 
 export default function convertData(data) {
   // data.header[name]
-  const newData = data;
+  const newData = clone(data);
   const newRows = {};
   const rowsId = Object.keys(data.rows);
   rowsId.forEach((rowId) => {

@@ -9,7 +9,7 @@ class DropAxis extends React.Component {
         <ul className="column-names">
           {
             items.map(item => (
-              <li>
+              <li key={item.name}>
                 <p>{item.name}</p>
                 <span className={`datatype-${item.type}`}>{item.type}</span>
               </li>
@@ -21,9 +21,8 @@ class DropAxis extends React.Component {
 }
 
 const spec = {
-  drop(props, monitor, component) {
-    console.log(props.addItem(monitor.getItem()));
-    console.log(component);
+  drop(props, monitor) {
+    props.addItem(monitor.getItem());
     return { moved: true };
   },
 };

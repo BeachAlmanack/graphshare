@@ -4,6 +4,7 @@ import Select from 'react-select';
 import { DragDropContext } from 'react-dnd';
 import ColumnName from './column_name';
 import DropAxis from './drop_axis';
+import _ from 'lodash';
 
 class ChartCreator extends React.Component {
   constructor(props) {
@@ -12,13 +13,23 @@ class ChartCreator extends React.Component {
       chosenDataset: '',
       xAxis: [],
       yAxis: [],
+      chartType: 'line',
     };
     this.handleChange = this.handleChange.bind(this);
     this.handleDrop = this.handleDrop.bind(this);
+    this.handleChartType = this.handleChartType.bind(this);
   }
 
   componentDidMount() {
     this.props.fetchDatasets(this.props.currentUserId);
+  }
+
+  handleChartType(type) {
+    this.setState({
+      chartType: type,
+      xAxis: [],
+      yAxis: [],
+    });
   }
 
   handleDrop(bin, item) {
@@ -27,6 +38,25 @@ class ChartCreator extends React.Component {
         [bin]: prevState[bin].concat([item]),
       };
     });
+    const dataset = this.props.datasets[this.state.chosenDataset.value];
+    console.log(this.state.yAxis.map(item => item.name));
+    const chart = 
+    {
+      id: 'new',
+      type: this.state.chartType,
+      data: {
+        header: dataset.header,
+        rows: dataset.rows,
+        axis: {
+          x: this.state.xAxis[0].name,
+          y: this.state.yAxis.map(item => item.name),
+        },
+      }
+    }
+    if (chart.data.axis.x && chart.data.axis.y.length > 0) {
+      console.log('about to send action');
+      this.props.receiveChart(chart);
+    }
   }
 
   handleChange(chosenDataset) {
@@ -55,6 +85,17 @@ class ChartCreator extends React.Component {
     return (
       <div className="chart-creator-menu">
         <div className="dataset-chooser">
+          <h2>Choose chart type: </h2>
+          <ul className="chart-type">
+            { ['line', 'area', 'pie', 'bar'].map(type => (
+              <li onClick={() => this.handleChartType(type)} key={type}>
+                <i
+                  className={`fa fa-${type}-chart fa-lg ${this.state.chartType === type ? 'active' : ''}`}
+                  aria-hidden="true"
+                />
+              </li>
+            ))}
+          </ul>
           <h2>Choose dataset: </h2>
           <Select
             value={this.state.chosenDataset}
@@ -69,11 +110,11 @@ class ChartCreator extends React.Component {
         <div className="dataset-drops">
           <div>
             <h2>X Axis</h2>
-            { DropAxis('Numerical', itemsX, item => this.handleDrop('xAxis', item)) }
+            {DropAxis(['Date', 'Numerical', 'Categorical'], itemsX, item => this.handleDrop('xAxis', item)) }
           </div>
           <div>
             <h2>Y Axis</h2>
-            {DropAxis(['Date', 'Numerical', 'Categorical'], itemsY, item => this.handleDrop('yAxis', item))}
+            {DropAxis('Numerical', itemsY, item => this.handleDrop('yAxis', item))}
           </div>
         </div>
       </div>

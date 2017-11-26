@@ -33,6 +33,22 @@
   }
 }
 
+.chart-type {
+  display: flex;
+  justify-content: space-around;
+  
+  li {
+    color: $dark-gray;
+    cursor: pointer;
+    &:hover {
+      color: $blue;
+    }
+  }
+  .active {
+      color: $blue;
+    }
+}
+
 
 .column-names {
   padding: 0px;

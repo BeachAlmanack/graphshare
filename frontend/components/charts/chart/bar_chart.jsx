@@ -11,11 +11,11 @@ const Rects = (rows, bandWidth, xcb, ycb, index) => {
 }
 
 class BarChart extends React.Component {
-  constructor(props) {
-    super(props);
 
+
+  render() {
     this.bars = [];
-    const rows = _.values(props.data.rows);
+    const rows = _.values(this.props.data.rows);
 
     const [scaleX, scaleY] = Scale(this.props.data, true);
     const numberOfBars = this.props.data.axis.y.length;
@@ -24,13 +24,8 @@ class BarChart extends React.Component {
       this.bars = this.bars.concat(seriesRect);
     });
 
-    console.log(this.bars);
-
     this.yAxis = <Axis scale={scaleY} axis='y' />
     this.xAxis = <Axis scale={scaleX} axis='x' />
-  }
-
-  render() {
     return (
       <svg width="530" height="220" className="chart">
         {this.xAxis}
