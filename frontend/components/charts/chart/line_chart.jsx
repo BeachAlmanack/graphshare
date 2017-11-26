@@ -5,10 +5,8 @@ import Axis from './axis';
 import Scale from './scale';
 
 class LineChart extends React.Component {
-
   render() {
-
-    this.paths = [];
+    const paths = [];
     const rows = _.values(this.props.data.rows);
 
     const [scaleX, scaleY] = Scale(this.props.data);
@@ -20,17 +18,17 @@ class LineChart extends React.Component {
         .curve(curveCatmullRom.alpha(0.5));
 
       const path = (<path d={lineFunction(rows)} className="line" key={columName} transform="translate(20, 0)" className={`color-stroke-${idx}`} />);
-      this.paths.push(path);
+      paths.push(path);
     });
 
-    this.yAxis = <Axis scale={scaleY} axis='y' />
-    this.xAxis = <Axis scale={scaleX} axis='x' />
+    this.yAxis = <Axis scale={scaleY} axis="y" />;
+    this.xAxis = <Axis scale={scaleX} axis="x" />;
 
     return (
       <svg width="530" height="220" className="chart">
         {this.yAxis}
         {this.xAxis}
-        { this.paths.map(path => path) }
+        { paths.map(path => path) }
       </svg>
     );
   }

@@ -5,14 +5,11 @@ import convertData from '../../../utils/data/data_convert';
 
 class ChartFactory {
   static build(chart) {
-    const convertedData = convertData(chart.data);
-    console.log('getting to the factory');
-    console.log(convertedData);
     switch (chart.type) {
       case 'line':
-        return <LineChart data={convertedData} />;
+        return <LineChart data={convertData(chart.data)} />;
       case 'bar':
-        return <BarChart data={convertedData} />;
+        return <BarChart data={convertData(chart.data)} />;
       default:
         return <div />;
     }

@@ -4,7 +4,6 @@ import Select from 'react-select';
 import { DragDropContext } from 'react-dnd';
 import ColumnName from './column_name';
 import DropAxis from './drop_axis';
-import _ from 'lodash';
 
 class ChartCreator extends React.Component {
   constructor(props) {
@@ -22,6 +21,7 @@ class ChartCreator extends React.Component {
 
   componentDidMount() {
     this.props.fetchDatasets(this.props.currentUserId);
+    this.props.receiveChart({ id: 'new', type: 'empty' });
   }
 
   handleChartType(type) {
@@ -32,35 +32,32 @@ class ChartCreator extends React.Component {
     });
   }
 
-  handleDrop(bin, item) {
-    this.setState((prevState) => {
-      return {
-        [bin]: prevState[bin].concat([item]),
-      };
+  handleDrop(dropBin, item) {
+    this.setState({
+      [dropBin]: this.state[dropBin].concat([item]),
     });
+
     const dataset = this.props.datasets[this.state.chosenDataset.value];
-    console.log(this.state.yAxis.map(item => item.name));
-    const chart = 
-    {
-      id: 'new',
-      type: this.state.chartType,
-      data: {
-        header: dataset.header,
-        rows: dataset.rows,
-        axis: {
-          x: this.state.xAxis[0].name,
-          y: this.state.yAxis.map(item => item.name),
+    const chart =
+      {
+        id: 'new',
+        type: this.state.chartType,
+        data: {
+          header: dataset.header,
+          rows: dataset.rows,
+          axis: {
+            x: this.state.xAxis[0].name,
+            y: this.state.yAxis.map(column => column.name),
+          },
         },
-      }
-    }
+      };
     if (chart.data.axis.x && chart.data.axis.y.length > 0) {
-      console.log('about to send action');
       this.props.receiveChart(chart);
     }
   }
 
   handleChange(chosenDataset) {
-    this.setState({ 
+    this.setState({
       chosenDataset,
       xAxis: [],
       yAxis: [],
@@ -69,15 +66,14 @@ class ChartCreator extends React.Component {
       this.props.fetchDataset(chosenDataset.value);
     }
   }
-  
+
   render() {
     const { datasets } = this.props;
     const ids = Object.keys(datasets);
     const columnNames = this.state.chosenDataset ? Object.keys(datasets[this.state.chosenDataset.value].header) : [];
-    const filteredCol = columnNames.filter(columnName => 
-      this.state.xAxis.every(item => (item.name !== columnName)) && 
-      this.state.yAxis.every(item => (item.name !== columnName))
-    );
+    const filteredCol = columnNames.filter(columnName =>
+      this.state.xAxis.every(item => (item.name !== columnName)) &&
+      this.state.yAxis.every(item => (item.name !== columnName)));
     const header = this.state.chosenDataset ? datasets[this.state.chosenDataset.value].header : [];
     const options = ids.map(id => ({ value: id, label: datasets[id].title }));
     const itemsX = this.state.xAxis;
@@ -87,7 +83,7 @@ class ChartCreator extends React.Component {
         <div className="dataset-chooser">
           <h2>Choose chart type: </h2>
           <ul className="chart-type">
-            { ['line', 'area', 'pie', 'bar'].map(type => (
+            {['line', 'area', 'pie', 'bar'].map(type => (
               <li onClick={() => this.handleChartType(type)} key={type}>
                 <i
                   className={`fa fa-${type}-chart fa-lg ${this.state.chartType === type ? 'active' : ''}`}
@@ -104,13 +100,14 @@ class ChartCreator extends React.Component {
           />
           <h2>Columns: </h2>
           <ul className="column-names">
-            {filteredCol.map(name => ColumnName(header[name], name)) }
+            {filteredCol.map(name => ColumnName(header[name].replace(/\(.*?\)/, ''), name))}
           </ul>
         </div>
         <div className="dataset-drops">
           <div>
             <h2>X Axis</h2>
-            {DropAxis(['Date', 'Numerical', 'Categorical'], itemsX, item => this.handleDrop('xAxis', item)) }
+            {DropAxis(['Date', 'Numerical', 'Categorical'], itemsX, item => this.handleDrop('xAxis', item))}
+            
           </div>
           <div>
             <h2>Y Axis</h2>

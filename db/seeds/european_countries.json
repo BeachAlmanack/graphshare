@@ -374,7 +374,7 @@
   },
   "header": {
     "UK": "Numerical",
-    "YEAR": "Date",
+    "YEAR": "Date(%Y)",
     "Italy": "Numerical",
     "Malta": "Numerical",
     "Spain": "Numerical",

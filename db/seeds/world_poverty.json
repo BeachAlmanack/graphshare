@@ -60,7 +60,7 @@
     }
   },
   "header": {
-    "Year": "Date",
+    "Year": "Date(%Y)",
     "Poverty headcount(%)": "Numerical"
   },
   "author_id": 30

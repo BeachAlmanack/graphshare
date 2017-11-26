@@ -11345,7 +11345,7 @@
   },
   "header": {
     "Low": "Numerical",
-    "Date": "Date",
+    "Date": "Date(%Y-%m-%d)",
     "High": "Numerical",
     "Open": "Numerical",
     "Close": "Numerical",

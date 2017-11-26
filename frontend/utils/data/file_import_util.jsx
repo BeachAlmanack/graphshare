@@ -27,6 +27,6 @@ export default (file, type, cb) => {
     case 'application/json':
       return jsonData(file, cb);
     default:
-      break;
+      return undefined;
   }
 };

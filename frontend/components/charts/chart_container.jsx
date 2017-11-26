@@ -5,7 +5,7 @@ import Chart from './chart';
 const mapStateToProps = (state) => {
   const chartId = 'new';
   return {
-    chart: state.entities.charts['new'],
+    chart: state.entities.charts.new,
     chartId,
   };
 };

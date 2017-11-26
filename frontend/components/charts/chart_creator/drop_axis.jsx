@@ -3,8 +3,12 @@ import { DropTarget } from 'react-dnd';
 
 class DropAxis extends React.Component {
   render() {
-    const { isOver, connectDropTarget, canDrop, items } = this.props;
-    return connectDropTarget(
+    const {
+      connectDropTarget,
+      items,
+    } = this.props;
+
+    return connectDropTarget((
       <div className="drop">
         <ul className="column-names">
           {
@@ -16,7 +20,7 @@ class DropAxis extends React.Component {
             ))
           }
         </ul>
-      </div>);
+      </div>));
   }
 }
 

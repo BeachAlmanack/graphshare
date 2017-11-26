@@ -1,10 +1,15 @@
-import {clone} from 'lodash';
+import { clone } from 'lodash';
+import { timeParse } from 'd3-time-format';
 
 const convert = (dataItem, type) => {
-
-  switch (type) {
+  const subType = type.match(/\((.*?)\)/);
+  switch (type.replace(/\(.*?\)/, '')) {
     case 'Numerical':
       return Number(dataItem.replace(/,/g, ''));
+    case 'Date': {
+      const parser = timeParse(subType[1]);
+      return parser(dataItem);
+    }
     default:
       return String(dataItem);
   }
@@ -12,7 +17,6 @@ const convert = (dataItem, type) => {
 
 
 export default function convertData(data) {
-  // data.header[name]
   const newData = clone(data);
   const newRows = {};
   const rowsId = Object.keys(data.rows);

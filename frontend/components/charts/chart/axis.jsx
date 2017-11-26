@@ -12,12 +12,12 @@ class Axis extends React.Component {
   }
 
   renderAxis() {
-    const scale = this.props.scale;
-    let axis;
+    const { scale } = this.props;
+    let axis = undefined;
     if (this.props.axis === 'y') {
       axis = axisLeft(scale).ticks(5, 's');
     } else {
-      axis = axisBottom(scale).ticks(10, 's');
+      axis = axisBottom(scale).ticks(20, 's');
     }
 
     select(this.node).call(axis);
@@ -25,7 +25,7 @@ class Axis extends React.Component {
 
   render() {
     const translate = (this.props.axis === 'y') ? 'translate(30, 0)' : 'translate(20, 190)';
-    return <g className="axis" ref={node => this.node = node} height="100" width="500" transform={translate}/>;
+    return <g className="axis" ref={node => this.node = node} height="100" width="500" transform={translate} />;
   }
 }
 
