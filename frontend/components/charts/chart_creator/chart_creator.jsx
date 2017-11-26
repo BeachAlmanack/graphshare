@@ -6,6 +6,8 @@ import { DragDropContext } from 'react-dnd';
 import ColumnName from './column_name';
 import DropAxis from './drop_axis';
 import ChartFactory from '../chart/chart_factory';
+import * as DataType from '../../../utils/constants/data_types';
+import * as ChartType from '../../../utils/constants/chart_types';
 
 class ChartCreator extends React.Component {
   constructor(props) {
@@ -14,7 +16,7 @@ class ChartCreator extends React.Component {
       chosenDataset: '',
       xAxis: [],
       yAxis: [],
-      chartType: 'line',
+      chartType: ChartType.LINE,
       chart: undefined,
     };
 
@@ -32,9 +34,6 @@ class ChartCreator extends React.Component {
         });
       }
     });
-
-    
-    this.props.receiveChart({ id: 'new', type: 'empty' });
   }
 
   handleChartType(type) {
@@ -42,6 +41,7 @@ class ChartCreator extends React.Component {
       chartType: type,
       xAxis: [],
       yAxis: [],
+      chart: undefined,
     });
   }
 
@@ -77,6 +77,7 @@ class ChartCreator extends React.Component {
       chosenDataset,
       xAxis: [],
       yAxis: [],
+      chart: undefined,
     });
     if (chosenDataset && !this.props.datasets[chosenDataset.value].rows) {
       this.props.fetchDataset(chosenDataset.value);
@@ -100,7 +101,7 @@ class ChartCreator extends React.Component {
         <div className="dataset-chooser">
           <h2>Choose chart type: </h2>
           <ul className="chart-type">
-            {['line', 'area', 'pie', 'bar'].map(type => (
+            {ChartType.ALL.map(type => (
               <li onClick={() => this.handleChartType(type)} key={type}>
                 <i
                   className={`fa fa-${type}-chart fa-lg ${this.state.chartType === type ? 'active' : ''}`}
@@ -123,12 +124,12 @@ class ChartCreator extends React.Component {
         <div className="dataset-drops">
           <div>
             <h2>X Axis</h2>
-            {DropAxis(['Date', 'Numerical', 'Categorical'], itemsX, item => this.handleDrop('xAxis', item))}
+            {DropAxis([DataType.DATE, DataType.NUMERICAL, DataType.CATEGORICAL], itemsX, item => this.handleDrop('xAxis', item))}
             
           </div>
           <div>
             <h2>Y Axis</h2>
-            {DropAxis('Numerical', itemsY, item => this.handleDrop('yAxis', item))}
+            {DropAxis(DataType.NUMERICAL, itemsY, item => this.handleDrop('yAxis', item))}
           </div>
         </div>
         <div>

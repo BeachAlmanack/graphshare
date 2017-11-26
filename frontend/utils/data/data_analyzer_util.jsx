@@ -1,6 +1,4 @@
-export const NUMERICAL = 'Numerical';
-export const DATE = 'Date';
-export const CATEGORICAL = 'Categorical';
+import * as DataType from '../constants/data_types';
 
 const rowsToColumns = (data) => {
   const dataset = {};
@@ -58,13 +56,13 @@ export const formatData = (rows) => {
     const { name } = arrayData[columnIds[column]];
     switch (null) {
       case verifyNumberColumn(arrayData[column].data):
-        header[name] = NUMERICAL;
+        header[name] = DataType.NUMERICAL;
         break;
       case verifyDateColumn(arrayData[column].data):
-        header[name] = DATE;
+        header[name] = DataType.DATE;
         break;
       default:
-        header[name] = CATEGORICAL;
+        header[name] = DataType.CATEGORICAL;
         break;
     }
   });

@@ -1,6 +1,7 @@
 import { scaleOrdinal, scaleLinear, scaleBand, scaleTime } from 'd3-scale';
 import { max, min } from 'd3-array';
 import { values } from 'lodash';
+import * as DataType from '../../../utils/constants/data_types';
 
 const scales = (data, band = false) => {
 
@@ -13,9 +14,9 @@ const scales = (data, band = false) => {
       .domain(domain)
       .range([10, 500])
       .padding(0.1);
-  } else if (data.header[data.axis.x].replace(/\(.*?\)/, '') === 'Date') {
+  } else if (DataType.getType(data.header[data.axis.x]) === DataType.DATE) {
     scaleX = scaleTime().domain([rows[0][data.axis.x], rows[rows.length - 1][data.axis.x]]).range([10, 500]);
-  } else if (data.header[data.axis.x] !== 'Numerical') {
+  } else if (data.header[data.axis.x] !== DataType.NUMERICAL) {
     const ordinalRange = [];
     for (let i = 10; i <= 480; i += (470 / (rows.length - 1))) {
       ordinalRange.push(i);

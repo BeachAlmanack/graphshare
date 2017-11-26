@@ -1,13 +1,13 @@
 import { clone } from 'lodash';
 import { timeParse } from 'd3-time-format';
+import * as DataType from '../constants/data_types';
 
 const convert = (dataItem, type) => {
-  const subType = type.match(/\((.*?)\)/);
-  switch (type.replace(/\(.*?\)/, '')) {
-    case 'Numerical':
+  switch (DataType.getType(type)) {
+    case DataType.NUMERICAL:
       return Number(dataItem.replace(/,/g, ''));
-    case 'Date': {
-      const parser = timeParse(subType[1]);
+    case DataType.DATE: {
+      const parser = timeParse(DataType.getSubType(type));
       return parser(dataItem);
     }
     default:
