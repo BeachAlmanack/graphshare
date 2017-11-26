@@ -16,6 +16,7 @@ class ChartCreator extends React.Component {
       chosenDataset: '',
       xAxis: [],
       yAxis: [],
+      title: '',
       chartType: ChartType.LINE,
       chart: undefined,
     };
@@ -23,6 +24,7 @@ class ChartCreator extends React.Component {
     this.handleChange = this.handleChange.bind(this);
     this.handleDrop = this.handleDrop.bind(this);
     this.handleChartType = this.handleChartType.bind(this);
+    this.updateTitle = this.updateTitle.bind(this);
   }
 
   componentDidMount() {
@@ -49,11 +51,11 @@ class ChartCreator extends React.Component {
     this.setState({
       [dropBin]: this.state[dropBin].concat([item]),
     });
-    
     const dataset = this.props.datasets[this.state.chosenDataset.value];
     const chart =
       {
         id: 'new',
+        title: this.state.title,
         type: this.state.chartType,
         data: {
           header: dataset.header,
@@ -82,6 +84,12 @@ class ChartCreator extends React.Component {
     if (chosenDataset && !this.props.datasets[chosenDataset.value].rows) {
       this.props.fetchDataset(chosenDataset.value);
     }
+  }
+
+  updateTitle(event) {
+    this.setState({
+      title: event.target.value,
+    });
   }
 
   render() {
@@ -124,7 +132,7 @@ class ChartCreator extends React.Component {
         <div className="dataset-drops">
           <div>
             <h2>X Axis</h2>
-            {DropAxis([DataType.DATE, DataType.NUMERICAL, DataType.CATEGORICAL], itemsX, item => this.handleDrop('xAxis', item))}
+            {DropAxis(DataType.ALL, itemsX, item => this.handleDrop('xAxis', item))}
             
           </div>
           <div>
@@ -132,7 +140,10 @@ class ChartCreator extends React.Component {
             {DropAxis(DataType.NUMERICAL, itemsY, item => this.handleDrop('yAxis', item))}
           </div>
         </div>
-        <div>
+        <div className="new-chart">
+          <label htmlFor="title"> Title:
+            <input id="title" type="text" value={this.state.title} onChange={this.updateTitle} placeholder="Chart Title" />
+          </label>
           { this.state.chart ? ChartFactory.build(this.state.chart) : '' }
         </div>
       </div>

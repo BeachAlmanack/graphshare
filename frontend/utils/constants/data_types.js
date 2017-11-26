@@ -2,6 +2,8 @@ export const NUMERICAL = 'Numerical';
 export const CATEGORICAL = 'Categorical';
 export const DATE = 'Date';
 
+export const ALL = [NUMERICAL, CATEGORICAL, DATE];
+
 // Removes the content in the parenthesis
 export const getType = string => (
   string.replace(/\(.*?\)/, '')

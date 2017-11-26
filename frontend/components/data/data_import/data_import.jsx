@@ -88,7 +88,7 @@ class DataImport extends React.Component {
             onDrop={this.onDrop}
             accept={ACCEPTED_TYPES.join(' ')}
           > {
-            this.state.file_name === '' ? 
+            this.state.file_name === '' ?
               <i className="fa fa-upload fa-3x" aria-hidden="true" />
               : <i className="fa fa-file fa-3x" aria-hidden="true" />
             }
@@ -106,8 +106,9 @@ class DataImport extends React.Component {
         </label>
           {this.state.file_name ?
             <div>
-            <label> Current File: </label>
-              <span className="data-import-message">  {this.state.file_name}</span> </div> : ''
+              <label> Current File: </label>
+              <span className="data-import-message">  {this.state.file_name}</span>
+            </div> : ''
           }
           {this.state.error ?
             <div>

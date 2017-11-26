@@ -2,11 +2,9 @@
 .chart-creator {
   @extend .page;
   margin-top: 20px;
-  display: flex;
 }
 
 .chart-creator-menu {
-  display: flex;
   margin-right: 20px;
   height: 100%;
 }
@@ -14,9 +12,10 @@
 .dataset-chooser {
   @include box($light-gray);
   margin-left: 10px;
+  float: left;
   width: 250px;
   padding: 10px;
-  max-height: 600px;
+  height: 600px;
   overflow: scroll;
   h2 {
     margin: 10px 0px;
@@ -26,7 +25,9 @@
 .dataset-drops {
   @include box($light-gray);
   margin-left: 10px;
-  width: 230px;
+  float: left;
+  width: 250px;
+  height: 600px;
   padding: 10px;
   h2 {
     margin: 10px 0px;
@@ -71,6 +72,18 @@
   background-color: $lightest-gray;
   overflow-y: auto;
   margin: auto;
+}
+
+.new-chart {
+  float: left;
+  margin-left: 10px;
+  width: 600px;
+  padding: 10px;
+  input {
+    width: 570px;
+    margin: 10px 0px;
+    background: white;
+  }
 }
 
 // Override React-select style
