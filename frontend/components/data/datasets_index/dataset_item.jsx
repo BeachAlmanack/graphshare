@@ -11,14 +11,15 @@ const DatasetItem = ({ dataset }) => {
       <div className="dataset-item">
         <h2> {dataset.title} </h2><p>   - {dataset.file_name} </p>
         {
-          dataTypes.map((dataType, idx) => (
+          dataTypes.slice(0, 9).map((dataType, idx) => (
 
             <ul key={columnNames[idx]}>
               <li>{columnNames[idx]}</li>
-              <li className={`datatype-${dataType}`}>{dataType}</li>
+              <li className={`datatype-${dataType.replace(/\(.*?\)/, '')}`}>{dataType}</li>
             </ul>
           ))
         }
+        { dataTypes.length > 9 ? <p>{dataTypes.length - 9} columns more...</p> : '' }
       </div>
     </Link>
   );

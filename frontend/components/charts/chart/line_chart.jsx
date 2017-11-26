@@ -1,5 +1,6 @@
 import React from 'react';
-import { line, curveCatmullRom } from 'd3-shape';
+import { line } from 'd3-shape';
+import { ascending } from 'd3-array';
 import _ from 'lodash';
 import Axis from './axis';
 import Scale from './scale';
@@ -7,15 +8,15 @@ import Scale from './scale';
 class LineChart extends React.Component {
   render() {
     const paths = [];
-    const rows = _.values(this.props.data.rows);
+    const rawRows = _.values(this.props.data.rows);
+    const rows = rawRows.sort((x, y) => ascending(x[this.props.data.axis.x], y[this.props.data.axis.x]));
 
     const [scaleX, scaleY] = Scale(this.props.data);
 
     this.props.data.axis.y.forEach((columName, idx) => {
       const lineFunction = line()
         .x(d => scaleX(d[this.props.data.axis.x]))
-        .y(d => scaleY(d[columName]))
-        .curve(curveCatmullRom.alpha(0.5));
+        .y(d => scaleY(d[columName]));
 
       const path = (<path d={lineFunction(rows)} className="line" key={columName} transform="translate(20, 0)" className={`color-stroke-${idx}`} />);
       paths.push(path);

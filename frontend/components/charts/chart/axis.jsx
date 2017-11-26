@@ -17,7 +17,7 @@ class Axis extends React.Component {
     if (this.props.axis === 'y') {
       axis = axisLeft(scale).ticks(5, 's');
     } else {
-      axis = axisBottom(scale).ticks(20, 's');
+      axis = axisBottom(scale).ticks(10);
     }
 
     select(this.node).call(axis);

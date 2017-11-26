@@ -40,7 +40,7 @@ class Dataset extends React.Component {
             </thead>
             <tbody>
               <tr>
-                {dataTypes.map((dataType, idx) => <td key={columnNames[idx]} className={`datatype-${dataType}`}>{dataType}</td>)}
+                {dataTypes.map((dataType, idx) => <td key={columnNames[idx]} className={`datatype-${dataType.replace(/\(.*?\)/, '')}`}>{dataType}</td>)}
               </tr>
               {
                 rows.map((row, idx) => (

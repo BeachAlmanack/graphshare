@@ -14,10 +14,7 @@ const scales = (data, band = false) => {
       .range([10, 500])
       .padding(0.1);
   } else if (data.header[data.axis.x].replace(/\(.*?\)/, '') === 'Date') {
-    console.log('date');
-    console.log(rows[0][data.axis.x]);
     scaleX = scaleTime().domain([rows[0][data.axis.x], rows[rows.length - 1][data.axis.x]]).range([10, 500]);
-    console.log(scaleX);
   } else if (data.header[data.axis.x] !== 'Numerical') {
     const ordinalRange = [];
     for (let i = 10; i <= 480; i += (470 / (rows.length - 1))) {
