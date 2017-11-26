@@ -7,8 +7,8 @@ const Rects = (rows, bandWidth, xcb, ycb, index) => (
   rows.map(row => (
     <rect
       width={bandWidth}
-      height={200 - ycb(row)}
-      transform={`translate(${(xcb(row) + (bandWidth * index)) + 20}, ${ycb(row) - 10})`}
+      height={190 - ycb(row)}
+      transform={`translate(${(xcb(row) + (bandWidth * index)) + 20}, ${ycb(row)})`}
       className={`color-fill-${index}`}
     />
   ))

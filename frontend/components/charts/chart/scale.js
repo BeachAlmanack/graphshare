@@ -42,6 +42,10 @@ const scales = (data, band = false) => {
     }
   });
 
+  if (lowestMin > 0) {
+    lowestMin -= lowestMin * 0.1;
+  }
+  biggestMax += biggestMax * 0.1;
   const scaleY = scaleLinear().domain([lowestMin, biggestMax]).range([190, 10]);
 
   return [scaleX, scaleY];
