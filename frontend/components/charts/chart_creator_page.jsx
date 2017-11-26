@@ -6,7 +6,6 @@ export default function DataImportPage() {
   return (
     <div className="chart-creator">
       <ChartCreatorContainer />
-      <ChartContainer />
     </div>
   );
 }

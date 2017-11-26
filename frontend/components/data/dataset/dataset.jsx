@@ -1,5 +1,5 @@
 import React from 'react';
-import _ from 'lodash';
+import { keys, values } from 'lodash';
 import PropTypes from 'prop-types';
 
 class Dataset extends React.Component {
@@ -14,21 +14,21 @@ class Dataset extends React.Component {
       let dataTypes = [];
       let rows = [];
       let rowIds = [];
-      const jsonData = JSON.stringify(this.props.dataset);
-      
-      function download(text, name, type) {
-        var a = document.createElement("a");
-        var file = new Blob([text], { type: type });
-        a.href = URL.createObjectURL(file);
-        a.download = name;
-        a.click();
-      }
+
+      // const jsonData = JSON.stringify(this.props.dataset);
+      // function download(text, name, type) {
+      //   var a = document.createElement("a");
+      //   var file = new Blob([text], { type: type });
+      //   a.href = URL.createObjectURL(file);
+      //   a.download = name;
+      //   a.click();
+      // }
       // download(jsonData, 'test.txt', 'text/plain');
 
-      columnNames = _.keys(this.props.dataset.header);
-      dataTypes = _.values(this.props.dataset.header);
-      rows = _.values(this.props.dataset.rows);
-      rowIds = _.keys(this.props.dataset.rows);
+      columnNames = keys(this.props.dataset.header);
+      dataTypes = values(this.props.dataset.header);
+      rows = values(this.props.dataset.rows);
+      rowIds = keys(this.props.dataset.rows);
 
       return (
         <div className="dataset">

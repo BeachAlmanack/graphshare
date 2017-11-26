@@ -5,6 +5,7 @@ import { find } from 'lodash';
 import { DragDropContext } from 'react-dnd';
 import ColumnName from './column_name';
 import DropAxis from './drop_axis';
+import ChartFactory from '../chart/chart_factory';
 
 class ChartCreator extends React.Component {
   constructor(props) {
@@ -14,6 +15,7 @@ class ChartCreator extends React.Component {
       xAxis: [],
       yAxis: [],
       chartType: 'line',
+      chart: undefined,
     };
 
     this.handleChange = this.handleChange.bind(this);
@@ -47,7 +49,7 @@ class ChartCreator extends React.Component {
     this.setState({
       [dropBin]: this.state[dropBin].concat([item]),
     });
-
+    
     const dataset = this.props.datasets[this.state.chosenDataset.value];
     const chart =
       {
@@ -62,13 +64,15 @@ class ChartCreator extends React.Component {
           },
         },
       };
+
     if (chart.data.axis.x && chart.data.axis.y.length > 0) {
-      this.props.receiveChart(chart);
+      this.setState({
+        chart,
+      });
     }
   }
 
   handleChange(chosenDataset) {
-    console.log(chosenDataset);
     this.setState({
       chosenDataset,
       xAxis: [],
@@ -126,6 +130,9 @@ class ChartCreator extends React.Component {
             <h2>Y Axis</h2>
             {DropAxis('Numerical', itemsY, item => this.handleDrop('yAxis', item))}
           </div>
+        </div>
+        <div>
+          { this.state.chart ? ChartFactory.build(this.state.chart) : '' }
         </div>
       </div>
     );

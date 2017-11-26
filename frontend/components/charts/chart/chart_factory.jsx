@@ -1,8 +1,8 @@
 import React from 'react';
+import { cloneDeep } from 'lodash';
 import LineChart from './line_chart';
 import BarChart from './bar_chart';
 import convertData from '../../../utils/data/data_convert';
-import { cloneDeep } from 'lodash';
 
 class ChartFactory {
   static build(chart) {
