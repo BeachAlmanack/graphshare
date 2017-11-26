@@ -20,7 +20,7 @@ class DatasetShowMenu extends React.Component {
           <div className="right-menu">
             
             <Link to={`/datasets/`} className="button-text"> My Datasets </Link>
-            <Link to={`/datasets/${dataset.id}`} className="button-text"> Create Chart from Data </Link>
+            <Link to={`/charts/new/${dataset.id}`} className="button-text"> Create Chart from Data </Link>
             <button onClick={this.deleteDataset(dataset.id)} className="button-text-red"> Delete </button>
             
             </div> : <div className="right-menu">

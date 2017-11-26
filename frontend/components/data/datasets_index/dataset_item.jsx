@@ -19,7 +19,7 @@ const DatasetItem = ({ dataset }) => {
             </ul>
           ))
         }
-        { dataTypes.length > 9 ? <p>{dataTypes.length - 9} columns more...</p> : '' }
+        { dataTypes.length > 9 ? <p>{dataTypes.length - 9} more columns...</p> : '' }
       </div>
     </Link>
   );

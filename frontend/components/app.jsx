@@ -18,7 +18,8 @@ const App = () => (
     <Switch>
       <ProtectedRoute exact path="/" component={Feed} />
       <ProtectedRoute path="/feed" component={Feed} />
-      <ProtectedRoute path="/charts/new" component={ChartCreatorPage} />
+      <ProtectedRoute exact path="/charts/new" component={ChartCreatorPage} />
+      <ProtectedRoute path="/charts/new/:dataId" component={ChartCreatorPage} />
       <ProtectedRoute exact path="/datasets" component={DatasetIndex} />
       <ProtectedRoute path="/datasets/new" component={DataImportPage} />
       <ProtectedRoute path="/datasets/:id" component={DataShowPage} />

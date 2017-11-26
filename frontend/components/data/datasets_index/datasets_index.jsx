@@ -24,7 +24,9 @@ class DatasetsIndex extends React.Component {
     return (
       <div className="dataset-index">
         { title }
-        {datasetsId.map(datasetId => <DatasetItem key={datasetId} dataset={this.props.datasets[datasetId]} />) }
+        <div className="dataset-items">
+          {datasetsId.map(datasetId => <DatasetItem key={datasetId} dataset={this.props.datasets[datasetId]} />) }
+        </div>
       </div>
     );
   }

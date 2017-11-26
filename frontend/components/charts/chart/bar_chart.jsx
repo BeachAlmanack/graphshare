@@ -18,7 +18,6 @@ class BarChart extends React.Component {
   render() {
     this.bars = [];
     const rows = values(this.props.data.rows);
-
     const [scaleX, scaleY] = Scale(this.props.data, true);
     const numberOfBars = this.props.data.axis.y.length;
     this.props.data.axis.y.forEach((columName, idx) => {

@@ -1,6 +1,7 @@
 import React from 'react';
 import HTML5Backend from 'react-dnd-html5-backend';
 import Select from 'react-select';
+import { find } from 'lodash';
 import { DragDropContext } from 'react-dnd';
 import ColumnName from './column_name';
 import DropAxis from './drop_axis';
@@ -14,13 +15,23 @@ class ChartCreator extends React.Component {
       yAxis: [],
       chartType: 'line',
     };
+
     this.handleChange = this.handleChange.bind(this);
     this.handleDrop = this.handleDrop.bind(this);
     this.handleChartType = this.handleChartType.bind(this);
   }
 
   componentDidMount() {
-    this.props.fetchDatasets(this.props.currentUserId);
+    this.props.fetchDatasets(this.props.currentUserId).then((payload) => {
+      if (this.props.selectedDataset) {
+        this.handleChange({
+          value: this.props.selectedDataset,
+          label: find(payload.datasets, { id: parseInt(this.props.selectedDataset) }).title,
+        });
+      }
+    });
+
+    
     this.props.receiveChart({ id: 'new', type: 'empty' });
   }
 
@@ -57,6 +68,7 @@ class ChartCreator extends React.Component {
   }
 
   handleChange(chosenDataset) {
+    console.log(chosenDataset);
     this.setState({
       chosenDataset,
       xAxis: [],
@@ -78,6 +90,7 @@ class ChartCreator extends React.Component {
     const options = ids.map(id => ({ value: id, label: datasets[id].title }));
     const itemsX = this.state.xAxis;
     const itemsY = this.state.yAxis;
+
     return (
       <div className="chart-creator-menu">
         <div className="dataset-chooser">

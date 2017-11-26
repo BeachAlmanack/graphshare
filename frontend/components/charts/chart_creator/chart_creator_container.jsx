@@ -4,10 +4,12 @@ import ChartCreator from './chart_creator';
 import { fetchDataset, fetchDatasets } from '../../../actions/datasets_actions';
 import { receiveChart } from '../../../actions/chart_actions';
 
-const mapStateToProps = state => ({
-  datasets: state.entities.datasets,
-  currentUserId: state.session.currentUser.id,
-});
+const mapStateToProps = (state, ownProps) => (
+  {
+    datasets: state.entities.datasets,
+    currentUserId: state.session.currentUser.id,
+    selectedDataset: ownProps.match.params.dataId,
+  });
 
 const mapDispatchToProps = dispatch => ({
   fetchDatasets: userId => dispatch(fetchDatasets(userId)),
