@@ -15,7 +15,7 @@ class ColumName extends React.Component {
 
 const spec = {
   beginDrag(props) {
-    return { id: props.id };
+    return { name: props.name, type: props.type };
   },
 };
 
@@ -26,4 +26,7 @@ function collect(connect, monitor) {
   };
 }
 
-export default DragSource('type', spec, collect)(ColumName);
+export default (type, name) => {
+  const ColumnDrag = DragSource(type, spec, collect)(ColumName);
+  return <ColumnDrag key={name} name={name} type={type} />;
+};

@@ -12,9 +12,10 @@ const scales = (data, band = false) => {
     scaleX = scaleBand().domain(domain).range([10, 500]).padding(0.1);
   } else if (data.header[data.axis.x] !== 'Numerical') {
     const ordinalRange = [];
-    for (let i = 10; i < 500; i += (500 / rows.length)) {
+    for (let i = 10; i <= 480; i += (470 / (rows.length - 1))){
       ordinalRange.push(i);
     }
+    console.log(ordinalRange);
     scaleX = scaleOrdinal().range(ordinalRange);
   } else {
     const maxx = max(rows.map(d => d[data.axis.x]));

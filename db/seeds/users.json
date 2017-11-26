@@ -1,30 +1,152 @@
-[{"username":"hcornilleau0","email":"cbohman0@odnoklassniki.ru","password":"wOjkBknjj"},
-{"username":"mblewis1","email":"aelion1@jiathis.com","password":"JVb8UdGb"},
-{"username":"lgiggs2","email":"myoakley2@altervista.org","password":"xvp54d"},
-{"username":"msuffield3","email":"rrandlesome3@timesonline.co.uk","password":"dyGc2jemxP"},
-{"username":"varmatidge4","email":"bknightsbridge4@cdbaby.com","password":"fIFtRjWaF"},
-{"username":"dunger5","email":"cpauls5@un.org","password":"T5oT4ShJhfX"},
-{"username":"rsydry6","email":"jhearnden6@bing.com","password":"AWQAdfU"},
-{"username":"hlowden7","email":"ksichardt7@php.net","password":"7D16Pq"},
-{"username":"kmyhill8","email":"tneeds8@istockphoto.com","password":"U2VQZuodr"},
-{"username":"cskerratt9","email":"egarr9@jalbum.net","password":"9d781GySnj"},
-{"username":"zbodicama","email":"rlegalla@mlb.com","password":"IWWXrGp1"},
-{"username":"rmayhoub","email":"cantognazzib@npr.org","password":"ZuMhVoAwBzb"},
-{"username":"cvonsalzbergc","email":"ddowdingc@amazonaws.com","password":"mA4epkIiUBmk"},
-{"username":"hfawsond","email":"aluscombed@ning.com","password":"JmWkgT7cN9X9"},
-{"username":"hpitforde","email":"awintoure@skyrock.com","password":"Zc4XEvgdm"},
-{"username":"khillsf","email":"gallmannf@berkeley.edu","password":"o8STeAF"},
-{"username":"rrowang","email":"jivicg@bigcartel.com","password":"5ierHqL"},
-{"username":"taltonh","email":"lminchih@ifeng.com","password":"NWyNaiY"},
-{"username":"chucklesbyi","email":"lpadfieldi@wix.com","password":"MgJcOaMQ"},
-{"username":"awittkej","email":"vbretherickj@nytimes.com","password":"ij1VUr9"},
-{"username":"dogbornek","email":"ddecarteretk@marketwatch.com","password":"y7Wd7ys"},
-{"username":"bdawtonl","email":"gmillaml@wsj.com","password":"Twrgppnp7h5"},
-{"username":"ejoskowiczm","email":"scocozzam@businessweek.com","password":"G2CArOwAiC7"},
-{"username":"asugarmann","email":"khagstonen@sciencedaily.com","password":"jcLxDIBN9C"},
-{"username":"tbrackeno","email":"mruskeo@hhs.gov","password":"7Hem3xZXvoX"},
-{"username":"kivashinnikovp","email":"rsiselandp@gmpg.org","password":"PjiVOrl"},
-{"username":"twolfendaleq","email":"ohalbeardq@mail.ru","password":"MUnEh2pA8796"},
-{"username":"mharsnepr","email":"pjatczakr@yelp.com","password":"Fcsvxo9a2d8"},
-{"username":"caxes","email":"gchrichtons@webnode.com","password":"BxPui3kl"},
-{"username":"demo","email":"demo@email.com","password":"password"}]
+[
+  {
+    "username": "hcornilleau0",
+    "email": "cbohman0@odnoklassniki.ru",
+    "password": "wOjkBknjj"
+  },
+  {
+    "username": "mblewis1",
+    "email": "aelion1@jiathis.com",
+    "password": "JVb8UdGb"
+  },
+  {
+    "username": "lgiggs2",
+    "email": "myoakley2@altervista.org",
+    "password": "xvp54d"
+  },
+  {
+    "username": "msuffield3",
+    "email": "rrandlesome3@timesonline.co.uk",
+    "password": "dyGc2jemxP"
+  },
+  {
+    "username": "varmatidge4",
+    "email": "bknightsbridge4@cdbaby.com",
+    "password": "fIFtRjWaF"
+  },
+  {
+    "username": "dunger5",
+    "email": "cpauls5@un.org",
+    "password": "T5oT4ShJhfX"
+  },
+  {
+    "username": "rsydry6",
+    "email": "jhearnden6@bing.com",
+    "password": "AWQAdfU"
+  },
+  {
+    "username": "hlowden7",
+    "email": "ksichardt7@php.net",
+    "password": "7D16Pq"
+  },
+  {
+    "username": "kmyhill8",
+    "email": "tneeds8@istockphoto.com",
+    "password": "U2VQZuodr"
+  },
+  {
+    "username": "cskerratt9",
+    "email": "egarr9@jalbum.net",
+    "password": "9d781GySnj"
+  },
+  {
+    "username": "zbodicama",
+    "email": "rlegalla@mlb.com",
+    "password": "IWWXrGp1"
+  },
+  {
+    "username": "rmayhoub",
+    "email": "cantognazzib@npr.org",
+    "password": "ZuMhVoAwBzb"
+  },
+  {
+    "username": "cvonsalzbergc",
+    "email": "ddowdingc@amazonaws.com",
+    "password": "mA4epkIiUBmk"
+  },
+  {
+    "username": "hfawsond",
+    "email": "aluscombed@ning.com",
+    "password": "JmWkgT7cN9X9"
+  },
+  {
+    "username": "hpitforde",
+    "email": "awintoure@skyrock.com",
+    "password": "Zc4XEvgdm"
+  },
+  {
+    "username": "khillsf",
+    "email": "gallmannf@berkeley.edu",
+    "password": "o8STeAF"
+  },
+  {
+    "username": "rrowang",
+    "email": "jivicg@bigcartel.com",
+    "password": "5ierHqL"
+  },
+  {
+    "username": "taltonh",
+    "email": "lminchih@ifeng.com",
+    "password": "NWyNaiY"
+  },
+  {
+    "username": "chucklesbyi",
+    "email": "lpadfieldi@wix.com",
+    "password": "MgJcOaMQ"
+  },
+  {
+    "username": "awittkej",
+    "email": "vbretherickj@nytimes.com",
+    "password": "ij1VUr9"
+  },
+  {
+    "username": "dogbornek",
+    "email": "ddecarteretk@marketwatch.com",
+    "password": "y7Wd7ys"
+  },
+  {
+    "username": "bdawtonl",
+    "email": "gmillaml@wsj.com",
+    "password": "Twrgppnp7h5"
+  },
+  {
+    "username": "ejoskowiczm",
+    "email": "scocozzam@businessweek.com",
+    "password": "G2CArOwAiC7"
+  },
+  {
+    "username": "asugarmann",
+    "email": "khagstonen@sciencedaily.com",
+    "password": "jcLxDIBN9C"
+  },
+  {
+    "username": "tbrackeno",
+    "email": "mruskeo@hhs.gov",
+    "password": "7Hem3xZXvoX"
+  },
+  {
+    "username": "kivashinnikovp",
+    "email": "rsiselandp@gmpg.org",
+    "password": "PjiVOrl"
+  },
+  {
+    "username": "twolfendaleq",
+    "email": "ohalbeardq@mail.ru",
+    "password": "MUnEh2pA8796"
+  },
+  {
+    "username": "mharsnepr",
+    "email": "pjatczakr@yelp.com",
+    "password": "Fcsvxo9a2d8"
+  },
+  {
+    "username": "caxes",
+    "email": "gchrichtons@webnode.com",
+    "password": "BxPui3kl"
+  },
+  {
+    "username": "demo",
+    "email": "demo@email.com",
+    "password": "password"
+  }
+]
