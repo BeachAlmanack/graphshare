@@ -5,3 +5,10 @@ export const postChart = chart => (
     data: { chart },
   })
 );
+
+export const getChart = id => (
+  $.ajax({
+    url: `/api/charts/${id}`,
+    method: 'GET',
+  })
+);

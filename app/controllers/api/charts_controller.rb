@@ -11,6 +11,11 @@ class Api::ChartsController < ApplicationController
     end
   end
 
+  def show
+    @chart = Chart.find(params[:id])
+    render :show
+  end
+
   private
   def chart_params
     params.require(:chart).permit(:title, :chart_type, :author_id, :dataset_id, data: {})

@@ -1,11 +1,21 @@
 import { connect } from 'react-redux';
 import { withRouter } from 'react-router-dom';
 import Chart from './chart';
+import { fetchChart } from '../../actions/chart_actions';
 
-const mapStateToProps = (state) => {
+const mapStateToProps = (state, ownProps) => {
+  const chartId = ownProps.match.params.id;
+  const chart = state.entities.charts[chartId];
   return {
-    chart: state.entities.charts.new,
+    chart,
+    chartId,
+    height: 600,
+    width: 1200,
   };
 };
 
-export default withRouter(connect(mapStateToProps)(Chart));
+const mapDispatchToProps = dispatch => ({
+  fetchChart: id => dispatch(fetchChart(id)),
+});
+
+export default withRouter(connect(mapStateToProps, mapDispatchToProps)(Chart));
