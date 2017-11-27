@@ -5,7 +5,7 @@ import { find } from 'lodash';
 import { DragDropContext } from 'react-dnd';
 import ColumnName from './column_name';
 import DropAxis from './drop_axis';
-import ChartFactory from '../chart/chart_factory';
+import Chart from '../chart';
 import * as DataType from '../../../utils/constants/data_types';
 import * as ChartType from '../../../utils/constants/chart_types';
 
@@ -103,7 +103,7 @@ class ChartCreator extends React.Component {
     const options = ids.map(id => ({ value: id, label: datasets[id].title }));
     const itemsX = this.state.xAxis;
     const itemsY = this.state.yAxis;
-
+    console.log(this.state.chart);
     return (
       <div className="chart-creator-menu">
         <div className="dataset-chooser">
@@ -144,7 +144,7 @@ class ChartCreator extends React.Component {
           <label htmlFor="title"> Title:
             <input id="title" type="text" value={this.state.title} onChange={this.updateTitle} placeholder="Chart Title" />
           </label>
-          { this.state.chart ? ChartFactory.build(this.state.chart) : '' }
+          { this.state.chart ? <Chart chart={this.state.chart} /> : '' }
         </div>
       </div>
     );

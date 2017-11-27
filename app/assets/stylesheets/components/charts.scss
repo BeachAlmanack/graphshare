@@ -9,6 +9,19 @@
   padding: 20px;
 }
 
+.labels {
+  @include box($light-gray, true);
+  padding: 5px;
+  display: flex;
+  width: 100%;
+  li {
+    margin-left: 10px;
+
+    .fa {
+      margin: 0px 5px;
+    }
+  }
+}
 
 // Chart colors
 .color-fill-0 {
@@ -22,6 +35,19 @@
 .color-fill-2 {
   fill: $orange;
 }
+
+.color-0 {
+  color: $blue;
+}
+
+.color-1 {
+  color: $green;
+}
+
+.color-2 {
+  color: $orange;
+}
+
 
 .color-stroke-0 {
   stroke: $blue;

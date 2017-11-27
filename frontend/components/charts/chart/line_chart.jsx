@@ -1,16 +1,16 @@
 import React from 'react';
 import { line } from 'd3-shape';
 import { ascending } from 'd3-array';
-import _ from 'lodash';
+import { values } from 'lodash';
 import Axis from './axis';
 import Scale from './scale';
 
 class LineChart extends React.Component {
   render() {
     const paths = [];
-    const rawRows = _.values(this.props.data.rows);
+    const rawRows = values(this.props.data.rows);
+    
     const rows = rawRows.sort((x, y) => ascending(x[this.props.data.axis.x], y[this.props.data.axis.x]));
-
     const [scaleX, scaleY] = Scale(this.props.data);
 
     this.props.data.axis.y.forEach((columName, idx) => {

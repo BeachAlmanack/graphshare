@@ -18,9 +18,11 @@ const scales = (data, band = false) => {
     scaleX = scaleTime().domain([rows[0][data.axis.x], rows[rows.length - 1][data.axis.x]]).range([10, 500]);
   } else if (data.header[data.axis.x] !== DataType.NUMERICAL) {
     const ordinalRange = [];
-    for (let i = 10; i <= 480; i += (470 / (rows.length - 1))) {
+    for (let i = 10; i <= 490; i += (470 / (rows.length - 1))) {
       ordinalRange.push(i);
     }
+    console.log(ordinalRange);
+    console.log(rows.length);
     scaleX = scaleOrdinal().range(ordinalRange);
   } else {
     const maxx = max(rows.map(d => d[data.axis.x]));

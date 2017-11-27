@@ -58,9 +58,9 @@ export const formatData = (rows) => {
       case verifyNumberColumn(arrayData[column].data):
         header[name] = DataType.NUMERICAL;
         break;
-      case verifyDateColumn(arrayData[column].data):
-        header[name] = DataType.DATE;
-        break;
+      // case verifyDateColumn(arrayData[column].data):
+      //   header[name] = DataType.DATE;
+      //   break;
       default:
         header[name] = DataType.CATEGORICAL;
         break;
