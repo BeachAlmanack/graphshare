@@ -1,20 +1,20 @@
 # == Schema Information
 #
-# Table name: datasets
+# Table name: charts
 #
 #  id         :integer          not null, primary key
 #  title      :string           not null
-#  file_name  :string           not null
-#  rows       :jsonb            not null
-#  header     :jsonb            not null
+#  type       :string           not null
+#  data       :jsonb            not null
 #  author_id  :integer          not null
+#  dataset_id :integer
 #  created_at :datetime         not null
 #  updated_at :datetime         not null
 #
 
 require 'test_helper'
 
-class DatasetTest < ActiveSupport::TestCase
+class ChartTest < ActiveSupport::TestCase
   # test "the truth" do
   #   assert true
   # end

@@ -2,6 +2,7 @@
 .chart-creator {
   @extend .page;
   margin: 20px auto;
+  overflow: hidden;
 }
 
 .chart-creator-menu {

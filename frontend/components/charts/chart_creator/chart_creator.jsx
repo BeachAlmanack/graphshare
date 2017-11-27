@@ -29,6 +29,7 @@ class ChartCreator extends React.Component {
     this.handleInputChange = this.handleInputChange.bind(this);
     this.removeItem = this.removeItem.bind(this);
     this.updateChart = this.updateChart.bind(this);
+    this.saveChart = this.saveChart.bind(this);
   }
 
   componentDidMount() {
@@ -57,7 +58,8 @@ class ChartCreator extends React.Component {
       {
         id: 'new',
         title: this.state.title,
-        type: this.state.chartType,
+        chart_type: this.state.chartType,
+        dataset_id: this.state.chosenDataset.id,
         data: {
           header: dataset.header,
           rows: dataset.rows,
@@ -122,6 +124,10 @@ class ChartCreator extends React.Component {
         this.updateChart();
       }, 0);
     };
+  }
+
+  saveChart() {
+    this.props.saveChart(this.state.chart);
   }
 
   render() {

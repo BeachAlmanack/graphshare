@@ -2,7 +2,7 @@ import { connect } from 'react-redux';
 import { withRouter } from 'react-router-dom';
 import ChartCreator from './chart_creator';
 import { fetchDataset, fetchDatasets } from '../../../actions/datasets_actions';
-import { receiveChart } from '../../../actions/chart_actions';
+import { receiveChart, saveChart } from '../../../actions/chart_actions';
 
 const mapStateToProps = (state, ownProps) => (
   {
@@ -15,6 +15,7 @@ const mapDispatchToProps = dispatch => ({
   fetchDatasets: userId => dispatch(fetchDatasets(userId)),
   fetchDataset: id => dispatch(fetchDataset(id)),
   receiveChart: chart => dispatch(receiveChart({ chart })),
+  saveChart: chart => dispatch(saveChart(chart)),
 });
 
 export default withRouter(connect(mapStateToProps, mapDispatchToProps)(ChartCreator));

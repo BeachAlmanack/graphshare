@@ -8,7 +8,7 @@ import * as ChartType from '../../../utils/constants/chart_types';
 
 class ChartFactory {
   static build(chart, width, height) {
-    switch (chart.type) {
+    switch (chart.chart_type) {
       case ChartType.LINE:
         return <LineChart data={convertData(chart.data)} width={width} height={height} />;
       case ChartType.BAR: {

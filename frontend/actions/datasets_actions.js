@@ -1,4 +1,4 @@
-import { postDataset, getDatasets, getDataset, deleteDataset } from '../utils/api/datasets_utils';
+import { postDataset, getDatasets, getDataset, deleteDataset } from '../utils/api/datasets_util';
 import { receiveErrors } from './errors_actions';
 
 export const RECEIVE_DATASET = 'RECEIVE_DATASET';
