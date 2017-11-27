@@ -6,6 +6,7 @@ class DropAxis extends React.Component {
     const {
       connectDropTarget,
       items,
+      removeItem,
     } = this.props;
 
     return connectDropTarget((
@@ -15,7 +16,10 @@ class DropAxis extends React.Component {
             items.map(item => (
               <li key={item.name}>
                 <p>{item.name}</p>
-                <span className={`datatype-${item.type}`}>{item.type}</span>
+                <div>
+                  <span className={`datatype-${item.type}`}>{item.type}</span>
+                  <i className="fa fa-times" aria-hidden="true" onClick={() => removeItem(item.name)} />
+                </div>
               </li>
             ))
           }
@@ -39,7 +43,7 @@ function collect(connect, monitor) {
   };
 }
 
-export default (type, items, onDrop) => {
+export default (type, items, onDrop, removeItem) => {
   const DropSquare = DropTarget(type, spec, collect)(DropAxis);
-  return <DropSquare items={items} addItem={onDrop} />;
+  return <DropSquare items={items} addItem={onDrop} removeItem={removeItem} />;
 };

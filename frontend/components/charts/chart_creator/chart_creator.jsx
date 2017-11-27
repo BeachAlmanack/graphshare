@@ -25,6 +25,7 @@ class ChartCreator extends React.Component {
     this.handleDrop = this.handleDrop.bind(this);
     this.handleChartType = this.handleChartType.bind(this);
     this.updateTitle = this.updateTitle.bind(this);
+    this.removeItem = this.removeItem.bind(this);
   }
 
   componentDidMount() {
@@ -92,6 +93,14 @@ class ChartCreator extends React.Component {
     });
   }
 
+  removeItem(bin) {
+    return (itemName) => {
+      this.setState({
+        [bin]: this.state[bin].filter(item => item.name !== itemName),
+      });
+    };
+  }
+
   render() {
     const { datasets } = this.props;
     const ids = Object.keys(datasets);
@@ -132,12 +141,12 @@ class ChartCreator extends React.Component {
         <div className="dataset-drops">
           <div>
             <h2>X Axis</h2>
-            {DropAxis(DataType.ALL, itemsX, item => this.handleDrop('xAxis', item))}
+            {DropAxis(DataType.ALL, itemsX, item => this.handleDrop('xAxis', item), this.removeItem('xAxis'))}
             
           </div>
           <div>
             <h2>Y Axis</h2>
-            {DropAxis(DataType.NUMERICAL, itemsY, item => this.handleDrop('yAxis', item))}
+            {DropAxis(DataType.NUMERICAL, itemsY, item => this.handleDrop('yAxis', item), this.removeItem('yAxis'))}
           </div>
         </div>
         <div className="new-chart">
