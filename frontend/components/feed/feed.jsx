@@ -8,7 +8,6 @@ export default function Feed() {
       <div className="feed">
         <LeftMenu />
         <div className="feed-items">
-          <ExampleChart />
         </div>
         <div className="right-menu" />
       </div>

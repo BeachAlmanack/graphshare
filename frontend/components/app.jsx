@@ -8,7 +8,7 @@ import DataImportPage from './data/data_import_page';
 import DataShowPage from './data/data_show_page';
 import Feed from './feed/feed';
 import ChartCreatorPage from './charts/chart_creator_page';
-import ChartContainer from './charts/chart_container';
+import ChartShowPage from './charts/chart_show_page';
 import ProfilePageContainer from './users/profile_page_container';
 import DatasetIndex from './data/datasets_index/datasets_index_container';
 import Footer from './footer/footer';
@@ -21,7 +21,7 @@ const App = () => (
       <ProtectedRoute path="/feed" component={Feed} />
       <ProtectedRoute exact path="/charts/new" component={ChartCreatorPage} />
       <ProtectedRoute path="/charts/new/:dataId" component={ChartCreatorPage} />
-      <ProtectedRoute path="/charts/:id" component={ChartContainer} />
+      <ProtectedRoute path="/charts/:id" component={ChartShowPage} />
       <ProtectedRoute exact path="/datasets" component={DatasetIndex} />
       <ProtectedRoute path="/datasets/new" component={DataImportPage} />
       <ProtectedRoute path="/datasets/:id" component={DataShowPage} />
