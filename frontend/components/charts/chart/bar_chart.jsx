@@ -2,36 +2,43 @@ import React from 'react';
 import { values } from 'lodash';
 import Axis from './axis';
 import Scale from './scale';
+import AxisLabels from './axis_labels';
 
-const Rects = (rows, bandWidth, xcb, ycb, index) => (
+const Rects = (rows, bandWidth, xcb, ycb, index, height) => (
   rows.map(row => (
     <rect
       width={bandWidth}
-      height={190 - ycb(row)}
-      transform={`translate(${(xcb(row) + (bandWidth * index)) + 20}, ${ycb(row)})`}
+      height={height - 30 - ycb(row)}
+      transform={`translate(${(xcb(row) + (bandWidth * index)) + 30}, ${ycb(row)})`}
       className={`color-fill-${index}`}
     />
   ))
 );
 
 class BarChart extends React.Component {
+  
   render() {
     this.bars = [];
+    const width = this.props.width;
+    const height = this.props.height;
+    const marginLeft = 30;
+
     const rows = values(this.props.data.rows);
-    const [scaleX, scaleY] = Scale(this.props.data, true);
+    const [scaleX, scaleY] = Scale(this.props.data, width, height, true);
     const numberOfBars = this.props.data.axis.y.length;
     this.props.data.axis.y.forEach((columName, idx) => {
-      const seriesRect = Rects(rows, (scaleX.bandwidth() / numberOfBars), (row => scaleX(row[this.props.data.axis.x])), (row => scaleY(row[columName])), idx);
+      const seriesRect = Rects(rows, (scaleX.bandwidth() / numberOfBars), (row => scaleX(row[this.props.data.axis.x])), (row => scaleY(row[columName])), idx, height);
       this.bars = this.bars.concat(seriesRect);
     });
 
-    this.yAxis = <Axis scale={scaleY} axis="y" />;
-    this.xAxis = <Axis scale={scaleX} axis="x" />;
+    this.yAxis = <Axis scale={scaleY} axis="y" width={width - 30} height={height - 30} />;
+    this.xAxis = <Axis scale={scaleX} axis="x" width={width - 30} height={height - 30} />;
     return (
-      <svg width="530" height="220" className="chart">
+      <svg width={width} height={height} className="chart">
         {this.xAxis}
         {this.yAxis}
         {this.bars.map(bar => bar)}
+        <AxisLabels bottomAxis={this.props.data.axisNames.x} leftAxis={this.props.data.axisNames.y} width={width} height={height} />
       </svg>
     );
   }

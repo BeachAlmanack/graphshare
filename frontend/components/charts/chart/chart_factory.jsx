@@ -14,7 +14,7 @@ class ChartFactory {
       case ChartType.BAR: {
         const dataCopy = cloneDeep(chart.data);
         dataCopy.header[dataCopy.axis.x] = CATEGORICAL;
-        return <BarChart data={convertData(dataCopy)} width={width} height={height}/>;
+        return <BarChart data={convertData(dataCopy)} width={width} height={height} />;
       }
       default:
         return <div />;

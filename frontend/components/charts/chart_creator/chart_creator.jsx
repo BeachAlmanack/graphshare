@@ -176,7 +176,7 @@ class ChartCreator extends React.Component {
           <label htmlFor="title"> Title:
             <input id="title" type="text" value={this.state.title} onChange={this.handleInputChange('title')} placeholder="Chart Title" />
           </label>
-          { this.state.chart ? <Chart chart={this.state.chart} /> : '' }
+          { this.state.chart ? <Chart chart={this.state.chart} width={530} height={250} /> : '' }
         </div>
       </div>
     );
