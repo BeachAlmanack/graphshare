@@ -21,8 +21,6 @@ const scales = (data, band = false) => {
     for (let i = 10; i <= 490; i += (470 / (rows.length - 1))) {
       ordinalRange.push(i);
     }
-    console.log(ordinalRange);
-    console.log(rows.length);
     scaleX = scaleOrdinal().range(ordinalRange);
   } else {
     const maxx = max(rows.map(d => d[data.axis.x]));

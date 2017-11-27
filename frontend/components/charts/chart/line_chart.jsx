@@ -9,6 +9,11 @@ class LineChart extends React.Component {
   render() {
     const paths = [];
     const rawRows = values(this.props.data.rows);
+
+    const xAxisName = this.props.data.axisNames.x;
+    const yAxisName = this.props.data.axisNames.y;
+    const xAxisText = <text x="270" y="225" textAnchor="middle"> {xAxisName} </text>;
+    const yAxisText = <text x="40" y="0"> {yAxisName} </text>;
     
     const rows = rawRows.sort((x, y) => ascending(x[this.props.data.axis.x], y[this.props.data.axis.x]));
     const [scaleX, scaleY] = Scale(this.props.data);
@@ -30,6 +35,8 @@ class LineChart extends React.Component {
         {this.yAxis}
         {this.xAxis}
         { paths.map(path => path) }
+        {xAxisText}
+        {yAxisText}
       </svg>
     );
   }

@@ -17,6 +17,8 @@ class ChartCreator extends React.Component {
       xAxis: [],
       yAxis: [],
       title: '',
+      xAxisName: '',
+      yAxisName: '',
       chartType: ChartType.LINE,
       chart: undefined,
     };
@@ -24,8 +26,9 @@ class ChartCreator extends React.Component {
     this.handleChange = this.handleChange.bind(this);
     this.handleDrop = this.handleDrop.bind(this);
     this.handleChartType = this.handleChartType.bind(this);
-    this.updateTitle = this.updateTitle.bind(this);
+    this.handleInputChange = this.handleInputChange.bind(this);
     this.removeItem = this.removeItem.bind(this);
+    this.updateChart = this.updateChart.bind(this);
   }
 
   componentDidMount() {
@@ -48,10 +51,7 @@ class ChartCreator extends React.Component {
     });
   }
 
-  handleDrop(dropBin, item) {
-    this.setState({
-      [dropBin]: this.state[dropBin].concat([item]),
-    });
+  updateChart() {
     const dataset = this.props.datasets[this.state.chosenDataset.value];
     const chart =
       {
@@ -61,6 +61,10 @@ class ChartCreator extends React.Component {
         data: {
           header: dataset.header,
           rows: dataset.rows,
+          axisNames: {
+            x: this.state.xAxisName,
+            y: this.state.yAxisName,
+          },
           axis: {
             x: this.state.xAxis[0].name,
             y: this.state.yAxis.map(column => column.name),
@@ -72,7 +76,18 @@ class ChartCreator extends React.Component {
       this.setState({
         chart,
       });
+    } else {
+      this.setState({
+        chart: undefined,
+      });
     }
+  }
+
+  handleDrop(dropBin, item) {
+    this.setState({
+      [dropBin]: this.state[dropBin].concat([item]),
+    });
+    this.updateChart();
   }
 
   handleChange(chosenDataset) {
@@ -87,10 +102,15 @@ class ChartCreator extends React.Component {
     }
   }
 
-  updateTitle(event) {
-    this.setState({
-      title: event.target.value,
-    });
+  handleInputChange(type) {
+    return (event) => {
+      this.setState({
+        [type]: event.target.value,
+      });
+      setTimeout(() => {
+        this.updateChart();
+      }, 0);
+    };
   }
 
   removeItem(bin) {
@@ -98,6 +118,9 @@ class ChartCreator extends React.Component {
       this.setState({
         [bin]: this.state[bin].filter(item => item.name !== itemName),
       });
+      setTimeout(() => {
+        this.updateChart();
+      }, 0);
     };
   }
 
@@ -112,7 +135,7 @@ class ChartCreator extends React.Component {
     const options = ids.map(id => ({ value: id, label: datasets[id].title }));
     const itemsX = this.state.xAxis;
     const itemsY = this.state.yAxis;
-    console.log(this.state.chart);
+    console.log(this.state);
     return (
       <div className="chart-creator-menu">
         <div className="dataset-chooser">
@@ -140,18 +163,18 @@ class ChartCreator extends React.Component {
         </div>
         <div className="dataset-drops">
           <div>
-            <h2>X Axis</h2>
+            <h2>X Axis</h2> <input type="text" placeholder="Axis Name" value={this.state.xAxisName} onChange={this.handleInputChange('xAxisName')} />
             {DropAxis(DataType.ALL, itemsX, item => this.handleDrop('xAxis', item), this.removeItem('xAxis'))}
             
           </div>
           <div>
-            <h2>Y Axis</h2>
+            <h2>Y Axis</h2> <input type="text" placeholder="Axis Name" value={this.state.yAxisName} onChange={this.handleInputChange('yAxisName')} />
             {DropAxis(DataType.NUMERICAL, itemsY, item => this.handleDrop('yAxis', item), this.removeItem('yAxis'))}
           </div>
         </div>
         <div className="new-chart">
           <label htmlFor="title"> Title:
-            <input id="title" type="text" value={this.state.title} onChange={this.updateTitle} placeholder="Chart Title" />
+            <input id="title" type="text" value={this.state.title} onChange={this.handleInputChange('title')} placeholder="Chart Title" />
           </label>
           { this.state.chart ? <Chart chart={this.state.chart} /> : '' }
         </div>

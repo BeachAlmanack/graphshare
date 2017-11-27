@@ -11,19 +11,23 @@ class DropAxis extends React.Component {
 
     return connectDropTarget((
       <div className="drop">
+        {
+          items.length > 0 ?
         <ul className="column-names">
           {
             items.map(item => (
               <li key={item.name}>
                 <p>{item.name}</p>
-                <div>
-                  <span className={`datatype-${item.type}`}>{item.type}</span>
-                  <i className="fa fa-times" aria-hidden="true" onClick={() => removeItem(item.name)} />
-                </div>
+                <span className={`datatype-${item.type}`}>{item.type}</span>
+                <i className="icon-remove" aria-hidden="true" onClick={() => removeItem(item.name)} />
               </li>
             ))
+
           }
-        </ul>
+        </ul> :
+        <div className="drop-columns">
+          <i className="icon-drop" />
+        </div> }
       </div>));
   }
 }

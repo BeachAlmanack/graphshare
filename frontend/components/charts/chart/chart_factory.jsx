@@ -7,14 +7,14 @@ import { CATEGORICAL } from '../../../utils/constants/data_types';
 import * as ChartType from '../../../utils/constants/chart_types';
 
 class ChartFactory {
-  static build(chart) {
+  static build(chart, width, height) {
     switch (chart.type) {
       case ChartType.LINE:
-        return <LineChart data={convertData(chart.data)} />;
+        return <LineChart data={convertData(chart.data)} width={width} height={height} />;
       case ChartType.BAR: {
         const dataCopy = cloneDeep(chart.data);
         dataCopy.header[dataCopy.axis.x] = CATEGORICAL;
-        return <BarChart data={convertData(dataCopy)} />;
+        return <BarChart data={convertData(dataCopy)} width={width} height={height}/>;
       }
       default:
         return <div />;

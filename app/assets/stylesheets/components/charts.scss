@@ -5,15 +5,17 @@
 }
 
 .chart {
-  @include box($light-gray, true);
+  @include box($light-gray);
   padding: 20px;
+  vertical-align:bottom;
 }
 
 .labels {
-  @include box($light-gray, true);
+  @include box($light-gray);
+  border-top: none;
   padding: 5px;
   display: flex;
-  width: 99%;
+  width: 572px;
   li {
     margin-left: 10px;
 
