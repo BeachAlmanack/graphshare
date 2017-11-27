@@ -20,9 +20,10 @@ const scales = (data, width, height, band = false) => {
     scaleX = scaleTime().domain([rows[0][data.axis.x], rows[rows.length - 1][data.axis.x]]).range([20, innerWidth]);
   } else if (data.header[data.axis.x] !== DataType.NUMERICAL) {
     const ordinalRange = [];
-    for (let i = 20; i <= innerWidth; i += (innerWidth - 20 / (rows.length - 1))) {
+    for (let i = 20; i <= innerWidth; i += ((innerWidth - 20) / (rows.length - 1))) {
       ordinalRange.push(i);
     }
+    console.log(ordinalRange);
     scaleX = scaleOrdinal().range(ordinalRange);
   } else {
     const maxx = max(rows.map(d => d[data.axis.x]));

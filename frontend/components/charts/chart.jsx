@@ -8,7 +8,7 @@ export default function Chart({ chart, width, height }) {
         {ChartFactory.build(chart, width, height)}
 
         {chart.data.axis.y.length > 1 ?
-          <ul className="labels">
+          <ul className="labels" style={ { width: (width + 42) } }>
             {
               chart.data.axis.y.map((label, idx) => (
                 <li key={label}>

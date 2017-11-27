@@ -22,15 +22,6 @@
     margin: 5px 0px 0px 10px;
     position: relative;
   }
-  .data-save {
-    @extend .button;
-    margin-bottom: 0px;
-    position: absolute;
-    bottom: 0px;
-    right: 0px;
-    text-align: center;
-    width: 100px;
-  }
 
   .data-import-message {
     margin-left: 20px;
@@ -60,4 +51,14 @@
     animation-duration: 1s;
     background-color: lighten($blue, 30%);
   }
+}
+
+.data-save {
+  @extend .button;
+  margin-bottom: 0px;
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  text-align: center;
+  width: 100px;
 }
