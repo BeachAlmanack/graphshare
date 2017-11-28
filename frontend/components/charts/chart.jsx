@@ -4,12 +4,14 @@ import ChartFactory from './chart/chart_factory';
 class Chart extends React.Component {
 
   componentDidMount() {
+    console.log('component did mount');
     if (!this.props.chart || (this.props.chart && this.props.chart.id !== 'new')) {
       this.props.fetchChart(this.props.chartId);
     }
   }
 
   componentWillReceiveProps(newProps) {
+    console.log(`component will receive props with id ${newProps.chatId}`);
     if (this.props.chartId !== newProps.chartId) {
       this.props.fetchChart(newProps.chartId);
     }

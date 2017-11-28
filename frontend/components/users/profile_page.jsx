@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import DatasetIndexContainer from '../data/datasets_index/datasets_index_container';
+import ChartIndexContainer from '../charts/chart_index/chart_index_container';
 
 class ProfilePage extends React.Component {
   componentDidMount() {
@@ -17,11 +18,15 @@ class ProfilePage extends React.Component {
     const user = this.props.user;
     if (user) {
       return (
-        <div className="page">
+        <div className="profile-page">
           <h1>{ user.username }</h1>
           <h1>{ user.email }</h1>
           <hr />
+          <h1>Stats</h1>
+          <hr />
           <DatasetIndexContainer userId={user.id} />
+          <hr />
+          <ChartIndexContainer userId={user.id} />
         </div>
       );
     }

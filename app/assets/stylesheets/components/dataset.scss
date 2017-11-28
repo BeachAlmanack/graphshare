@@ -16,7 +16,7 @@
   }
 
   tr:nth-child(even) {
-    background-color: lighten($light-gray, 8%);
+    background-color: $lightest-gray;
   }
 }
 
