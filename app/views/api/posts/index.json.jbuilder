@@ -24,7 +24,7 @@ end
 
 json.datasets do
   json.array! datasets.uniq do |dataset|
-    json.extract! dataset, :id, :title, :file_name, :rows, :header, :author_id
+    json.extract! dataset, :id, :title, :file_name, :header, :author_id
   end
 end
 

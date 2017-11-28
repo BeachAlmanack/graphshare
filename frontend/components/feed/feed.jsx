@@ -1,14 +1,13 @@
 import React from 'react';
 import LeftMenu from './left_menu/left_menu';
-import ExampleChart from '../charts/chart';
+import PostsContainer from './posts/posts_container';
 
 export default function Feed() {
   return (
     <div>
       <div className="feed">
         <LeftMenu />
-        <div className="feed-items">
-        </div>
+        <PostsContainer />
         <div className="right-menu" />
       </div>
     </div>

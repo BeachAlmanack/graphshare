@@ -23,3 +23,9 @@ Post.create({title: 'Post test',
   postable: Dataset.first,
   user: User.last
 })
+
+Post.create({title: 'Post test 2', 
+  description: 'Wow this is such a test. Wow this is such a test. Wow this is such a test. Wow this is such a test. Wow this is such a test. Wow this is such a test', 
+  postable: Chart.first,
+  user: User.last
+})
