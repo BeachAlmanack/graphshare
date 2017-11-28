@@ -1,7 +1,7 @@
 body {
   font-family: 'Roboto', sans-serif;
   font-weight: 300;
-  background-color: rgb(252, 251, 249)	;
+  background-color: $beige;
   padding-bottom:60px;
   @include border-box;
 }

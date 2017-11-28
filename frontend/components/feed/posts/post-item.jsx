@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import DatasetItem from '../../data/datasets_index/dataset_item';
 import Chart from '../../charts/chart';
 
@@ -7,7 +8,9 @@ const postContentByType = (post, datasets, charts) => {
     case 'Dataset':
       return <DatasetItem key={post.postable_id + post.postable_type} dataset={datasets[post.postable_id]} />;
     case 'Chart':
-      return <Chart key={post.postable_id + post.postable_type} chart={charts[post.postable_id]} width={300} height={200} />;
+      return (<Link to={`/charts/${post.postable_id}`}>
+        <Chart key={post.postable_id + post.postable_type} chart={charts[post.postable_id]} width={530} height={200} />
+      </Link>);
     default:
       return <p> Problem </p>;
   }
@@ -18,8 +21,8 @@ export default function ({post, datasets, charts}) {
 
   return (
     <div className="post-item">
-      {post.title} <br />
-      {post.description}
+      <h2>{post.title}</h2>
+      <p>{post.description}</p>
       {postContent}
     </div>
   );

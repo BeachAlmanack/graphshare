@@ -56,8 +56,38 @@
 
 
 .feed-items {
-  width: 600px;
-  height: 400px;
+  max-width: 600px;
+}
+
+.post-item {
+  @include box($light-gray, true);
+  background-color: white;
+  display: block;
+  margin-bottom: 10px;
+  overflow: hidden;
+  padding: 10px;
+  h2 {
+    font-size: 25px;
+  }
+  p {
+    width: 100%;
+    display: block;
+    margin: 10px auto;
+    padding: 10px;
+    background: white;
+  }
+  .dataset-item {
+    margin: 0;
+    width: 100%;
+    box-shadow: none;
+  }
+  svg {
+    display: block;
+    margin: 10px auto 0px auto;
+  }
+  .labels {
+    margin: auto;
+  }
 }
 
 .right-feed-menu {
