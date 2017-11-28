@@ -1,0 +1,10 @@
+.profile-page {
+  @extend .page;
+  hr {
+    margin-top: 40px;
+  }
+
+  h1 {
+    font-size: 20px;
+  }
+}

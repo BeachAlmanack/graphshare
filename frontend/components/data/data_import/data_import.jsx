@@ -14,6 +14,7 @@ class DataImport extends React.Component {
       title: this.props.dataset.title,
       file_name: this.props.dataset.file_name,
       error: '',
+      disableSave: false,
     };
 
     this.handleTitle = this.handleTitle.bind(this);
@@ -64,6 +65,9 @@ class DataImport extends React.Component {
 
   saveDataset() {
     if (this.state.file_name !== '' && this.state.title !== '') {
+      this.setState({
+        disableSave: true,
+      });
       this.props.saveDataset(this.state.id).then(() => this.props.history.push('/datasets'));
     } else {
       const errors = [];
@@ -116,7 +120,11 @@ class DataImport extends React.Component {
               <span className="data-import-message error"> {this.state.error} </span>
             </div> : ''
           }
-          <button className="data-save" onClick={this.saveDataset}>Save</button>
+          {!this.state.disableSave ? <button className="data-save" onClick={this.saveDataset}>Save</button> : 
+          <div className="loading-save">
+            <div className="double-bounce1"></div>
+            <div className="double-bounce2"></div>
+          </div> }
         </div>
       </div>
     );
