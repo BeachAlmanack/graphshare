@@ -27,6 +27,9 @@ class User < ApplicationRecord
   has_many :charts,
   inverse_of: :user
 
+  has_many :posts,
+  inverse_of: :user
+
   def password=(password)
     @password = password
     self.password_digest = BCrypt::Password.create(password)

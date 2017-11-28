@@ -17,3 +17,9 @@ Dataset.create(worldPovertyJson)
 
 populationChart = ActiveSupport::JSON.decode(File.read('db/seeds/charts/population.json'))
 Chart.create(populationChart)
+
+Post.create({title: 'Post test', 
+  description: 'Wow this is such a test. Wow this is such a test. Wow this is such a test. Wow this is such a test. Wow this is such a test. Wow this is such a test', 
+  postable: Dataset.first,
+  user: User.last
+})

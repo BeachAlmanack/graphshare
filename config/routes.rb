@@ -7,5 +7,6 @@ Rails.application.routes.draw do
     resources :datasets, only: [:create, :index, :show, :destroy]
     resources :charts, only: [:create, :show, :index]
     get '/fullcharts/', to: 'charts#all'
+    resources :posts, only: [:create, :index]
   end
 end

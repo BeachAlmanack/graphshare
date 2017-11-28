@@ -15,6 +15,8 @@
 class Dataset < ApplicationRecord
   validates :title, :file_name, :rows, :header, presence: true
 
+  include Postable
+
   belongs_to :user,
   foreign_key: :author_id,
   inverse_of: :datasets

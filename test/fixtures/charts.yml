@@ -4,7 +4,7 @@
 #
 #  id         :integer          not null, primary key
 #  title      :string           not null
-#  type       :string           not null
+#  chart_type :string           not null
 #  data       :jsonb            not null
 #  author_id  :integer          not null
 #  dataset_id :integer
