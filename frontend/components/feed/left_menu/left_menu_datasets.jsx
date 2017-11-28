@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
 
-class DatasetsIndex extends React.Component {
+class LeftMenuDatasets extends React.Component {
   componentDidMount() {
     this.props.fetchDatasets(this.props.currentUserId);
   }
@@ -30,4 +30,4 @@ class DatasetsIndex extends React.Component {
   }
 }
 
-export default DatasetsIndex;
+export default LeftMenuDatasets;

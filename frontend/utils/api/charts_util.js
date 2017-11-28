@@ -12,3 +12,11 @@ export const getChart = id => (
     method: 'GET',
   })
 );
+
+export const getCharts = author_id => (
+  $.ajax({
+    url: '/api/charts/',
+    method: 'GET',
+    data: { author_id },
+  })
+);

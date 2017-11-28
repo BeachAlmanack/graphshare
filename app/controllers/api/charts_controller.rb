@@ -16,6 +16,13 @@ class Api::ChartsController < ApplicationController
     render :show
   end
 
+
+  def index
+    @charts = Chart.includes(:user).where(author_id: params[:author_id])
+    render :index
+  end
+
+
   private
   def chart_params
     params.require(:chart).permit(:title, :chart_type, :author_id, :dataset_id, data: {})

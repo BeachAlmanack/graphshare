@@ -127,7 +127,7 @@ class ChartCreator extends React.Component {
   }
 
   saveChart() {
-    this.props.saveChart(this.state.chart);
+    this.props.saveChart(this.state.chart).then(payload => this.props.history.push(`/charts/${payload.chart.id}`));
   }
 
   render() {

@@ -2,15 +2,22 @@ import React from 'react';
 import ChartFactory from './chart/chart_factory';
 
 class Chart extends React.Component {
+
   componentDidMount() {
-    if (!this.props.chart) {
+    if (!this.props.chart || (this.props.chart && this.props.chart.id !== 'new')) {
       this.props.fetchChart(this.props.chartId);
+    }
+  }
+
+  componentWillReceiveProps(newProps) {
+    if (this.props.chartId !== newProps.chartId) {
+      this.props.fetchChart(newProps.chartId);
     }
   }
 
   render() {
     const { chart, width, height } = this.props;
-    if (chart) {
+    if (chart && chart.data) {
       return (
         <div>
           {ChartFactory.build(chart, width, height)}

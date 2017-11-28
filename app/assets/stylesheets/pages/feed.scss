@@ -7,8 +7,7 @@
 }
 
 .left-feed-menu {
-  @include box($light-gray, true);
-  padding: 20px;
+  
   h2 {
     font-size: 18px;
     font-weight: 100;
@@ -21,6 +20,17 @@
     margin-top: 10px;
     width: 100%;
   }
+}
+
+.dataset-menu {
+  @include box($light-gray, true);
+  padding: 20px;
+}
+
+.chart-menu {
+  @include box($light-gray, true);
+  margin-top: 20px;
+  padding: 20px;
 }
 
 .left-feed-menu-item {

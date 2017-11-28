@@ -1,6 +1,6 @@
 import { RECEIVE_DATASET, RECEIVE_DATASETS } from '../../actions/datasets_actions';
 import { RECEIVE_USER } from '../../actions/session_actions';
-import { RECEIVE_CHART } from '../../actions/chart_actions';
+import { RECEIVE_CHART, RECEIVE_CHARTS } from '../../actions/chart_actions';
 
 const initialState = {};
 
@@ -15,6 +15,7 @@ const usersReducer = (state = initialState, action) => {
         return Object.assign({}, state, { [action.user.id]: action.user });
       }
       return state;
+    case RECEIVE_CHARTS:
     case RECEIVE_DATASETS:
       newState = action.users.reduce((acc, el) => {
         acc[el.id] = el;
