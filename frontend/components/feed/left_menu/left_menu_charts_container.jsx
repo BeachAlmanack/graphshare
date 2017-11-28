@@ -8,7 +8,7 @@ const mapStateToProps = state => ({
 });
 
 const mapDispatchToProps = dispatch => ({
-  fetchCharts: userId => dispatch(fetchCharts(userId)),
+  fetchCharts: userId => dispatch(fetchCharts(userId, false)),
 });
 
 export default connect(mapStateToProps, mapDispatchToProps)(LeftMenuCharts);

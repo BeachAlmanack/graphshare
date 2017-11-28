@@ -28,7 +28,6 @@ class ChartsIndex extends React.Component {
           { chartsId.map(chartId => (
             <Chart
               key={chartId}
-              chartId={chartId}
               chart={this.props.charts[chartId]}
               width="400"
               height="200"

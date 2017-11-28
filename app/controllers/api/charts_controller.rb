@@ -16,6 +16,10 @@ class Api::ChartsController < ApplicationController
     render :show
   end
 
+  def all
+    @charts = Chart.includes(:user).where(author_id: params[:author_id])
+    render :all
+  end
 
   def index
     @charts = Chart.includes(:user).where(author_id: params[:author_id])

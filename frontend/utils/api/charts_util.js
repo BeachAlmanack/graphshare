@@ -20,3 +20,11 @@ export const getCharts = author_id => (
     data: { author_id },
   })
 );
+
+export const getFullCharts = author_id => (
+  $.ajax({
+    url: '/api/fullcharts/',
+    method: 'GET',
+    data: { author_id },
+  })
+);

@@ -1,4 +1,4 @@
-import { postChart, getChart, getCharts } from '../utils/api/charts_util';
+import { postChart, getChart, getCharts, getFullCharts } from '../utils/api/charts_util';
 import { receiveErrors } from './errors_actions';
 
 export const RECEIVE_CHART = 'RECEIVE_CHART';
@@ -31,7 +31,11 @@ export const fetchChart = id => (dispatch) => {
     .then(payload => dispatch(receiveChart(payload)));
 };
 
-export const fetchCharts = authorId => (dispatch) => {
+export const fetchCharts = (authorId, withData) => (dispatch) => {
+  if (withData) {
+    return getFullCharts(authorId)
+      .then(payload => dispatch(receiveCharts(payload)));
+  }
   return getCharts(authorId)
     .then(payload => dispatch(receiveCharts(payload)));
 };

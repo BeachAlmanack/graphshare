@@ -5,14 +5,13 @@ class Chart extends React.Component {
 
   componentDidMount() {
     console.log('component did mount');
-    if (!this.props.chart || (this.props.chart && this.props.chart.id !== 'new')) {
+    if (!this.props.chart || !this.props.chart.data) {
       this.props.fetchChart(this.props.chartId);
     }
   }
 
   componentWillReceiveProps(newProps) {
-    console.log(`component will receive props with id ${newProps.chatId}`);
-    if (this.props.chartId !== newProps.chartId) {
+    if (newProps.chartId && this.props.chartId !== newProps.chartId) {
       this.props.fetchChart(newProps.chartId);
     }
   }
