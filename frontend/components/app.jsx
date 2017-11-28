@@ -11,6 +11,7 @@ import ChartCreatorPage from './charts/chart_creator_page';
 import ChartShowPage from './charts/chart_show_page';
 import ProfilePageContainer from './users/profile_page_container';
 import DatasetIndex from './data/datasets_index/datasets_index_container';
+import ChartIndex from './charts/chart_index/chart_index_container';
 import Footer from './footer/footer';
 
 const App = () => (
@@ -23,6 +24,7 @@ const App = () => (
       <ProtectedRoute path="/charts/new/:dataId" component={ChartCreatorPage} />
       <ProtectedRoute path="/charts/:id" component={ChartShowPage} />
       <ProtectedRoute exact path="/datasets" component={DatasetIndex} />
+      <ProtectedRoute exact path="/charts" component={ChartIndex} />
       <ProtectedRoute path="/datasets/new" component={DataImportPage} />
       <ProtectedRoute path="/datasets/:id" component={DataShowPage} />
       <ProtectedRoute path="/users/:id" component={ProfilePageContainer} />

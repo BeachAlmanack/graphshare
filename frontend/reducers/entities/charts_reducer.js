@@ -7,7 +7,7 @@ const datasetsReducer = (state = initialState, action) => {
   let newState;
   switch (action.type) {
     case RECEIVE_CHART:
-      return { [action.chart.id]: action.chart };
+      return Object.assign({}, state, { [action.chart.id]: action.chart });
     case RECEIVE_CHARTS:
       newState = action.charts.reduce((acc, el) => {
         acc[el.id] = el;
