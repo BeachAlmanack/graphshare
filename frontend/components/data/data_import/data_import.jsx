@@ -31,16 +31,18 @@ class DataImport extends React.Component {
     let error = '';
     const files = acceptedFiles.concat(rejectedFiles);
     if ((files.length) === 1) {
-      if (ACCEPTED_TYPES.includes(files[0].type)) {
+      if (!ACCEPTED_TYPES.includes(files[0].type)) {
+        error = `${files[0].name} is not a valid file`;
+      } else if (files[0].size > 200000){
+        error = 'The file is too large. (Maximum size is 200KB)';
+      } else {
         this.setState({
           file_name: files[0].name,
         });
         error = '';
         fileReader(window.URL.createObjectURL(files[0]), files[0].type, this.processData);
+        }
       } else {
-        error = `${files[0].name} is not a valid file`;
-      }
-    } else {
       error = 'You can only upload one file at a time';
     }
     this.setState({

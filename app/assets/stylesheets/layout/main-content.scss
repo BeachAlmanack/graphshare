@@ -1,6 +1,7 @@
 .page {
   max-width: $large-screen;
   margin: auto;
+  overflow: hidden;
 }
 
 @media screen and (max-width: $large-screen) {

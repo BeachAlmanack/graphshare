@@ -23,7 +23,7 @@ class ChartCreator extends React.Component {
       chart: undefined,
     };
 
-    this.handleChange = this.handleChange.bind(this);
+    this.handleDatasetChange = this.handleDatasetChange.bind(this);
     this.handleDrop = this.handleDrop.bind(this);
     this.handleChartType = this.handleChartType.bind(this);
     this.handleInputChange = this.handleInputChange.bind(this);
@@ -35,7 +35,7 @@ class ChartCreator extends React.Component {
   componentDidMount() {
     this.props.fetchDatasets(this.props.currentUserId).then((payload) => {
       if (this.props.selectedDataset) {
-        this.handleChange({
+        this.handleDatasetChange({
           value: this.props.selectedDataset,
           label: find(payload.datasets, { id: parseInt(this.props.selectedDataset) }).title,
         });
@@ -92,7 +92,7 @@ class ChartCreator extends React.Component {
     this.updateChart();
   }
 
-  handleChange(chosenDataset) {
+  handleDatasetChange(chosenDataset) {
     this.setState({
       chosenDataset,
       xAxis: [],
@@ -159,7 +159,7 @@ class ChartCreator extends React.Component {
           <h2>Choose dataset: </h2>
           <Select
             value={this.state.chosenDataset}
-            onChange={this.handleChange}
+            onChange={this.handleDatasetChange}
             options={options}
           />
           <h2>Columns: </h2>
