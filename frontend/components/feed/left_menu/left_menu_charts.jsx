@@ -19,7 +19,6 @@ class LeftMenuCharts extends React.Component {
           {chartsId.map(chartId => (
             <Link to={`/charts/${chartId}`}>
               <li key={chartId} className="left-feed-menu-item">
-                <i className={`fa fa-${charts[chartId].chart_type}-chart fa-lg`} aria-hidden="true" />
                 <p>{charts[chartId].title}</p>
                 <i className="fa fa-angle-right fa-lg" aria-hidden="true"></i>
               </li>

@@ -21,6 +21,10 @@ class Api::DatasetsController < ApplicationController
 
   def destroy
     @dataset = Dataset.find(params[:id])
+    @dataset.charts.each do |chart|
+      chart.dataset_id = nil
+      chart.save
+    end
     @dataset.destroy
     render :show
   end

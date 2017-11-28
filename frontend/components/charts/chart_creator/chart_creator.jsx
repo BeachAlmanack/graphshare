@@ -59,7 +59,7 @@ class ChartCreator extends React.Component {
         id: 'new',
         title: this.state.title,
         chart_type: this.state.chartType,
-        dataset_id: this.state.chosenDataset.id,
+        dataset_id: this.state.chosenDataset.value,
         data: {
           header: dataset.header,
           rows: dataset.rows,
