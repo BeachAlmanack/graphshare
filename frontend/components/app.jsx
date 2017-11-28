@@ -1,5 +1,5 @@
 import React from 'react';
-import { Route, Switch } from 'react-router-dom';
+import { Route, Switch, Redirect } from 'react-router-dom';
 import { AuthRoute, ProtectedRoute } from '../utils/routes_util';
 import HeaderContainer from './header/header_container';
 import LoginContainer from './users/login_container';
@@ -18,7 +18,7 @@ const App = () => (
   <div className="app">
     <Route path="/" component={HeaderContainer} />
     <Switch>
-      <ProtectedRoute exact path="/" component={Feed} />
+      <ProtectedRoute exact path="/" component={() => <Redirect to="/feed" />} />
       <ProtectedRoute path="/feed" component={Feed} />
       <ProtectedRoute exact path="/charts/new" component={ChartCreatorPage} />
       <ProtectedRoute path="/charts/new/:dataId" component={ChartCreatorPage} />
