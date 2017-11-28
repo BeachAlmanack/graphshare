@@ -18,13 +18,14 @@ class Chart extends React.Component {
 
   render() {
     const { chart, width, height } = this.props;
+
     if (chart && chart.data) {
       return (
         <div>
           {ChartFactory.build(chart, width, height)}
 
-          {chart.data.axis.y.length > 1 ?
-            <ul className="labels" style={{ width: (width + 42) }}>
+
+            <ul className="labels" data-width={width} style={{ width: (width + 42) }}>
               {
                 chart.data.axis.y.map((label, idx) => (
                   <li key={label}>
@@ -33,7 +34,7 @@ class Chart extends React.Component {
                 ))
               }
             </ul>
-            : ''}
+
         </div>
       );
     }

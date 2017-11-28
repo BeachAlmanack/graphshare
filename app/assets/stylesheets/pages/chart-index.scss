@@ -1,3 +1,40 @@
 .chart-index {
   @extend .page;
 }
+
+.chart-item {
+  width: 31%;
+  min-height: 340px;
+  float: left;
+  padding: 10px;
+  margin: 10px;
+  cursor: pointer;
+
+  h2 {
+    display: block;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+
+  svg {
+    margin: auto;
+    display: block;
+  }
+  .labels {
+    margin: auto;
+  }
+}
+
+@media screen and (max-width: $large-screen) {
+    .chart-item {
+      width: 47%;
+    }
+
+}
+
+@media screen and (max-width: 800px) {
+    .chart-item {
+      width: 97%;
+    }
+
+}

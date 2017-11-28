@@ -15,6 +15,7 @@
 .dataset-item {
   @include box($light-gray, true);
   width: 31%;
+  min-height: 340px;
   float: left;
   padding: 10px;
   margin: 10px;

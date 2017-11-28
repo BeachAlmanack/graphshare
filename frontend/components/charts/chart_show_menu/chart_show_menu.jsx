@@ -25,7 +25,8 @@ class ChartShowMenu extends React.Component {
           </div>
           {userId === chart.author_id ?
             <div className="right-menu">
-            { chart.dataset_id ? <Link to={`/datasets/${chart.dataset_id}`} className="button-text">Original Dataset</Link> : '' }
+              <Link to={`/charts/`} className="button-text">My Charts</Link>
+              { chart.dataset_id ? <Link to={`/datasets/${chart.dataset_id}`} className="button-text">Original Dataset</Link> : '' }
             </div> : <div className="right-menu">
               Created by {this.props.users[chart.author_id].username}
             </div>}

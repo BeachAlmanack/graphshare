@@ -26,13 +26,18 @@ class ChartsIndex extends React.Component {
         {title}
         <div className="chart-items">
           { chartsId.map(chartId => (
-            <Chart
-              key={chartId}
-              chart={this.props.charts[chartId]}
-              width="400"
-              height="200"
-              fetchChart={this.props.fetchChart}
-            />))}
+            <Link to={`/charts/${chartId}`} className="chart-item">
+              <h2>{this.props.charts[chartId].title}</h2>
+              <Chart
+                key={chartId}
+                chart={this.props.charts[chartId]}
+                width={350}
+                height={200}
+                fetchChart={this.props.fetchChart}
+              />
+            </Link>
+          ))}
+            
         </div>
       </div>
     );
