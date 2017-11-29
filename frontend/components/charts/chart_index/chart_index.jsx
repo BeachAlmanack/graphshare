@@ -5,6 +5,7 @@ import Chart from '../chart';
 
 class ChartsIndex extends React.Component {
   componentDidMount() {
+    console.log(this.props.userId);
     this.props.fetchCharts(this.props.userId);
   }
 

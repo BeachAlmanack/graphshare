@@ -23,8 +23,8 @@ const App = () => (
       <ProtectedRoute exact path="/charts/new" component={ChartCreatorPage} />
       <ProtectedRoute path="/charts/new/:dataId" component={ChartCreatorPage} />
       <ProtectedRoute path="/charts/:id" component={ChartShowPage} />
-      <ProtectedRoute exact path="/datasets" component={DatasetIndex} />
       <ProtectedRoute exact path="/charts" component={ChartIndex} />
+      <ProtectedRoute exact path="/datasets" component={DatasetIndex} />
       <ProtectedRoute path="/datasets/new" component={DataImportPage} />
       <ProtectedRoute path="/datasets/:id" component={DataShowPage} />
       <ProtectedRoute path="/users/:id" component={ProfilePageContainer} />

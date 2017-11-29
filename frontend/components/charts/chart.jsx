@@ -17,17 +17,20 @@ class Chart extends React.Component {
     console.log('component did mount');
     if (!this.props.chart || !this.props.chart.data) {
       this.props.fetchChart(this.props.chartId).then(this.fitParentContainer);
-    } else {
-      this.fitParentContainer();
     }
+    setTimeout(() => {
+      this.fitParentContainer();
+    }, 0);
     window.addEventListener('resize', this.fitParentContainer);
   }
 
   componentWillReceiveProps(newProps) {
     if (newProps.chartId && this.props.chartId !== newProps.chartId) {
-      this.props.fetchChart(newProps.chartId);
-      this.fitParentContainer();
+      this.props.fetchChart(newProps.chartId).then(this.fitParentContainer);
     }
+    setTimeout(() => {
+      this.fitParentContainer();
+    }, 0);
   }
 
   componentWillUnmount() {
