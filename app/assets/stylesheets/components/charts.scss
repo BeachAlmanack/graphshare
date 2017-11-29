@@ -4,10 +4,15 @@
   stroke-width: 1px;
 }
 
+.chart-container {
+  overflow-x: scroll;
+}
+
 .chart {
   @include box($light-gray);
   padding: 20px;
   vertical-align:bottom;
+  display: block;
 }
 
 .labels {

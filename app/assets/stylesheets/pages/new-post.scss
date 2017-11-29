@@ -2,8 +2,10 @@
   width: 100%;
   overflow: hidden;
   .dataset-item {
-    width: 100%;
     margin: 0;
+    width: 100%;
+    box-shadow: none;
+    min-height: auto;
   }
 }
 

@@ -6,6 +6,7 @@ const mapStateToProps = state => ({
   posts: state.entities.posts,
   datasets: state.entities.datasets,
   charts: state.entities.charts,
+  users: state.entities.users,
 });
 
 const mapDispatchToProps = dispatch => ({

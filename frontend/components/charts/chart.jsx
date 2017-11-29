@@ -21,7 +21,7 @@ class Chart extends React.Component {
 
     if (chart && chart.data) {
       return (
-        <div>
+        <div className="chart-container">
           {ChartFactory.build(chart, width, height)}
 
 

@@ -65,7 +65,7 @@
   display: block;
   margin-bottom: 10px;
   overflow: hidden;
-  padding: 10px;
+  padding: 20px;
   h2 {
     font-size: 25px;
   }
@@ -88,6 +88,22 @@
   }
   .labels {
     margin: auto;
+  }
+  .fa-heart-o {
+    margin-top: 10px;
+    margin-right: 5px;
+    float: right;
+    font-size: 23px;
+    color: $red;
+    cursor: pointer;
+    &:hover:before {
+      content: "\f004"
+    }
+  }
+  .likes {
+    float: right;
+    margin-top: 10px;
+    margin-right: 5px;
   }
 }
 

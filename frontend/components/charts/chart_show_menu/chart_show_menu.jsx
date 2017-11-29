@@ -38,7 +38,7 @@ class ChartShowMenu extends React.Component {
             </div>
           }
           <Modal show={this.state.showNewPost} onClose={this.toggleNewPost}>
-            <NewPost><Chart chart={chart} width={360} height={150} /></NewPost>
+            <NewPost><Chart chart={chart} width={370} height={150} /></NewPost>
           </Modal>
         </div>
       );

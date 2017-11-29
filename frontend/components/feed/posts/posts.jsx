@@ -9,13 +9,13 @@ class Posts extends React.Component {
   }
 
   render() {
-    const { charts, datasets, posts } = this.props;
+    const { charts, datasets, posts, users } = this.props;
     const postsArr = values(posts);
 
     return (
       <div className="feed-items">
         { postsArr.map(post => (
-          <Post key={post.id} post={post} datasets={datasets} charts={charts} />
+          <Post key={post.id} post={post} datasets={datasets} charts={charts} users={users} />
           ))
         }
       </div>
