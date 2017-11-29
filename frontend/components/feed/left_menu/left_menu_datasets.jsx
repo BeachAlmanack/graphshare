@@ -9,16 +9,15 @@ class LeftMenuDatasets extends React.Component {
 
   render() {
     const { datasets } = this.props;
-    const datasetsId = Object.keys(this.props.datasets).slice(0, 8);
 
     return (
       <div className="dataset-menu">
-        <Link to="/datasets/"><h2> Most recent datasets </h2></Link>
+        <Link to="/datasets/"><h2> My recent datasets </h2></Link>
         <ul>
-          {datasetsId.map(datasetId => (
-            <Link to={`/datasets/${datasetId}`}>
-              <li key={datasetId} className="left-feed-menu-item">
-                <p>{datasets[datasetId].title}</p>
+          {datasets.map(dataset => (
+            <Link to={`/datasets/${dataset.id}`}>
+              <li key={dataset.id} className="left-feed-menu-item">
+                <p>{dataset.title}</p>
                 <i className="fa fa-angle-right fa-lg" aria-hidden="true"></i>
               </li>
             </Link>

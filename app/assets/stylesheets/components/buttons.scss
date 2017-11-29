@@ -13,6 +13,13 @@
   border: 1px solid $red;
 }
 
+.button-green {
+  @extend .button;
+  background: $green;
+  color: white;
+  border: 1px solid $green;
+}
+
 .button-outline {
   background: white;
   color: $blue;

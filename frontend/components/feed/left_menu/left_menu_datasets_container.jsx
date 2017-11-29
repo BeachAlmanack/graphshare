@@ -1,9 +1,10 @@
 import { connect } from 'react-redux';
 import LeftMenuDataset from './left_menu_datasets';
 import { fetchDatasets } from '../../../actions/datasets_actions';
+import { myRecentDatasets } from '../../../reducers/selectors';
 
 const mapStateToProps = state => ({
-  datasets: state.entities.datasets,
+  datasets: myRecentDatasets(state, 8),
   currentUserId: state.session.currentUser.id,
 });
 

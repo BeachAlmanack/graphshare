@@ -10,16 +10,15 @@ class LeftMenuCharts extends React.Component {
 
   render() {
     const { charts } = this.props;
-    const chartsId = Object.keys(this.props.charts).slice(0, 8);
 
     return (
       <div className="chart-menu">
-        <Link to="/charts/"><h2> Most recent charts </h2></Link>
+        <Link to="/charts/"><h2> My recent charts </h2></Link>
         <ul>
-          {chartsId.map(chartId => (
-            <Link to={`/charts/${chartId}`}>
-              <li key={chartId} className="left-feed-menu-item">
-                <p>{charts[chartId].title}</p>
+          {charts.map(chart => (
+            <Link to={`/charts/${chart.id}`}>
+              <li key={chart.id} className="left-feed-menu-item">
+                <p>{chart.title}</p>
                 <i className="fa fa-angle-right fa-lg" aria-hidden="true"></i>
               </li>
             </Link>

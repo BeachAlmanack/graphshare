@@ -1,6 +1,6 @@
 json.datasets do
   json.array! @datasets do |dataset|
-    json.extract! dataset, :id, :title, :header, :file_name, :author_id
+    json.extract! dataset, :id, :title, :header, :file_name, :author_id, :created_at
   end
 end
 

@@ -1,21 +1,25 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
+import Modal from '../../util/modal';
+import NewPost from '../../posts/new_post';
+import Chart from '../chart';
 
 class ChartShowMenu extends React.Component {
 
+  constructor(props) {
+    super(props);
+    this.state = { showNewPost: false };
+    this.toggleNewPost = this.toggleNewPost.bind(this);
+  }
+
+  toggleNewPost() {
+    this.setState({
+      showNewPost: !this.state.showNewPost
+    });
+  }
+
   render() {
-
-      // const jsonData = JSON.stringify(this.props.chart);
-      // function download(text, name, type) {
-      //   var a = document.createElement("a");
-      //   var file = new Blob([text], { type: type });
-      //   a.href = URL.createObjectURL(file);
-      //   a.download = name;
-      //   a.click();
-      // }
-      // download(jsonData, 'test.txt', 'text/plain');
-
     const { chart, userId } = this.props;
     if (chart) {
       return (
@@ -25,11 +29,17 @@ class ChartShowMenu extends React.Component {
           </div>
           {userId === chart.author_id ?
             <div className="right-menu">
+              <button onClick={this.toggleNewPost} className="button-text">Post</button>
               <Link to={`/charts/`} className="button-text">My Charts</Link>
               { chart.dataset_id ? <Link to={`/datasets/${chart.dataset_id}`} className="button-text">Original Dataset</Link> : '' }
-            </div> : <div className="right-menu">
+            </div> :
+            <div className="right-menu">
               Created by {this.props.users[chart.author_id].username}
-            </div>}
+            </div>
+          }
+          <Modal show={this.state.showNewPost} onClose={this.toggleNewPost}>
+            <NewPost><Chart chart={chart} width={360} height={150} /></NewPost>
+          </Modal>
         </div>
       );
     }

@@ -1,0 +1,19 @@
+.new-post {
+  width: 100%;
+  overflow: hidden;
+  .dataset-item {
+    width: 100%;
+    margin: 0;
+  }
+}
+
+.save {
+  width: 100%;
+  height: 50px;
+  .button-green {
+    float: right;
+    width: 100px;
+    text-align: center;
+    margin-right: 10px;
+  }
+}
