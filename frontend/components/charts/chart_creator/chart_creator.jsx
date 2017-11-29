@@ -141,7 +141,7 @@ class ChartCreator extends React.Component {
     const options = ids.map(id => ({ value: id, label: datasets[id].title }));
     const itemsX = this.state.xAxis;
     const itemsY = this.state.yAxis;
-    console.log(this.state);
+
     return (
       <div className="chart-creator-menu">
         <div className="dataset-chooser">

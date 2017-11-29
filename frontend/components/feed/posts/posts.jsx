@@ -1,6 +1,5 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { values } from 'lodash';
 import Post from './post-item';
 
 class Posts extends React.Component {
@@ -10,11 +9,10 @@ class Posts extends React.Component {
 
   render() {
     const { charts, datasets, posts, users } = this.props;
-    const postsArr = values(posts);
 
     return (
       <div className="feed-items">
-        { postsArr.map(post => (
+        { posts.map(post => (
           <Post key={post.id} post={post} datasets={datasets} charts={charts} users={users} />
           ))
         }

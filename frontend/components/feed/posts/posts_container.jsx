@@ -1,9 +1,10 @@
 import { connect } from 'react-redux';
 import Posts from './posts';
 import { fetchPosts } from '../../../actions/post_actions';
+import { latestPosts } from '../../../reducers/selectors';
 
 const mapStateToProps = state => ({
-  posts: state.entities.posts,
+  posts: latestPosts(state),
   datasets: state.entities.datasets,
   charts: state.entities.charts,
   users: state.entities.users,

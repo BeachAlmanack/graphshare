@@ -22,7 +22,8 @@ class NewPost extends React.Component {
   }
 
   saveNewPost() {
-    this.props.savePost(this.state);
+    console.log(this.props);
+    this.props.savePost(this.state).then(() => this.props.history.push('/feed'));
   }
 
   render() {

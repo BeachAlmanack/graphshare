@@ -9,8 +9,6 @@ class DatasetsIndex extends React.Component {
   }
 
   render() {
-    const datasetsId = Object.keys(this.props.datasets);
-    console.log(datasetsId);
     const title = this.props.userId === this.props.currentUserId ? (
       <div className="menu-bar">
         <h1>My Datasets</h1>
@@ -26,7 +24,7 @@ class DatasetsIndex extends React.Component {
       <div className="dataset-index">
         { title }
         <div className="dataset-items">
-          {datasetsId.map(datasetId => <DatasetItem key={datasetId} dataset={this.props.datasets[datasetId]} />) }
+          {this.props.datasets.map(dataset => <DatasetItem key={dataset.id} dataset={dataset} />) }
         </div>
       </div>
     );

@@ -14,7 +14,6 @@ class Chart extends React.Component {
   }
 
   componentDidMount() {
-    console.log('component did mount');
     if (!this.props.chart || !this.props.chart.data) {
       this.props.fetchChart(this.props.chartId).then(this.fitParentContainer);
     }

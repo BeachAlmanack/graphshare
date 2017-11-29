@@ -18,6 +18,7 @@ export const recentDatasets = (state, number, userId) => {
     if (dateA > dateB) return -1;
     return 0;
   });
+
   return datasetIds.map(id => datasets[id]);
 };
 
@@ -42,3 +43,18 @@ export const recentCharts = (state, number, userId) => {
   });
   return chartIds.map(id => charts[id]);
 };
+
+export const latestPosts = (state) => {
+  const { posts } = state.entities;
+  const postIds = Object.keys(posts);
+
+  postIds.sort((a, b) => {
+    const dateA = new Date(posts[a].created_at);
+    const dateB = new Date(posts[b].created_at);
+    if (dateA < dateB) return 1;
+    if (dateA > dateB) return -1;
+    return 0;
+  });
+
+  return postIds.map(id => posts[id]);
+}

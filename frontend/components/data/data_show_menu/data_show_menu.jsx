@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import Modal from '../../util/modal';
-import NewPost from '../../posts/new_post';
+import NewPostContainer from '../../posts/new_post_container';
 import DatasetItem from '../datasets_index/dataset_item';
 
 class DatasetShowMenu extends React.Component {
@@ -43,9 +43,9 @@ class DatasetShowMenu extends React.Component {
             </div>
           }
           <Modal show={this.state.showNewPost} onClose={this.toggleNewPost}>
-            <NewPost contentType="Dataset" contentId={dataset.id} savePost={this.props.savePost}>
+            <NewPostContainer contentType="Dataset" contentId={dataset.id}>
               <DatasetItem dataset={dataset} />
-            </NewPost>
+            </NewPostContainer>
           </Modal>
         </div>
       );

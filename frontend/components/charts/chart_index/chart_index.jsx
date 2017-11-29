@@ -5,12 +5,10 @@ import Chart from '../chart';
 
 class ChartsIndex extends React.Component {
   componentDidMount() {
-    console.log(this.props.userId);
     this.props.fetchCharts(this.props.userId);
   }
 
   render() {
-    const chartsId = Object.keys(this.props.charts);
     const title = this.props.userId === this.props.currentUserId ? (
       <div className="menu-bar">
         <h1>My charts</h1>
@@ -26,12 +24,12 @@ class ChartsIndex extends React.Component {
       <div className="chart-index">
         {title}
         <div className="chart-items">
-          { chartsId.map(chartId => (
-            <Link to={`/charts/${chartId}`} className="chart-item">
-              <h2>{this.props.charts[chartId].title}</h2>
+          { this.props.charts.map(chart => (
+            <Link to={`/charts/${chart.id}`} className="chart-item">
+              <h2>{chart.title}</h2>
               <Chart
-                key={chartId}
-                chart={this.props.charts[chartId]}
+                key={chart.id}
+                chart={chart}
                 width={350}
                 height={200}
                 fetchChart={this.props.fetchChart}

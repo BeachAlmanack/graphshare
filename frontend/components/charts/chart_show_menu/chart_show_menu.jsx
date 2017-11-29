@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import Modal from '../../util/modal';
-import NewPost from '../../posts/new_post';
+import NewPostContainer from '../../posts/new_post_container';
 import Chart from '../chart';
 
 class ChartShowMenu extends React.Component {
@@ -38,9 +38,9 @@ class ChartShowMenu extends React.Component {
             </div>
           }
           <Modal show={this.state.showNewPost} onClose={this.toggleNewPost}>
-            <NewPost contentType='Chart' contentId={chart.id} savePost={this.props.savePost}>
+            <NewPostContainer contentType='Chart' contentId={chart.id}>
               <Chart chart={chart} width={370} height={150} />
-            </NewPost>
+            </NewPostContainer>
           </Modal>
         </div>
       );
