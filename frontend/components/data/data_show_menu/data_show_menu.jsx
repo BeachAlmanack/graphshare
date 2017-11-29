@@ -43,7 +43,9 @@ class DatasetShowMenu extends React.Component {
             </div>
           }
           <Modal show={this.state.showNewPost} onClose={this.toggleNewPost}>
-            <NewPost><DatasetItem dataset={dataset} /></NewPost>
+            <NewPost contentType="Dataset" contentId={dataset.id} savePost={this.props.savePost}>
+              <DatasetItem dataset={dataset} />
+            </NewPost>
           </Modal>
         </div>
       );

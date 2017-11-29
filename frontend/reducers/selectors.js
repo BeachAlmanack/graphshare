@@ -1,6 +1,15 @@
-export const myRecentDatasets = (state, number) => {
+export const recentDatasets = (state, number, userId) => {
+
+  if (!userId) {
+    userId = state.session.currentUser.id;
+  }
+
   const { datasets } = state.entities;
-  const datasetIds = Object.keys(datasets).filter(id => datasets[id].author_id === state.session.currentUser.id).slice(0, number);
+  let datasetIds = Object.keys(datasets).filter(id => datasets[id].author_id === userId);
+
+  if (number) {
+    datasetIds = datasetIds.slice(0, number);
+  }
   
   datasetIds.sort((a,b) => {
     const dateA = new Date(datasets[a].created_at);
@@ -13,9 +22,16 @@ export const myRecentDatasets = (state, number) => {
 };
 
 
-export const myRecentCharts = (state, number) => {
+export const recentCharts = (state, number, userId) => {
+  if (!userId) {
+    userId = state.session.currentUser.id;
+  }
   const { charts } = state.entities;
-  const chartIds = Object.keys(charts).filter(id => charts[id].author_id === state.session.currentUser.id).slice(0, number);
+  let chartIds = Object.keys(charts).filter(id => charts[id].author_id === userId);
+
+  if (number) {
+    chartIds = chartIds.slice(0, number);
+  }
 
   chartIds.sort((a, b) => {
     const dateA = new Date(charts[a].created_at);

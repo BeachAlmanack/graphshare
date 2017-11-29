@@ -14,8 +14,15 @@ import DatasetIndex from './data/datasets_index/datasets_index_container';
 import ChartIndex from './charts/chart_index/chart_index_container';
 import Footer from './footer/footer';
 
+const ScrollToTop = () => {
+  window.scrollTo(0, 0);
+  return null;
+};
+
+
 const App = () => (
   <div className="app">
+    <Route component={ScrollToTop} />
     <Route path="/" component={HeaderContainer} />
     <Switch>
       <ProtectedRoute exact path="/" component={() => <Redirect to="/feed" />} />

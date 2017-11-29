@@ -15,7 +15,7 @@ class ChartShowMenu extends React.Component {
 
   toggleNewPost() {
     this.setState({
-      showNewPost: !this.state.showNewPost
+      showNewPost: !this.state.showNewPost,
     });
   }
 
@@ -38,7 +38,9 @@ class ChartShowMenu extends React.Component {
             </div>
           }
           <Modal show={this.state.showNewPost} onClose={this.toggleNewPost}>
-            <NewPost><Chart chart={chart} width={370} height={150} /></NewPost>
+            <NewPost contentType='Chart' contentId={chart.id} savePost={this.props.savePost}>
+              <Chart chart={chart} width={370} height={150} />
+            </NewPost>
           </Modal>
         </div>
       );

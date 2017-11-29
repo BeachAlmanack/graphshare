@@ -5,7 +5,7 @@ class Api::DatasetsController < ApplicationController
     if @dataset.save
       render :show
     else
-      render json: { dataset: @dataset.errors.full_messages }, status: 422
+      render json: { errors: @dataset.errors.full_messages }, status: 422
     end
   end
 

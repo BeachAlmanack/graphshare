@@ -1,6 +1,7 @@
 import { connect } from 'react-redux';
 import ChartIndex from './chart_index';
 import { fetchCharts, fetchChart } from '../../../actions/chart_actions';
+import { recentCharts } from '../../../reducers/selectors';
 
 const mapStateToProps = (state, ownProps) => {
   const currentUserId = state.session.currentUser.id;
@@ -9,7 +10,7 @@ const mapStateToProps = (state, ownProps) => {
     userId = ownProps.userId
   }
   return {
-    charts: state.entities.charts,
+    charts: recentCharts(state, undefined, userId),
     userId,
     currentUserId,
   };
