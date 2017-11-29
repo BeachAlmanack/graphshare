@@ -4,6 +4,7 @@ import { receiveErrors } from './errors_actions';
 export const RECEIVE_DATASET = 'RECEIVE_DATASET';
 export const RECEIVE_DATASETS = 'RECEIVE_DATASETS';
 export const RECEIVE_DATASET_TITLE = 'RECEIVE_DATASET_TITLE';
+export const CLEAR_NEW_DATASET = 'CLEAR_NEW_DATASET';
 
 export const receiveDataset = payload => ({
   type: RECEIVE_DATASET,
@@ -23,6 +24,10 @@ export const updateDatasetTitle = (id, title) => ({
   id,
 });
 
+export const clearNewDataset = () => ({
+  type: CLEAR_NEW_DATASET,
+});
+
 export const saveDataset = id => (dispatch, getState) => {
   const dataset = getState().entities.datasets[id];
   dataset.author_id = getState().session.currentUser.id;
@@ -31,7 +36,8 @@ export const saveDataset = id => (dispatch, getState) => {
   }
   return postDataset(dataset)
     .fail(errors => dispatch(receiveErrors(errors.responseJSON)))
-    .then(payload => dispatch(receiveDataset(payload)));
+    .then(payload => dispatch(receiveDataset(payload)))
+    .then(() => dispatch(clearNewDataset()));
 };
 
 export const fetchDatasets = authorId => (dispatch) => {

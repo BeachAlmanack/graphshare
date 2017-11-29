@@ -1,5 +1,5 @@
-import { merge } from 'lodash';
-import { RECEIVE_DATASET, RECEIVE_DATASET_TITLE, RECEIVE_DATASETS } from '../../actions/datasets_actions';
+import { merge, omit } from 'lodash';
+import { RECEIVE_DATASET, RECEIVE_DATASET_TITLE, RECEIVE_DATASETS, CLEAR_NEW_DATASET } from '../../actions/datasets_actions';
 import { RECEIVE_POSTS } from '../../actions/post_actions';
 
 const initialState = {};
@@ -21,6 +21,8 @@ const datasetsReducer = (state = initialState, action) => {
       newState = state;
       newState[action.id].title = action.title;
       return newState;
+    case CLEAR_NEW_DATASET:
+      return omit(state, ['new']);
     default:
       return state;
   }

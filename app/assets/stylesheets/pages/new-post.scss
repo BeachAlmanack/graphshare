@@ -7,6 +7,13 @@
     box-shadow: none;
     min-height: auto;
   }
+  svg {
+    display: block;
+    margin: auto;
+  }
+  .labels {
+    margin: auto;
+  }
 }
 
 .save {
