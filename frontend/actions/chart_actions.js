@@ -27,8 +27,8 @@ export const saveChart = chart => (dispatch, getState) => {
 };
 
 export const fetchChart = id => (dispatch) => {
-  return getChart(id)
-    .then(payload => dispatch(receiveChart(payload)));
+    return getChart(id)
+      .then(payload => dispatch(receiveChart(payload)));
 };
 
 export const fetchCharts = (authorId, withData) => (dispatch) => {

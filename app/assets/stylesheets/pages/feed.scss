@@ -125,5 +125,62 @@
 }
 
 .right-feed-menu {
+  @include box($light-gray, true);
+  min-height: 400px;
+
+  h2 {
+    font-size: 18px;
+    font-weight: 100;
+    padding: 10px;
+  }
+
+  li {
+    // border-bottom: 1px solid $light-gray;
+    border-top: 1px solid $light-gray;
+    padding: 10px 20px;
+
+    &:hover {
+      background-color: $lightest-gray;
+    }
+  }
+  .username {
+    display: inline;
+    margin-left: 10px;
+  }
+
+  .user-avatar {
+    width: 40px;
+    display: inline;
+    vertical-align: middle;
+    margin-bottom: 10px;
+  }
+
+  .fa {
+    margin-left: 3px;
+    margin-right: 6px;
+    font-size: 20px;
+    color: $dark-gray;
+  }
+
+  .fa-heart-o, .fa-heart {
+    color: $red;
+  }
+
+  .top-count {
+    text-align: center;
+  }
   
 }
+
+@media screen and (max-width: 1100px) {
+    .right-feed-menu {
+      display: none;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .left-feed-menu {
+      display: none;
+    }
+}
+

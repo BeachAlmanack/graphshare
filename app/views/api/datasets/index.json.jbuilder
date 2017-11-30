@@ -1,6 +1,8 @@
 json.datasets do
   json.array! @datasets do |dataset|
     json.extract! dataset, :id, :title, :header, :file_name, :author_id, :created_at
+    json.like_count dataset.likes.count
+    json.post_count dataset.posts.count
   end
 end
 

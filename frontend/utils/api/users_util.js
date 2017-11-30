@@ -27,3 +27,10 @@ export const getUser = userId => (
     method: 'GET',
   })
 );
+
+export const getTopUsers = () => (
+  $.ajax({
+    url: '/api/topusers/',
+    method: 'GET',
+  })
+);

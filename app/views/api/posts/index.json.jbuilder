@@ -25,12 +25,16 @@ end
 json.datasets do
   json.array! datasets.uniq do |dataset|
     json.extract! dataset, :id, :title, :file_name, :header, :author_id
+    json.like_count dataset.likes.count
+    json.post_count dataset.posts.count
   end
 end
 
 json.charts do
   json.array! charts.uniq do |chart|
     json.extract! chart, :id, :title, :chart_type, :data, :author_id, :dataset_id
+    json.like_count chart.likes.count
+    json.post_count chart.posts.count
   end
 end
 

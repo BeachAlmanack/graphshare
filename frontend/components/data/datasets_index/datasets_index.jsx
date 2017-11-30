@@ -11,8 +11,10 @@ class DatasetsIndex extends React.Component {
   render() {
     const title = this.props.userId === this.props.currentUserId ? (
       <div className="menu-bar">
+        <div className="top-menu">
         <h1>My Datasets</h1>
         <Link className="button-text" to="/datasets/new">Upload new dataset</Link>
+        </div>
       </div>
     ) : (
       <div className="menu-bar">

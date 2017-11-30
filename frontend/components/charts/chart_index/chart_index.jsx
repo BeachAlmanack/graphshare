@@ -11,8 +11,10 @@ class ChartsIndex extends React.Component {
   render() {
     const title = this.props.userId === this.props.currentUserId ? (
       <div className="menu-bar">
+      <div className="top-menu">
         <h1>My charts</h1>
         <Link className="button-text" to="/charts/new">Create new chart</Link>
+        </div>
       </div>
     ) : (
         <div className="menu-bar">

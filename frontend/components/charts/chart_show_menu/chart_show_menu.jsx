@@ -28,8 +28,8 @@ class ChartShowMenu extends React.Component {
             <h1>{chart.title}</h1>
             <div>
               <p> <i className="fa fa-pencil-square-o" aria-hidden="true" />
-                {chart.post_count} Post{chart.post_count > 1 ? 's' : ''} | <i className="fa fa-heart" aria-hidden="true" />
-                {chart.like_count} Like{chart.like_count > 1 ? 's' : ''} </p>
+                {chart.post_count || 0} Post{chart.post_count > 1 ? 's' : ''} | <i className="fa fa-heart" aria-hidden="true" />
+                {chart.like_count || 0} Like{chart.like_count > 1 ? 's' : ''} </p>
             </div>
           </div>
           {userId === chart.author_id ?

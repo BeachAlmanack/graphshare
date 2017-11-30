@@ -82,3 +82,12 @@ export const numLikesPosts = (state) => {
   return likedPostIds;
 };
 
+export const topContributors = (state) => {
+  const { users } = state.entities;
+  const topUsers = values(users).filter(user => user.top_rank !== undefined);
+  return topUsers.sort((a, b) => {
+    if (a.top_rank < b.top_rank) return -1;
+    if (a.top_rank > b.top_rank) return 1;
+    return 0;
+  });
+};

@@ -1,6 +1,6 @@
 class Api::PostsController < ApplicationController
   def index
-    @posts = Post.all
+    @posts = Post.includes(:likes, :user, :postable).all
   end
 
   def create
