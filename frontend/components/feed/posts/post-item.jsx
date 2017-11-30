@@ -21,7 +21,7 @@ export default function ({post, datasets, charts, users}) {
   return (
     <div className="post-item">
       <h2><Link to={`/users/${post.author_id}`}>{users[post.author_id].username}</Link></h2>
-      <p>{new Date(post.created_at).getDate()}</p>
+      <p>{new Date(post.created_at).toDateString()}</p>
       <h2>{post.title}</h2>
       <p>{post.description}</p>
       {postContent}
