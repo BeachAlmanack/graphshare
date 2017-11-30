@@ -27,6 +27,7 @@ class DropAxis extends React.Component {
         </ul> :
         <div className="drop-columns">
           <i className="icon-drop" />
+          <p className="drag-here">Drag in here</p>
         </div> }
       </div>));
   }

@@ -6,7 +6,6 @@ class Api::ChartsController < ApplicationController
     if @chart.save
       render :show
     else
-      debugger
       render json: { chart: @chart.errors.full_messages }, status: 422
     end
   end

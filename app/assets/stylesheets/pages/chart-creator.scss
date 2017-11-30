@@ -8,13 +8,13 @@
 .chart-creator-menu {
   margin-right: 20px;
   height: 100%;
+  display: flex;
 }
 
 .dataset-chooser {
   @include box($light-gray);
   margin-left: 10px;
-  float: left;
-  width: 250px;
+  min-width: 250px;
   padding: 10px;
   height: 600px;
   overflow: scroll;
@@ -26,8 +26,7 @@
 .dataset-drops {
   @include box($light-gray);
   margin-left: 10px;
-  float: left;
-  width: 250px;
+  min-width: 250px;
   height: 600px;
   padding: 10px;
   h2 {
@@ -65,7 +64,7 @@
   margin-bottom: 5px;
   li {
     margin: 3px 0px 0px;
-    padding: 10px;
+    padding: 10px 10px 10px 5px;
     display: flex;
     justify-content: space-between;
     background-color: $lightest-gray;
@@ -74,6 +73,12 @@
     vertical-align: center;
     position: relative;
   }
+  .fa {
+      color: $dark-gray;
+      font-size: 16px;
+      margin-left: 2px;
+  }
+
 }
 
 .drop {
@@ -92,6 +97,10 @@
     height: 100%;
     text-align: center;
     margin: auto;
+    position: relative;
+  }
+  .drag-here {
+    margin-top: 40%;
   }
   .icon-drop {
     display: block;
@@ -103,8 +112,9 @@
     background-size: cover;
     width: 50px;
     height: 50px;
-    margin: 50% auto;
-    transform: translatey(-50%);
+    position: absolute;
+    top: 20px;
+    left: 38%;
   }
 
   .icon-remove {
@@ -129,14 +139,13 @@
 }
 
 .new-chart {
-  float: left;
   margin-left: 10px;
-  width: 640px;
-  padding: 10px;
-  height: 600px;
+  padding: 20px;
+  height: 380px;
+  width: 100%;
   position: relative;
   input {
-    width: 640px;
+    width: 100%;
     margin: 10px 0px;
     background: white;
   }
@@ -162,4 +171,14 @@
 
 .Select-input input {
   border: none;
+}
+
+.chart-save {
+  @extend .button;
+  margin-right: 20px;
+  position: absolute;
+  top: 125%;
+  right: 0px;
+  text-align: center;
+  width: 100px;
 }

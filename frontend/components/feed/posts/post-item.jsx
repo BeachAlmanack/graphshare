@@ -9,7 +9,7 @@ const postContentByType = (post, datasets, charts) => {
       return <DatasetItem key={post.postable_id + post.postable_type} dataset={datasets[post.postable_id]} />;
     case 'Chart':
       return (<Link to={`/charts/${post.postable_id}`}>
-        <Chart key={post.postable_id + post.postable_type} chart={charts[post.postable_id]} width={500} height={200} />
+        <Chart key={post.postable_id + post.postable_type} chart={charts[post.postable_id]} width={500} height={250} />
       </Link>);
     default:
       return <p> Problem </p>;

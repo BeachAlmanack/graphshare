@@ -11,7 +11,9 @@ class ColumName extends React.Component {
 
     return connectDragSource((
       <li>
-        <p>{name}</p>
+
+        <p><i className="fa fa-ellipsis-v" aria-hidden="true" /><i className="fa fa-ellipsis-v" aria-hidden="true" /> {name}</p>
+
         <span className={`datatype-${type}`}>{type}</span>
       </li>
     ));

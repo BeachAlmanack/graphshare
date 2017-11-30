@@ -22,7 +22,7 @@ class Posts extends React.Component {
             liked={likedPosts[post.id]}
             numLikes={numLikes[post.id]}
             likePost={likePost}
-            unlikePost = {unlikePost}
+            unlikePost={unlikePost}
           />
           ))
         }

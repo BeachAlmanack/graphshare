@@ -61,7 +61,7 @@ class Chart extends React.Component {
         <div className="chart-container" ref={(el) => { this.chartContainer = el; }}>
           { this.state.containerWidth ? (
             <div>
-              {ChartFactory.build(chart, this.state.containerWidth - 72, height)}
+              {ChartFactory.build(chart, this.state.containerWidth - 72, height - 30)}
 
               <ul className="labels" data-width={width} style={{ width: (this.state.containerWidth - 30) }}>
                 {

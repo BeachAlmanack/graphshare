@@ -144,8 +144,9 @@ class ChartCreator extends React.Component {
 
     return (
       <div className="chart-creator-menu">
+        
         <div className="dataset-chooser">
-          <h2>Choose chart type: </h2>
+          <h2>1. Choose chart type: </h2>
           <ul className="chart-type">
             {ChartType.ALL.map(type => (
               <li onClick={() => this.handleChartType(type)} key={type}>
@@ -156,13 +157,13 @@ class ChartCreator extends React.Component {
               </li>
             ))}
           </ul>
-          <h2>Choose dataset: </h2>
+          <h2>2. Choose dataset: </h2>
           <Select
             value={this.state.chosenDataset}
             onChange={this.handleDatasetChange}
             options={options}
           />
-          <h2>Columns: </h2>
+          <h2>3. Drag Columns in axes: </h2>
           <ul className="column-names">
             {filteredCol.map(name => ColumnName(header[name].replace(/\(.*?\)/, ''), name))}
           </ul>
@@ -171,7 +172,6 @@ class ChartCreator extends React.Component {
           <div>
             <h2>X Axis</h2> <input type="text" placeholder="Axis Name" value={this.state.xAxisName} onChange={this.handleInputChange('xAxisName')} />
             {DropAxis(DataType.ALL, itemsX, item => this.handleDrop('xAxis', item), this.removeItem('xAxis'))}
-            
           </div>
           <div>
             <h2>Y Axis</h2> <input type="text" placeholder="Axis Name" value={this.state.yAxisName} onChange={this.handleInputChange('yAxisName')} />
@@ -182,8 +182,8 @@ class ChartCreator extends React.Component {
           <label htmlFor="title"> Title:
             <input id="title" type="text" value={this.state.title} onChange={this.handleInputChange('title')} placeholder="Chart Title" />
           </label>
-          { this.state.chart ? <Chart chart={this.state.chart} width={600} height={300} /> : '' }
-          <button onClick={this.saveChart} className="data-save">Save </button>
+          {this.state.chart ? <Chart chart={this.state.chart} height={300} /> : <div className="chart-container" style={{ height: 350 }}> Chart </div>}
+          <button onClick={this.saveChart} className="chart-save">Save </button>
         </div>
       </div>
     );
