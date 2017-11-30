@@ -9,6 +9,7 @@
 #  session_token   :string           not null
 #  created_at      :datetime         not null
 #  updated_at      :datetime         not null
+#  avatar_url      :string           default("http://res.cloudinary.com/dunj0n6sb/image/upload/v1512006039/0_m4syrq.svg")
 #
 
 class User < ApplicationRecord
@@ -29,6 +30,8 @@ class User < ApplicationRecord
 
   has_many :posts,
   inverse_of: :user
+
+  has_many :likes
 
   def password=(password)
     @password = password

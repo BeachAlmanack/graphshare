@@ -33,3 +33,11 @@ json.charts do
     json.extract! chart, :id, :title, :chart_type, :data, :author_id, :dataset_id
   end
 end
+
+json.likes do
+  @posts.each do |post| 
+    json.array! post.likes do |like|
+      json.extract! like, :id, :user_id, :post_id
+    end
+  end
+end

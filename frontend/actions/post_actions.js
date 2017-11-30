@@ -8,6 +8,7 @@ export const receivePosts = payload => ({
   charts: payload.charts,
   posts: payload.posts,
   users: payload.users,
+  likes: payload.likes,
 });
 
 
@@ -21,4 +22,3 @@ export const savePost = post => (dispatch, getState) => {
   return postPost(post)
     .fail(errors => dispatch(receiveErrors(errors.responseJSON)));
 };
-
