@@ -8,12 +8,22 @@ class Posts extends React.Component {
   }
 
   render() {
-    const { charts, datasets, posts, users } = this.props;
+    const { charts, datasets, posts, users, likedPosts, numLikes, likePost, unlikePost } = this.props;
 
     return (
       <div className="feed-items">
         { posts.map(post => (
-          <Post key={post.id} post={post} datasets={datasets} charts={charts} users={users} />
+          <Post
+            key={post.id}
+            post={post}
+            datasets={datasets}
+            charts={charts}
+            users={users}
+            liked={likedPosts[post.id]}
+            numLikes={numLikes[post.id]}
+            likePost={likePost}
+            unlikePost = {unlikePost}
+          />
           ))
         }
       </div>

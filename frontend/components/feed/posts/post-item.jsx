@@ -16,17 +16,49 @@ const postContentByType = (post, datasets, charts) => {
   }
 };
 
-export default function ({post, datasets, charts, users}) {
-  const postContent = postContentByType(post, datasets, charts);
-  return (
-    <div className="post-item">
-      <Link to={`/users/${post.author_id}`}><img src={users[post.author_id].avatar_url} className="user-avatar"/>
-        <span className="username">{users[post.author_id].username}</span></Link>
-      <span className="date">{new Date(post.created_at).toDateString()}</span>
-      <h2>{post.title}</h2>
-      <p>{post.description}</p>
-      {postContent}
-      <i className="fa fa-heart-o" aria-hidden="true" />  <span className="likes">30 likes</span>
-    </div>
-  );
+class Post extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      liked: this.props.liked,
+      numLikes: this.props.numLikes,
+    };
+    this.toggleLike = this.toggleLike.bind(this);
+  }
+
+  toggleLike(event) {
+    event.preventDefault();
+    if (!this.state.liked) {
+      this.props.likePost({post_id: this.props.post.id});
+    } else {
+      this.props.unlikePost({ post_id: this.props.post.id });
+    }
+    this.setState({
+      liked: !this.state.liked,
+      numLikes: this.state.liked ? this.state.numLikes - 1 : this.state.numLikes + 1,
+    });
+  }
+
+  render() {
+    const { post, datasets, charts, users } = this.props;
+    const postContent = postContentByType(post, datasets, charts);
+    return (
+      <div className="post-item">
+        <Link to={`/users/${post.author_id}`}>
+          <img src={users[post.author_id].avatar_url} className="user-avatar" alt="user avatar" />
+          <span className="username">{users[post.author_id].username}</span>
+        </Link>
+        <span className="date">{new Date(post.created_at).toDateString()}</span>
+        <h2>{post.title}</h2>
+        <p>{post.description}</p>
+        {postContent}
+        <button onClick={this.toggleLike} className="like-icon">
+          {this.state.liked ? <i className="fa fa-heart" aria-hidden="true" /> : <i className="fa fa-heart-o" aria-hidden="true" />}
+        </button>
+        <span className="likes">{this.state.numLikes} likes</span>
+      </div>
+    );
+  }
 }
+
+export default Post;

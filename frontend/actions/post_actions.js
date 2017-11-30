@@ -1,4 +1,5 @@
 import { getPosts, postPost } from '../utils/api/posts_util';
+import { receiveErrors } from './errors_actions';
 
 export const RECEIVE_POSTS = 'RECEIVE_POSTS';
 

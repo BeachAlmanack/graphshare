@@ -8,5 +8,6 @@ Rails.application.routes.draw do
     resources :charts, only: [:create, :show, :index]
     get '/fullcharts/', to: 'charts#all'
     resources :posts, only: [:create, :index]
+    resources :likes, only: [:create, :destroy]
   end
 end

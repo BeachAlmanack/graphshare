@@ -10,7 +10,10 @@
 #
 
 class Like < ApplicationRecord
-  belongs_to :user
+  validates :post_id, uniqueness: { scope: :user_id, message: 'Already liked' }
+  belongs_to :user,
+  inverse_of: :likes
+
   belongs_to :post
   
 end

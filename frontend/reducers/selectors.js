@@ -1,3 +1,5 @@
+import { values } from 'lodash';
+
 export const recentDatasets = (state, number, userId) => {
 
   if (!userId) {
@@ -57,4 +59,26 @@ export const latestPosts = (state) => {
   });
 
   return postIds.map(id => posts[id]);
-}
+};
+
+export const likedPosts = (state) => {
+  const { posts } = state.entities;
+  const currentUser = state.session.currentUser.id;
+  const postsValues = values(posts);
+  const likedPostIds = {};
+  postsValues.forEach((post) => {
+    likedPostIds[post.id] = post.liking_user_ids.includes(currentUser);
+  });
+  return likedPostIds;
+};
+
+export const numLikesPosts = (state) => {
+  const { likes } = state.entities;
+  const likesValues = values(likes);
+  const likedPostIds = {};
+  likesValues.forEach((like) => {
+    likedPostIds[like.post_id] = likedPostIds[like.post_id] ? (likedPostIds[like.post_id] + 1) : 1;
+  });
+  return likedPostIds;
+};
+

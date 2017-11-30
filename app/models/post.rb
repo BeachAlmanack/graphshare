@@ -20,4 +20,8 @@ class Post < ApplicationRecord
   inverse_of: :posts
 
   has_many :likes
+
+  has_many :liking_users,
+  through: :likes,
+  source: :user
 end

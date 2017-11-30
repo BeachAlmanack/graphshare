@@ -106,19 +106,21 @@
   .labels {
     margin: auto;
   }
-  .fa-heart-o {
+  .fa-heart-o, .fa-heart {
     margin-top: 10px;
     margin-right: 5px;
-    float: right;
     font-size: 23px;
     color: $red;
     cursor: pointer;
-    &:hover:before {
-      content: "\f004"
-    }
+  }
+  // .fa-heart-o:hover:before {
+  //   content: "\f004";
+  // }
+  .like-icon {
+    float: right;
   }
   .likes {
-    float: left;
+    float: right;
     margin-top: 10px;
     margin-right: 5px;
   }
