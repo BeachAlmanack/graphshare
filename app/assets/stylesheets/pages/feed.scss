@@ -7,7 +7,7 @@
 }
 
 .left-feed-menu {
-  
+  margin-right: 10px;
   h2 {
     font-size: 18px;
     font-weight: 100;
@@ -57,6 +57,7 @@
 
 .feed-items {
   max-width: 600px;
+  margin: auto;
 }
 
 .post-item {
@@ -127,7 +128,7 @@
 .right-feed-menu {
   @include box($light-gray, true);
   min-height: 400px;
-
+  margin-left: 10px;
   h2 {
     font-size: 18px;
     font-weight: 100;
@@ -178,7 +179,7 @@
     }
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 800px) {
     .left-feed-menu {
       display: none;
     }

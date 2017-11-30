@@ -11,7 +11,7 @@ class Posts extends React.Component {
     const { charts, datasets, posts, users, likedPosts, numLikes, likePost, unlikePost } = this.props;
 
     return (
-      <div className="feed-items">
+      <div className="f$eed-items">
         { posts.map(post => (
           <Post
             key={post.id}
