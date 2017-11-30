@@ -27,7 +27,7 @@ class ChartsIndex extends React.Component {
         {title}
         <div className="chart-items">
           { this.props.charts.map(chart => (
-            <Link to={`/charts/${chart.id}`} className="chart-item">
+            <Link to={`/charts/${chart.id}`} className="chart-item" key={chart.id}>
               <h2>{chart.title}</h2>
               <Chart
                 key={chart.id}

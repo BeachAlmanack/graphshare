@@ -34,7 +34,7 @@ class DatasetsIndex extends React.Component {
 }
 
 DatasetsIndex.propTypes = {
-  datasets: PropTypes.objectOf(Object).isRequired,
+  datasets: PropTypes.arrayOf(Object).isRequired,
   userId: PropTypes.number.isRequired,
   currentUserId: PropTypes.number.isRequired,
   fetchDatasets: PropTypes.func.isRequired,

@@ -7,6 +7,7 @@ import AxisLabels from './axis_labels';
 const Rects = (rows, bandWidth, xcb, ycb, index, height) => (
   rows.map(row => (
     <rect
+      key={(xcb(row) + (bandWidth * index)) + 30}
       width={bandWidth}
       height={height - 30 - ycb(row)}
       transform={`translate(${(xcb(row) + (bandWidth * index)) + 30}, ${ycb(row)})`}

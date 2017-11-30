@@ -17,7 +17,7 @@ class ChartFactory {
         return <BarChart data={convertData(dataCopy)} width={width} height={height} />;
       }
       default:
-        return <div />;
+        return <div className="empty-chart" style={{ backgroundColor: 'blue', width, height }} />;
     }
   }
 }

@@ -16,7 +16,7 @@ class LeftMenuCharts extends React.Component {
         <Link to="/charts/"><h2> My recent charts </h2></Link>
         <ul>
           {charts.map(chart => (
-            <Link to={`/charts/${chart.id}`}>
+            <Link to={`/charts/${chart.id}`} key={chart.id}>
               <li key={chart.id} className="left-feed-menu-item">
                 <p>{chart.title}</p>
                 <i className="fa fa-angle-right fa-lg" aria-hidden="true"></i>

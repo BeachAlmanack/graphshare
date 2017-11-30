@@ -12,7 +12,7 @@ class TopContributors extends React.Component {
       <div className="right-feed-menu">
         <h2>Top Contributors</h2>
         <ul>
-          { users.map(user => <TopContributorItem user={user} />) }
+          { users.map(user => <TopContributorItem key={user.id} user={user} />) }
         </ul>
       </div>
     );
@@ -20,4 +20,3 @@ class TopContributors extends React.Component {
 }
 
 export default TopContributors;
-

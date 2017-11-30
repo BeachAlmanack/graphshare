@@ -15,8 +15,8 @@ class LeftMenuDatasets extends React.Component {
         <Link to="/datasets/"><h2> My recent datasets </h2></Link>
         <ul>
           {datasets.map(dataset => (
-            <Link to={`/datasets/${dataset.id}`}>
-              <li key={dataset.id} className="left-feed-menu-item">
+            <Link to={`/datasets/${dataset.id}`} key={dataset.id}>
+              <li className="left-feed-menu-item">
                 <p>{dataset.title}</p>
                 <i className="fa fa-angle-right fa-lg" aria-hidden="true"></i>
               </li>

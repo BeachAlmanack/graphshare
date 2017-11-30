@@ -14,7 +14,7 @@ class Chart extends React.Component {
   }
 
   componentDidMount() {
-    if (!this.props.chart || !this.props.chart.data) {
+    if ((!this.props.chart || !this.props.chart.data) && this.props.chartId) {
       this.props.fetchChart(this.props.chartId).then(this.fitParentContainer);
     }
     setTimeout(() => {
@@ -38,15 +38,17 @@ class Chart extends React.Component {
 
   fitParentContainer() {
     const { containerWidth } = this.state;
-    const currentContainerWidth = this.chartContainer
-      .getBoundingClientRect().width;
+    if (this.chartContainer) {
+      const currentContainerWidth = this.chartContainer
+        .getBoundingClientRect().width;
 
-    const shouldResize = containerWidth !== currentContainerWidth;
+      const shouldResize = containerWidth !== currentContainerWidth;
 
-    if (shouldResize) {
-      this.setState({
-        containerWidth: currentContainerWidth,
-      });
+      if (shouldResize) {
+        this.setState({
+          containerWidth: currentContainerWidth,
+        });
+      }
     }
   }
 
@@ -57,23 +59,25 @@ class Chart extends React.Component {
     if (chart && chart.data) {
       return (
         <div className="chart-container" ref={(el) => { this.chartContainer = el; }}>
-          
-          {this.state.containerWidth ? ChartFactory.build(chart, this.state.containerWidth - 72, height) : ''}
+          { this.state.containerWidth ? (
+            <div>
+              {ChartFactory.build(chart, this.state.containerWidth - 72, height)}
 
-          <ul className="labels" data-width={width} style={{ width: (this.state.containerWidth - 30) }}>
-              {
-                chart.data.axis.y.map((label, idx) => (
-                  <li key={label}>
-                    <i className={`fa fa-square color-${idx}`} aria-hidden="true" />{label}
-                  </li>
-                ))
-              }
-            </ul>
-
+              <ul className="labels" data-width={width} style={{ width: (this.state.containerWidth - 30) }}>
+                {
+                  chart.data.axis.y.map((label, idx) => (
+                    <li key={label}>
+                      <i className={`fa fa-square color-${idx}`} aria-hidden="true" />{label}
+                    </li>
+                  ))
+                }
+              </ul>
+            </div>
+          ) : '' }
         </div>
       );
     }
-    return (<div>loading</div>);
+    return <div />;
   }
 }
 
