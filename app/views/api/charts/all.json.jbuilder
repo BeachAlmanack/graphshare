@@ -8,6 +8,6 @@ users = @charts.map { |chart| chart.user}.uniq
 
 json.users do
   json.array! users do |user|
-    json.extract! user, :id, :username, :email
+    json.extract! user, :id, :username, :email, :avatar_url
   end
 end

@@ -3,5 +3,5 @@ json.chart do
 end
 
 json.user do
-  json.extract! @chart.user, :id, :username, :email
+  json.extract! @chart.user, :id, :username, :email, :avatar_url
 end

@@ -19,8 +19,11 @@ class ProfilePage extends React.Component {
     if (user) {
       return (
         <div className="profile-page">
-          <h1>{ user.username }</h1>
-          <h1>{ user.email }</h1>
+          <img src={user.avatar_url} className="user-avatar" />
+          <div className="user-info-detail">
+            <h1>{user.username}</h1>
+            <h1>{user.email}</h1>
+          </div>
           <hr />
           <h1>Stats</h1>
           <hr />

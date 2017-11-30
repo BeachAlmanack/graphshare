@@ -20,8 +20,9 @@ export default function ({post, datasets, charts, users}) {
   const postContent = postContentByType(post, datasets, charts);
   return (
     <div className="post-item">
-      <h2><Link to={`/users/${post.author_id}`}>{users[post.author_id].username}</Link></h2>
-      <p>{new Date(post.created_at).toDateString()}</p>
+      <Link to={`/users/${post.author_id}`}><img src={users[post.author_id].avatar_url} className="user-avatar"/>
+        <span className="username">{users[post.author_id].username}</span></Link>
+      <span className="date">{new Date(post.created_at).toDateString()}</span>
       <h2>{post.title}</h2>
       <p>{post.description}</p>
       {postContent}

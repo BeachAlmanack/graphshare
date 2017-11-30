@@ -3,5 +3,5 @@ json.dataset do
 end
 
 json.user do
-  json.extract! @dataset.user, :id, :username
+  json.extract! @dataset.user, :id, :username, :avatar_url
 end

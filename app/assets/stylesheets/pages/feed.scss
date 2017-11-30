@@ -67,6 +67,7 @@
   overflow: hidden;
   padding: 20px;
   h2 {
+    margin-top: 5px;
     font-size: 25px;
   }
   p {
@@ -75,6 +76,22 @@
     margin: 10px auto;
     padding: 10px;
     background: white;
+  }
+
+  .username {
+    display: inline;
+    margin-left: 10px;
+  }
+
+  .user-avatar {
+    width: 40px;
+    display: inline;
+    vertical-align: middle;
+  }
+
+  .date {
+    float: right;
+    margin-top: 8px;
   }
   .dataset-item {
     margin: 0;
