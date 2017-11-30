@@ -1,3 +1,8 @@
 .chart-show {
   @extend .page;
+
+  svg {
+    display: block;
+    margin: 0 auto;
+  }
 }

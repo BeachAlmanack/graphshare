@@ -14,7 +14,7 @@
     padding-bottom: 10px;
   }
   .left-menu-button {
-    @extend .button-outline;
+    @extend .button;
     display: block;
     text-align: center;
     margin-top: 10px;
@@ -113,9 +113,7 @@
     color: $red;
     cursor: pointer;
   }
-  // .fa-heart-o:hover:before {
-  //   content: "\f004";
-  // }
+
   .like-icon {
     float: right;
   }

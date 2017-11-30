@@ -8,12 +8,12 @@ userJson.each do |row|
   users << User.create!(row)
 end
 
-aaplJson = ActiveSupport::JSON.decode(File.read('db/seeds/datasets/AAPL.json'))
-europeanCountriesJson = ActiveSupport::JSON.decode(File.read('db/seeds/datasets/european_countries.json'))
-worldPovertyJson = ActiveSupport::JSON.decode(File.read('db/seeds/datasets/world_poverty.json'))
-Dataset.create(aaplJson)
-Dataset.create(europeanCountriesJson)
-Dataset.create(worldPovertyJson)
+datasets = []
+
+demoDataJson = ActiveSupport::JSON.decode(File.read('db/seeds/datasets/demo_data.json'))
+demoDataJson.each do |row|
+  datasets = Dataset.create(row)
+end
 
 populationChart = ActiveSupport::JSON.decode(File.read('db/seeds/charts/population.json'))
 Chart.create(populationChart)

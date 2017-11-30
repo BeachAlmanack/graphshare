@@ -28,18 +28,28 @@ class DatasetShowMenu extends React.Component {
     if (dataset) {
       return (
         <div className="menu-bar">
-          <div className="left-menu">
-            <h1>{dataset.title}</h1> <p>{dataset.file_name}</p>
+          <div className="top-menu">
+            <h1>{dataset.title}</h1>
+
+          
+            <div>
+              <p> <i className="fa fa-pencil-square-o" aria-hidden="true" /> 
+                {dataset.post_count} Post{dataset.post_count > 1 ? 's' : ''} | <i className="fa fa-heart" aria-hidden="true" /> 
+                {dataset.like_count} Like{dataset.like_count > 1 ? 's' : ''} </p>
+            </div>
           </div>
           {userId === dataset.author_id ?
-          <div className="right-menu">
+            <div className="bottom-menu">
+              <p>{dataset.file_name}</p>
+              <div>
               <button onClick={this.toggleNewPost} className="button-text">Post</button>
-            <Link to={`/datasets/`} className="button-text"> My Datasets </Link>
+              <Link to={`/datasets/`} className="button-text"> My Datasets </Link>
             <Link to={`/charts/new/${dataset.id}`} className="button-text"> Create Chart from Data </Link>
             <button onClick={this.deleteDataset(dataset.id)} className="button-text-red"> Delete </button>
-            
-            </div> : <div className="right-menu">
-              Created by { this.props.users[dataset.author_id].username }
+              </div>
+            </div> : <div className="bottom-menu">
+              <p>{dataset.file_name}</p>
+              <p> Created by { this.props.users[dataset.author_id].username }</p>
             </div>
           }
           <Modal show={this.state.showNewPost} onClose={this.toggleNewPost}>

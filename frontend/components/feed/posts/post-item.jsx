@@ -21,7 +21,7 @@ class Post extends React.Component {
     super(props);
     this.state = {
       liked: this.props.liked,
-      numLikes: this.props.numLikes,
+      numLikes: this.props.numLikes || 0,
     };
     this.toggleLike = this.toggleLike.bind(this);
   }

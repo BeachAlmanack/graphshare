@@ -24,16 +24,24 @@ class ChartShowMenu extends React.Component {
     if (chart) {
       return (
         <div className="menu-bar">
-          <div className="left-menu">
+          <div className="top-menu">
             <h1>{chart.title}</h1>
+            <div>
+              <p> <i className="fa fa-pencil-square-o" aria-hidden="true" />
+                {chart.post_count} Post{chart.post_count > 1 ? 's' : ''} | <i className="fa fa-heart" aria-hidden="true" />
+                {chart.like_count} Like{chart.like_count > 1 ? 's' : ''} </p>
+            </div>
           </div>
           {userId === chart.author_id ?
-            <div className="right-menu">
+            <div className="bottom-menu">
+              <p />
+              <div>
               <button onClick={this.toggleNewPost} className="button-text">Post</button>
               <Link to={`/charts/`} className="button-text">My Charts</Link>
               { chart.dataset_id ? <Link to={`/datasets/${chart.dataset_id}`} className="button-text">Original Dataset</Link> : '' }
+              </div>
             </div> :
-            <div className="right-menu">
+            <div className="bottom-menu">
               Created by {this.props.users[chart.author_id].username}
             </div>
           }
