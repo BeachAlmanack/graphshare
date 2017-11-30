@@ -14,6 +14,12 @@ class Api::UsersController < ApplicationController
     render :show
   end
 
+  def top
+    sql = ('SELECT users.* FROM posts JOIN users ON author_id=users.id GROUP BY users.id ORDER BY COUNT(posts.id) LIMIT 10')
+    @users = User.find_by_sql(sql)
+    render :top
+  end
+
   private
   def user_params
     params.require(:user).permit(:username, :email, :password)
