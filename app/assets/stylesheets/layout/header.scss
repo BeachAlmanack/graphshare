@@ -20,13 +20,14 @@
   color: $dark-gray;
   .orange {
     color: $blue;
-    margin-right: 10px;
+    margin-right: 5px;
   }
 
   .blue {
-    color: $yellow;
-    border-left: 1px solid $light-gray;
-    padding-left: 10px;
+    background-color: $yellow;
+    color: white;
+    // border-left: 1px solid $light-gray;
+    padding: 0px 10px;
   }
 }
 
@@ -90,12 +91,14 @@
   .user-nav-link {
     margin: 0px 10px;
     height: 60px;
+    width: auto;
   }
   .user-avatar {
     margin-top: 15px;
     height: 30px;
     width: 30px;
     float: left;
+    margin-right: 5px;
   }
   p {
     margin-top: 20px;

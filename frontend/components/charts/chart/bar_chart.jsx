@@ -26,12 +26,14 @@ class BarChart extends React.Component {
 
     const rows = values(this.props.data.rows);
     const [scaleX, scaleY] = Scale(this.props.data, width, height, true);
+    
     const numberOfBars = this.props.data.axis.y.length;
+    let rotate = false;
     this.props.data.axis.y.forEach((columName, idx) => {
       const seriesRect = Rects(rows, (scaleX.bandwidth() / numberOfBars), (row => scaleX(row[this.props.data.axis.x])), (row => scaleY(row[columName])), idx, height);
+      rotate = (seriesRect.length > 8);
       this.bars = this.bars.concat(seriesRect);
     });
-
     this.yAxis = <Axis scale={scaleY} axis="y" width={width - 30} height={height - 30} />;
     this.xAxis = <Axis scale={scaleX} axis="x" width={width - 30} height={height - 30} />;
     return (

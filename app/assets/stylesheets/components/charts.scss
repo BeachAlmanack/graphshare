@@ -45,6 +45,18 @@
   fill: $orange;
 }
 
+.color-fill-3 {
+  fill: rgb(142, 31, 156);
+}
+
+.color-fill-4 {
+  fill: $red;
+}
+
+.color-fill-5 {
+  fill: rgb(30, 156, 194);
+}
+
 .color-0 {
   color: $blue;
 }
@@ -57,6 +69,17 @@
   color: $orange;
 }
 
+.color-3 {
+  color: rgb(142, 31, 156);
+}
+
+.color-4 {
+  color: $red;
+}
+
+.color-5 {
+  color: rgb(30, 156, 194);
+}
 
 .color-stroke-0 {
   stroke: $blue;
@@ -70,5 +93,21 @@
 
 .color-stroke-2 {
   stroke: $orange;
+  fill: none;
+}
+
+
+.color-stroke-3 {
+  stroke: rgb(142, 31, 156);
+  fill: none;
+}
+
+.color-stroke-4 {
+  stroke: $red;
+  fill: none;
+}
+
+.color-stroke-5 {
+  stroke: rgb(30, 156, 194);
   fill: none;
 }

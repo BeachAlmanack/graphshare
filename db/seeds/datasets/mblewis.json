@@ -1,0 +1,2702 @@
+[
+  {
+    "title": "Snapchat versus Instagram",
+    "file_name": "search_snapchart_instagram.csv",
+    "rows": {
+      "0": {
+        "Week": "02.12.12",
+        "snapchat: (Worldwide)": "1",
+        "instagram: (Worldwide)": "18"
+      },
+      "1": {
+        "Week": "09.12.12",
+        "snapchat: (Worldwide)": "1",
+        "instagram: (Worldwide)": "19"
+      },
+      "2": {
+        "Week": "16.12.12",
+        "snapchat: (Worldwide)": "2",
+        "instagram: (Worldwide)": "25"
+      },
+      "3": {
+        "Week": "23.12.12",
+        "snapchat: (Worldwide)": "2",
+        "instagram: (Worldwide)": "25"
+      },
+      "4": {
+        "Week": "30.12.12",
+        "snapchat: (Worldwide)": "2",
+        "instagram: (Worldwide)": "24"
+      },
+      "5": {
+        "Week": "06.01.13",
+        "snapchat: (Worldwide)": "1",
+        "instagram: (Worldwide)": "21"
+      },
+      "6": {
+        "Week": "13.01.13",
+        "snapchat: (Worldwide)": "1",
+        "instagram: (Worldwide)": "21"
+      },
+      "7": {
+        "Week": "20.01.13",
+        "snapchat: (Worldwide)": "1",
+        "instagram: (Worldwide)": "23"
+      },
+      "8": {
+        "Week": "27.01.13",
+        "snapchat: (Worldwide)": "1",
+        "instagram: (Worldwide)": "21"
+      },
+      "9": {
+        "Week": "03.02.13",
+        "snapchat: (Worldwide)": "1",
+        "instagram: (Worldwide)": "23"
+      },
+      "10": {
+        "Week": "10.02.13",
+        "snapchat: (Worldwide)": "1",
+        "instagram: (Worldwide)": "26"
+      },
+      "11": {
+        "Week": "17.02.13",
+        "snapchat: (Worldwide)": "1",
+        "instagram: (Worldwide)": "26"
+      },
+      "12": {
+        "Week": "24.02.13",
+        "snapchat: (Worldwide)": "1",
+        "instagram: (Worldwide)": "26"
+      },
+      "13": {
+        "Week": "03.03.13",
+        "snapchat: (Worldwide)": "1",
+        "instagram: (Worldwide)": "27"
+      },
+      "14": {
+        "Week": "10.03.13",
+        "snapchat: (Worldwide)": "1",
+        "instagram: (Worldwide)": "27"
+      },
+      "15": {
+        "Week": "17.03.13",
+        "snapchat: (Worldwide)": "1",
+        "instagram: (Worldwide)": "29"
+      },
+      "16": {
+        "Week": "24.03.13",
+        "snapchat: (Worldwide)": "2",
+        "instagram: (Worldwide)": "31"
+      },
+      "17": {
+        "Week": "31.03.13",
+        "snapchat: (Worldwide)": "2",
+        "instagram: (Worldwide)": "31"
+      },
+      "18": {
+        "Week": "07.04.13",
+        "snapchat: (Worldwide)": "2",
+        "instagram: (Worldwide)": "30"
+      },
+      "19": {
+        "Week": "14.04.13",
+        "snapchat: (Worldwide)": "2",
+        "instagram: (Worldwide)": "31"
+      },
+      "20": {
+        "Week": "21.04.13",
+        "snapchat: (Worldwide)": "2",
+        "instagram: (Worldwide)": "31"
+      },
+      "21": {
+        "Week": "28.04.13",
+        "snapchat: (Worldwide)": "2",
+        "instagram: (Worldwide)": "33"
+      },
+      "22": {
+        "Week": "05.05.13",
+        "snapchat: (Worldwide)": "2",
+        "instagram: (Worldwide)": "33"
+      },
+      "23": {
+        "Week": "12.05.13",
+        "snapchat: (Worldwide)": "3",
+        "instagram: (Worldwide)": "32"
+      },
+      "24": {
+        "Week": "19.05.13",
+        "snapchat: (Worldwide)": "3",
+        "instagram: (Worldwide)": "34"
+      },
+      "25": {
+        "Week": "26.05.13",
+        "snapchat: (Worldwide)": "4",
+        "instagram: (Worldwide)": "34"
+      },
+      "26": {
+        "Week": "02.06.13",
+        "snapchat: (Worldwide)": "4",
+        "instagram: (Worldwide)": "34"
+      },
+      "27": {
+        "Week": "09.06.13",
+        "snapchat: (Worldwide)": "4",
+        "instagram: (Worldwide)": "34"
+      },
+      "28": {
+        "Week": "16.06.13",
+        "snapchat: (Worldwide)": "3",
+        "instagram: (Worldwide)": "40"
+      },
+      "29": {
+        "Week": "23.06.13",
+        "snapchat: (Worldwide)": "3",
+        "instagram: (Worldwide)": "41"
+      },
+      "30": {
+        "Week": "30.06.13",
+        "snapchat: (Worldwide)": "3",
+        "instagram: (Worldwide)": "40"
+      },
+      "31": {
+        "Week": "07.07.13",
+        "snapchat: (Worldwide)": "3",
+        "instagram: (Worldwide)": "41"
+      },
+      "32": {
+        "Week": "14.07.13",
+        "snapchat: (Worldwide)": "3",
+        "instagram: (Worldwide)": "42"
+      },
+      "33": {
+        "Week": "21.07.13",
+        "snapchat: (Worldwide)": "3",
+        "instagram: (Worldwide)": "42"
+      },
+      "34": {
+        "Week": "28.07.13",
+        "snapchat: (Worldwide)": "3",
+        "instagram: (Worldwide)": "42"
+      },
+      "35": {
+        "Week": "04.08.13",
+        "snapchat: (Worldwide)": "3",
+        "instagram: (Worldwide)": "44"
+      },
+      "36": {
+        "Week": "11.08.13",
+        "snapchat: (Worldwide)": "3",
+        "instagram: (Worldwide)": "44"
+      },
+      "37": {
+        "Week": "18.08.13",
+        "snapchat: (Worldwide)": "3",
+        "instagram: (Worldwide)": "42"
+      },
+      "38": {
+        "Week": "25.08.13",
+        "snapchat: (Worldwide)": "3",
+        "instagram: (Worldwide)": "42"
+      },
+      "39": {
+        "Week": "01.09.13",
+        "snapchat: (Worldwide)": "3",
+        "instagram: (Worldwide)": "40"
+      },
+      "40": {
+        "Week": "08.09.13",
+        "snapchat: (Worldwide)": "3",
+        "instagram: (Worldwide)": "40"
+      },
+      "41": {
+        "Week": "15.09.13",
+        "snapchat: (Worldwide)": "3",
+        "instagram: (Worldwide)": "40"
+      },
+      "42": {
+        "Week": "22.09.13",
+        "snapchat: (Worldwide)": "3",
+        "instagram: (Worldwide)": "40"
+      },
+      "43": {
+        "Week": "29.09.13",
+        "snapchat: (Worldwide)": "3",
+        "instagram: (Worldwide)": "39"
+      },
+      "44": {
+        "Week": "06.10.13",
+        "snapchat: (Worldwide)": "3",
+        "instagram: (Worldwide)": "39"
+      },
+      "45": {
+        "Week": "13.10.13",
+        "snapchat: (Worldwide)": "3",
+        "instagram: (Worldwide)": "41"
+      },
+      "46": {
+        "Week": "20.10.13",
+        "snapchat: (Worldwide)": "3",
+        "instagram: (Worldwide)": "41"
+      },
+      "47": {
+        "Week": "27.10.13",
+        "snapchat: (Worldwide)": "3",
+        "instagram: (Worldwide)": "41"
+      },
+      "48": {
+        "Week": "03.11.13",
+        "snapchat: (Worldwide)": "3",
+        "instagram: (Worldwide)": "41"
+      },
+      "49": {
+        "Week": "10.11.13",
+        "snapchat: (Worldwide)": "6",
+        "instagram: (Worldwide)": "40"
+      },
+      "50": {
+        "Week": "17.11.13",
+        "snapchat: (Worldwide)": "5",
+        "instagram: (Worldwide)": "40"
+      },
+      "51": {
+        "Week": "24.11.13",
+        "snapchat: (Worldwide)": "4",
+        "instagram: (Worldwide)": "40"
+      },
+      "52": {
+        "Week": "01.12.13",
+        "snapchat: (Worldwide)": "4",
+        "instagram: (Worldwide)": "41"
+      },
+      "53": {
+        "Week": "08.12.13",
+        "snapchat: (Worldwide)": "4",
+        "instagram: (Worldwide)": "42"
+      },
+      "54": {
+        "Week": "15.12.13",
+        "snapchat: (Worldwide)": "5",
+        "instagram: (Worldwide)": "43"
+      },
+      "55": {
+        "Week": "22.12.13",
+        "snapchat: (Worldwide)": "9",
+        "instagram: (Worldwide)": "50"
+      },
+      "56": {
+        "Week": "29.12.13",
+        "snapchat: (Worldwide)": "9",
+        "instagram: (Worldwide)": "53"
+      },
+      "57": {
+        "Week": "05.01.14",
+        "snapchat: (Worldwide)": "7",
+        "instagram: (Worldwide)": "46"
+      },
+      "58": {
+        "Week": "12.01.14",
+        "snapchat: (Worldwide)": "6",
+        "instagram: (Worldwide)": "44"
+      },
+      "59": {
+        "Week": "19.01.14",
+        "snapchat: (Worldwide)": "6",
+        "instagram: (Worldwide)": "46"
+      },
+      "60": {
+        "Week": "26.01.14",
+        "snapchat: (Worldwide)": "5",
+        "instagram: (Worldwide)": "45"
+      },
+      "61": {
+        "Week": "02.02.14",
+        "snapchat: (Worldwide)": "5",
+        "instagram: (Worldwide)": "45"
+      },
+      "62": {
+        "Week": "09.02.14",
+        "snapchat: (Worldwide)": "5",
+        "instagram: (Worldwide)": "44"
+      },
+      "63": {
+        "Week": "16.02.14",
+        "snapchat: (Worldwide)": "5",
+        "instagram: (Worldwide)": "47"
+      },
+      "64": {
+        "Week": "23.02.14",
+        "snapchat: (Worldwide)": "5",
+        "instagram: (Worldwide)": "46"
+      },
+      "65": {
+        "Week": "02.03.14",
+        "snapchat: (Worldwide)": "5",
+        "instagram: (Worldwide)": "48"
+      },
+      "66": {
+        "Week": "09.03.14",
+        "snapchat: (Worldwide)": "5",
+        "instagram: (Worldwide)": "47"
+      },
+      "67": {
+        "Week": "16.03.14",
+        "snapchat: (Worldwide)": "5",
+        "instagram: (Worldwide)": "47"
+      },
+      "68": {
+        "Week": "23.03.14",
+        "snapchat: (Worldwide)": "5",
+        "instagram: (Worldwide)": "49"
+      },
+      "69": {
+        "Week": "30.03.14",
+        "snapchat: (Worldwide)": "6",
+        "instagram: (Worldwide)": "50"
+      },
+      "70": {
+        "Week": "06.04.14",
+        "snapchat: (Worldwide)": "6",
+        "instagram: (Worldwide)": "53"
+      },
+      "71": {
+        "Week": "13.04.14",
+        "snapchat: (Worldwide)": "6",
+        "instagram: (Worldwide)": "53"
+      },
+      "72": {
+        "Week": "20.04.14",
+        "snapchat: (Worldwide)": "6",
+        "instagram: (Worldwide)": "53"
+      },
+      "73": {
+        "Week": "27.04.14",
+        "snapchat: (Worldwide)": "11",
+        "instagram: (Worldwide)": "54"
+      },
+      "74": {
+        "Week": "04.05.14",
+        "snapchat: (Worldwide)": "8",
+        "instagram: (Worldwide)": "54"
+      },
+      "75": {
+        "Week": "11.05.14",
+        "snapchat: (Worldwide)": "6",
+        "instagram: (Worldwide)": "53"
+      },
+      "76": {
+        "Week": "18.05.14",
+        "snapchat: (Worldwide)": "6",
+        "instagram: (Worldwide)": "52"
+      },
+      "77": {
+        "Week": "25.05.14",
+        "snapchat: (Worldwide)": "6",
+        "instagram: (Worldwide)": "55"
+      },
+      "78": {
+        "Week": "01.06.14",
+        "snapchat: (Worldwide)": "6",
+        "instagram: (Worldwide)": "55"
+      },
+      "79": {
+        "Week": "08.06.14",
+        "snapchat: (Worldwide)": "6",
+        "instagram: (Worldwide)": "55"
+      },
+      "80": {
+        "Week": "15.06.14",
+        "snapchat: (Worldwide)": "6",
+        "instagram: (Worldwide)": "56"
+      },
+      "81": {
+        "Week": "22.06.14",
+        "snapchat: (Worldwide)": "6",
+        "instagram: (Worldwide)": "57"
+      },
+      "82": {
+        "Week": "29.06.14",
+        "snapchat: (Worldwide)": "6",
+        "instagram: (Worldwide)": "58"
+      },
+      "83": {
+        "Week": "06.07.14",
+        "snapchat: (Worldwide)": "6",
+        "instagram: (Worldwide)": "61"
+      },
+      "84": {
+        "Week": "13.07.14",
+        "snapchat: (Worldwide)": "7",
+        "instagram: (Worldwide)": "60"
+      },
+      "85": {
+        "Week": "20.07.14",
+        "snapchat: (Worldwide)": "7",
+        "instagram: (Worldwide)": "62"
+      },
+      "86": {
+        "Week": "27.07.14",
+        "snapchat: (Worldwide)": "6",
+        "instagram: (Worldwide)": "62"
+      },
+      "87": {
+        "Week": "03.08.14",
+        "snapchat: (Worldwide)": "6",
+        "instagram: (Worldwide)": "62"
+      },
+      "88": {
+        "Week": "10.08.14",
+        "snapchat: (Worldwide)": "6",
+        "instagram: (Worldwide)": "62"
+      },
+      "89": {
+        "Week": "17.08.14",
+        "snapchat: (Worldwide)": "6",
+        "instagram: (Worldwide)": "65"
+      },
+      "90": {
+        "Week": "24.08.14",
+        "snapchat: (Worldwide)": "6",
+        "instagram: (Worldwide)": "63"
+      },
+      "91": {
+        "Week": "31.08.14",
+        "snapchat: (Worldwide)": "7",
+        "instagram: (Worldwide)": "61"
+      },
+      "92": {
+        "Week": "07.09.14",
+        "snapchat: (Worldwide)": "6",
+        "instagram: (Worldwide)": "60"
+      },
+      "93": {
+        "Week": "14.09.14",
+        "snapchat: (Worldwide)": "6",
+        "instagram: (Worldwide)": "58"
+      },
+      "94": {
+        "Week": "21.09.14",
+        "snapchat: (Worldwide)": "7",
+        "instagram: (Worldwide)": "58"
+      },
+      "95": {
+        "Week": "28.09.14",
+        "snapchat: (Worldwide)": "6",
+        "instagram: (Worldwide)": "59"
+      },
+      "96": {
+        "Week": "05.10.14",
+        "snapchat: (Worldwide)": "9",
+        "instagram: (Worldwide)": "60"
+      },
+      "97": {
+        "Week": "12.10.14",
+        "snapchat: (Worldwide)": "12",
+        "instagram: (Worldwide)": "59"
+      },
+      "98": {
+        "Week": "19.10.14",
+        "snapchat: (Worldwide)": "7",
+        "instagram: (Worldwide)": "58"
+      },
+      "99": {
+        "Week": "26.10.14",
+        "snapchat: (Worldwide)": "7",
+        "instagram: (Worldwide)": "60"
+      },
+      "100": {
+        "Week": "02.11.14",
+        "snapchat: (Worldwide)": "7",
+        "instagram: (Worldwide)": "60"
+      },
+      "101": {
+        "Week": "09.11.14",
+        "snapchat: (Worldwide)": "7",
+        "instagram: (Worldwide)": "60"
+      },
+      "102": {
+        "Week": "16.11.14",
+        "snapchat: (Worldwide)": "8",
+        "instagram: (Worldwide)": "59"
+      },
+      "103": {
+        "Week": "23.11.14",
+        "snapchat: (Worldwide)": "8",
+        "instagram: (Worldwide)": "58"
+      },
+      "104": {
+        "Week": "30.11.14",
+        "snapchat: (Worldwide)": "7",
+        "instagram: (Worldwide)": "60"
+      },
+      "105": {
+        "Week": "07.12.14",
+        "snapchat: (Worldwide)": "8",
+        "instagram: (Worldwide)": "61"
+      },
+      "106": {
+        "Week": "14.12.14",
+        "snapchat: (Worldwide)": "8",
+        "instagram: (Worldwide)": "61"
+      },
+      "107": {
+        "Week": "21.12.14",
+        "snapchat: (Worldwide)": "10",
+        "instagram: (Worldwide)": "67"
+      },
+      "108": {
+        "Week": "28.12.14",
+        "snapchat: (Worldwide)": "10",
+        "instagram: (Worldwide)": "73"
+      },
+      "109": {
+        "Week": "04.01.15",
+        "snapchat: (Worldwide)": "9",
+        "instagram: (Worldwide)": "67"
+      },
+      "110": {
+        "Week": "11.01.15",
+        "snapchat: (Worldwide)": "8",
+        "instagram: (Worldwide)": "64"
+      },
+      "111": {
+        "Week": "18.01.15",
+        "snapchat: (Worldwide)": "8",
+        "instagram: (Worldwide)": "64"
+      },
+      "112": {
+        "Week": "25.01.15",
+        "snapchat: (Worldwide)": "11",
+        "instagram: (Worldwide)": "64"
+      },
+      "113": {
+        "Week": "01.02.15",
+        "snapchat: (Worldwide)": "9",
+        "instagram: (Worldwide)": "63"
+      },
+      "114": {
+        "Week": "08.02.15",
+        "snapchat: (Worldwide)": "8",
+        "instagram: (Worldwide)": "61"
+      },
+      "115": {
+        "Week": "15.02.15",
+        "snapchat: (Worldwide)": "8",
+        "instagram: (Worldwide)": "64"
+      },
+      "116": {
+        "Week": "22.02.15",
+        "snapchat: (Worldwide)": "8",
+        "instagram: (Worldwide)": "62"
+      },
+      "117": {
+        "Week": "01.03.15",
+        "snapchat: (Worldwide)": "8",
+        "instagram: (Worldwide)": "61"
+      },
+      "118": {
+        "Week": "08.03.15",
+        "snapchat: (Worldwide)": "8",
+        "instagram: (Worldwide)": "63"
+      },
+      "119": {
+        "Week": "15.03.15",
+        "snapchat: (Worldwide)": "8",
+        "instagram: (Worldwide)": "62"
+      },
+      "120": {
+        "Week": "22.03.15",
+        "snapchat: (Worldwide)": "8",
+        "instagram: (Worldwide)": "64"
+      },
+      "121": {
+        "Week": "29.03.15",
+        "snapchat: (Worldwide)": "8",
+        "instagram: (Worldwide)": "64"
+      },
+      "122": {
+        "Week": "05.04.15",
+        "snapchat: (Worldwide)": "20",
+        "instagram: (Worldwide)": "67"
+      },
+      "123": {
+        "Week": "12.04.15",
+        "snapchat: (Worldwide)": "14",
+        "instagram: (Worldwide)": "65"
+      },
+      "124": {
+        "Week": "19.04.15",
+        "snapchat: (Worldwide)": "12",
+        "instagram: (Worldwide)": "64"
+      },
+      "125": {
+        "Week": "26.04.15",
+        "snapchat: (Worldwide)": "12",
+        "instagram: (Worldwide)": "65"
+      },
+      "126": {
+        "Week": "03.05.15",
+        "snapchat: (Worldwide)": "11",
+        "instagram: (Worldwide)": "64"
+      },
+      "127": {
+        "Week": "10.05.15",
+        "snapchat: (Worldwide)": "11",
+        "instagram: (Worldwide)": "63"
+      },
+      "128": {
+        "Week": "17.05.15",
+        "snapchat: (Worldwide)": "11",
+        "instagram: (Worldwide)": "64"
+      },
+      "129": {
+        "Week": "24.05.15",
+        "snapchat: (Worldwide)": "11",
+        "instagram: (Worldwide)": "65"
+      },
+      "130": {
+        "Week": "31.05.15",
+        "snapchat: (Worldwide)": "11",
+        "instagram: (Worldwide)": "67"
+      },
+      "131": {
+        "Week": "07.06.15",
+        "snapchat: (Worldwide)": "13",
+        "instagram: (Worldwide)": "68"
+      },
+      "132": {
+        "Week": "14.06.15",
+        "snapchat: (Worldwide)": "12",
+        "instagram: (Worldwide)": "66"
+      },
+      "133": {
+        "Week": "21.06.15",
+        "snapchat: (Worldwide)": "12",
+        "instagram: (Worldwide)": "69"
+      },
+      "134": {
+        "Week": "28.06.15",
+        "snapchat: (Worldwide)": "12",
+        "instagram: (Worldwide)": "68"
+      },
+      "135": {
+        "Week": "05.07.15",
+        "snapchat: (Worldwide)": "12",
+        "instagram: (Worldwide)": "71"
+      },
+      "136": {
+        "Week": "12.07.15",
+        "snapchat: (Worldwide)": "12",
+        "instagram: (Worldwide)": "72"
+      },
+      "137": {
+        "Week": "19.07.15",
+        "snapchat: (Worldwide)": "13",
+        "instagram: (Worldwide)": "72"
+      },
+      "138": {
+        "Week": "26.07.15",
+        "snapchat: (Worldwide)": "12",
+        "instagram: (Worldwide)": "71"
+      },
+      "139": {
+        "Week": "02.08.15",
+        "snapchat: (Worldwide)": "13",
+        "instagram: (Worldwide)": "71"
+      },
+      "140": {
+        "Week": "09.08.15",
+        "snapchat: (Worldwide)": "12",
+        "instagram: (Worldwide)": "72"
+      },
+      "141": {
+        "Week": "16.08.15",
+        "snapchat: (Worldwide)": "12",
+        "instagram: (Worldwide)": "71"
+      },
+      "142": {
+        "Week": "23.08.15",
+        "snapchat: (Worldwide)": "11",
+        "instagram: (Worldwide)": "71"
+      },
+      "143": {
+        "Week": "30.08.15",
+        "snapchat: (Worldwide)": "11",
+        "instagram: (Worldwide)": "72"
+      },
+      "144": {
+        "Week": "06.09.15",
+        "snapchat: (Worldwide)": "11",
+        "instagram: (Worldwide)": "69"
+      },
+      "145": {
+        "Week": "13.09.15",
+        "snapchat: (Worldwide)": "32",
+        "instagram: (Worldwide)": "68"
+      },
+      "146": {
+        "Week": "20.09.15",
+        "snapchat: (Worldwide)": "20",
+        "instagram: (Worldwide)": "68"
+      },
+      "147": {
+        "Week": "27.09.15",
+        "snapchat: (Worldwide)": "23",
+        "instagram: (Worldwide)": "68"
+      },
+      "148": {
+        "Week": "04.10.15",
+        "snapchat: (Worldwide)": "15",
+        "instagram: (Worldwide)": "67"
+      },
+      "149": {
+        "Week": "11.10.15",
+        "snapchat: (Worldwide)": "14",
+        "instagram: (Worldwide)": "70"
+      },
+      "150": {
+        "Week": "18.10.15",
+        "snapchat: (Worldwide)": "13",
+        "instagram: (Worldwide)": "68"
+      },
+      "151": {
+        "Week": "25.10.15",
+        "snapchat: (Worldwide)": "16",
+        "instagram: (Worldwide)": "67"
+      },
+      "152": {
+        "Week": "01.11.15",
+        "snapchat: (Worldwide)": "14",
+        "instagram: (Worldwide)": "69"
+      },
+      "153": {
+        "Week": "08.11.15",
+        "snapchat: (Worldwide)": "14",
+        "instagram: (Worldwide)": "68"
+      },
+      "154": {
+        "Week": "15.11.15",
+        "snapchat: (Worldwide)": "12",
+        "instagram: (Worldwide)": "67"
+      },
+      "155": {
+        "Week": "22.11.15",
+        "snapchat: (Worldwide)": "12",
+        "instagram: (Worldwide)": "67"
+      },
+      "156": {
+        "Week": "29.11.15",
+        "snapchat: (Worldwide)": "12",
+        "instagram: (Worldwide)": "71"
+      },
+      "157": {
+        "Week": "06.12.15",
+        "snapchat: (Worldwide)": "14",
+        "instagram: (Worldwide)": "70"
+      },
+      "158": {
+        "Week": "13.12.15",
+        "snapchat: (Worldwide)": "13",
+        "instagram: (Worldwide)": "70"
+      },
+      "159": {
+        "Week": "20.12.15",
+        "snapchat: (Worldwide)": "16",
+        "instagram: (Worldwide)": "75"
+      },
+      "160": {
+        "Week": "27.12.15",
+        "snapchat: (Worldwide)": "16",
+        "instagram: (Worldwide)": "92"
+      },
+      "161": {
+        "Week": "03.01.16",
+        "snapchat: (Worldwide)": "14",
+        "instagram: (Worldwide)": "74"
+      },
+      "162": {
+        "Week": "10.01.16",
+        "snapchat: (Worldwide)": "12",
+        "instagram: (Worldwide)": "67"
+      },
+      "163": {
+        "Week": "17.01.16",
+        "snapchat: (Worldwide)": "13",
+        "instagram: (Worldwide)": "71"
+      },
+      "164": {
+        "Week": "24.01.16",
+        "snapchat: (Worldwide)": "13",
+        "instagram: (Worldwide)": "69"
+      },
+      "165": {
+        "Week": "31.01.16",
+        "snapchat: (Worldwide)": "14",
+        "instagram: (Worldwide)": "70"
+      },
+      "166": {
+        "Week": "07.02.16",
+        "snapchat: (Worldwide)": "15",
+        "instagram: (Worldwide)": "72"
+      },
+      "167": {
+        "Week": "14.02.16",
+        "snapchat: (Worldwide)": "15",
+        "instagram: (Worldwide)": "73"
+      },
+      "168": {
+        "Week": "21.02.16",
+        "snapchat: (Worldwide)": "15",
+        "instagram: (Worldwide)": "71"
+      },
+      "169": {
+        "Week": "28.02.16",
+        "snapchat: (Worldwide)": "16",
+        "instagram: (Worldwide)": "69"
+      },
+      "170": {
+        "Week": "06.03.16",
+        "snapchat: (Worldwide)": "16",
+        "instagram: (Worldwide)": "71"
+      },
+      "171": {
+        "Week": "13.03.16",
+        "snapchat: (Worldwide)": "17",
+        "instagram: (Worldwide)": "69"
+      },
+      "172": {
+        "Week": "20.03.16",
+        "snapchat: (Worldwide)": "17",
+        "instagram: (Worldwide)": "73"
+      },
+      "173": {
+        "Week": "27.03.16",
+        "snapchat: (Worldwide)": "21",
+        "instagram: (Worldwide)": "83"
+      },
+      "174": {
+        "Week": "03.04.16",
+        "snapchat: (Worldwide)": "17",
+        "instagram: (Worldwide)": "74"
+      },
+      "175": {
+        "Week": "10.04.16",
+        "snapchat: (Worldwide)": "17",
+        "instagram: (Worldwide)": "73"
+      },
+      "176": {
+        "Week": "17.04.16",
+        "snapchat: (Worldwide)": "18",
+        "instagram: (Worldwide)": "74"
+      },
+      "177": {
+        "Week": "24.04.16",
+        "snapchat: (Worldwide)": "18",
+        "instagram: (Worldwide)": "74"
+      },
+      "178": {
+        "Week": "01.05.16",
+        "snapchat: (Worldwide)": "17",
+        "instagram: (Worldwide)": "75"
+      },
+      "179": {
+        "Week": "08.05.16",
+        "snapchat: (Worldwide)": "17",
+        "instagram: (Worldwide)": "78"
+      },
+      "180": {
+        "Week": "15.05.16",
+        "snapchat: (Worldwide)": "17",
+        "instagram: (Worldwide)": "78"
+      },
+      "181": {
+        "Week": "22.05.16",
+        "snapchat: (Worldwide)": "18",
+        "instagram: (Worldwide)": "78"
+      },
+      "182": {
+        "Week": "29.05.16",
+        "snapchat: (Worldwide)": "18",
+        "instagram: (Worldwide)": "80"
+      },
+      "183": {
+        "Week": "05.06.16",
+        "snapchat: (Worldwide)": "17",
+        "instagram: (Worldwide)": "80"
+      },
+      "184": {
+        "Week": "12.06.16",
+        "snapchat: (Worldwide)": "17",
+        "instagram: (Worldwide)": "80"
+      },
+      "185": {
+        "Week": "19.06.16",
+        "snapchat: (Worldwide)": "18",
+        "instagram: (Worldwide)": "82"
+      },
+      "186": {
+        "Week": "26.06.16",
+        "snapchat: (Worldwide)": "17",
+        "instagram: (Worldwide)": "81"
+      },
+      "187": {
+        "Week": "03.07.16",
+        "snapchat: (Worldwide)": "19",
+        "instagram: (Worldwide)": "84"
+      },
+      "188": {
+        "Week": "10.07.16",
+        "snapchat: (Worldwide)": "18",
+        "instagram: (Worldwide)": "83"
+      },
+      "189": {
+        "Week": "17.07.16",
+        "snapchat: (Worldwide)": "20",
+        "instagram: (Worldwide)": "86"
+      },
+      "190": {
+        "Week": "24.07.16",
+        "snapchat: (Worldwide)": "18",
+        "instagram: (Worldwide)": "88"
+      },
+      "191": {
+        "Week": "31.07.16",
+        "snapchat: (Worldwide)": "21",
+        "instagram: (Worldwide)": "88"
+      },
+      "192": {
+        "Week": "07.08.16",
+        "snapchat: (Worldwide)": "16",
+        "instagram: (Worldwide)": "82"
+      },
+      "193": {
+        "Week": "14.08.16",
+        "snapchat: (Worldwide)": "17",
+        "instagram: (Worldwide)": "83"
+      },
+      "194": {
+        "Week": "21.08.16",
+        "snapchat: (Worldwide)": "15",
+        "instagram: (Worldwide)": "83"
+      },
+      "195": {
+        "Week": "28.08.16",
+        "snapchat: (Worldwide)": "15",
+        "instagram: (Worldwide)": "84"
+      },
+      "196": {
+        "Week": "04.09.16",
+        "snapchat: (Worldwide)": "15",
+        "instagram: (Worldwide)": "81"
+      },
+      "197": {
+        "Week": "11.09.16",
+        "snapchat: (Worldwide)": "14",
+        "instagram: (Worldwide)": "83"
+      },
+      "198": {
+        "Week": "18.09.16",
+        "snapchat: (Worldwide)": "13",
+        "instagram: (Worldwide)": "78"
+      },
+      "199": {
+        "Week": "25.09.16",
+        "snapchat: (Worldwide)": "14",
+        "instagram: (Worldwide)": "78"
+      },
+      "200": {
+        "Week": "02.10.16",
+        "snapchat: (Worldwide)": "13",
+        "instagram: (Worldwide)": "78"
+      },
+      "201": {
+        "Week": "09.10.16",
+        "snapchat: (Worldwide)": "14",
+        "instagram: (Worldwide)": "80"
+      },
+      "202": {
+        "Week": "16.10.16",
+        "snapchat: (Worldwide)": "13",
+        "instagram: (Worldwide)": "78"
+      },
+      "203": {
+        "Week": "23.10.16",
+        "snapchat: (Worldwide)": "14",
+        "instagram: (Worldwide)": "80"
+      },
+      "204": {
+        "Week": "30.10.16",
+        "snapchat: (Worldwide)": "13",
+        "instagram: (Worldwide)": "83"
+      },
+      "205": {
+        "Week": "06.11.16",
+        "snapchat: (Worldwide)": "14",
+        "instagram: (Worldwide)": "77"
+      },
+      "206": {
+        "Week": "13.11.16",
+        "snapchat: (Worldwide)": "13",
+        "instagram: (Worldwide)": "81"
+      },
+      "207": {
+        "Week": "20.11.16",
+        "snapchat: (Worldwide)": "13",
+        "instagram: (Worldwide)": "82"
+      },
+      "208": {
+        "Week": "27.11.16",
+        "snapchat: (Worldwide)": "13",
+        "instagram: (Worldwide)": "82"
+      },
+      "209": {
+        "Week": "04.12.16",
+        "snapchat: (Worldwide)": "13",
+        "instagram: (Worldwide)": "83"
+      },
+      "210": {
+        "Week": "11.12.16",
+        "snapchat: (Worldwide)": "13",
+        "instagram: (Worldwide)": "84"
+      },
+      "211": {
+        "Week": "18.12.16",
+        "snapchat: (Worldwide)": "14",
+        "instagram: (Worldwide)": "88"
+      },
+      "212": {
+        "Week": "25.12.16",
+        "snapchat: (Worldwide)": "18",
+        "instagram: (Worldwide)": "97"
+      },
+      "213": {
+        "Week": "01.01.17",
+        "snapchat: (Worldwide)": "15",
+        "instagram: (Worldwide)": "95"
+      },
+      "214": {
+        "Week": "08.01.17",
+        "snapchat: (Worldwide)": "13",
+        "instagram: (Worldwide)": "87"
+      },
+      "215": {
+        "Week": "15.01.17",
+        "snapchat: (Worldwide)": "13",
+        "instagram: (Worldwide)": "86"
+      },
+      "216": {
+        "Week": "22.01.17",
+        "snapchat: (Worldwide)": "13",
+        "instagram: (Worldwide)": "88"
+      },
+      "217": {
+        "Week": "29.01.17",
+        "snapchat: (Worldwide)": "14",
+        "instagram: (Worldwide)": "90"
+      },
+      "218": {
+        "Week": "05.02.17",
+        "snapchat: (Worldwide)": "13",
+        "instagram: (Worldwide)": "89"
+      },
+      "219": {
+        "Week": "12.02.17",
+        "snapchat: (Worldwide)": "13",
+        "instagram: (Worldwide)": "89"
+      },
+      "220": {
+        "Week": "19.02.17",
+        "snapchat: (Worldwide)": "14",
+        "instagram: (Worldwide)": "92"
+      },
+      "221": {
+        "Week": "26.02.17",
+        "snapchat: (Worldwide)": "17",
+        "instagram: (Worldwide)": "91"
+      },
+      "222": {
+        "Week": "05.03.17",
+        "snapchat: (Worldwide)": "14",
+        "instagram: (Worldwide)": "89"
+      },
+      "223": {
+        "Week": "12.03.17",
+        "snapchat: (Worldwide)": "13",
+        "instagram: (Worldwide)": "89"
+      },
+      "224": {
+        "Week": "19.03.17",
+        "snapchat: (Worldwide)": "13",
+        "instagram: (Worldwide)": "89"
+      },
+      "225": {
+        "Week": "26.03.17",
+        "snapchat: (Worldwide)": "13",
+        "instagram: (Worldwide)": "89"
+      },
+      "226": {
+        "Week": "02.04.17",
+        "snapchat: (Worldwide)": "13",
+        "instagram: (Worldwide)": "89"
+      },
+      "227": {
+        "Week": "09.04.17",
+        "snapchat: (Worldwide)": "13",
+        "instagram: (Worldwide)": "92"
+      },
+      "228": {
+        "Week": "16.04.17",
+        "snapchat: (Worldwide)": "16",
+        "instagram: (Worldwide)": "94"
+      },
+      "229": {
+        "Week": "23.04.17",
+        "snapchat: (Worldwide)": "13",
+        "instagram: (Worldwide)": "92"
+      },
+      "230": {
+        "Week": "30.04.17",
+        "snapchat: (Worldwide)": "13",
+        "instagram: (Worldwide)": "93"
+      },
+      "231": {
+        "Week": "07.05.17",
+        "snapchat: (Worldwide)": "13",
+        "instagram: (Worldwide)": "91"
+      },
+      "232": {
+        "Week": "14.05.17",
+        "snapchat: (Worldwide)": "12",
+        "instagram: (Worldwide)": "92"
+      },
+      "233": {
+        "Week": "21.05.17",
+        "snapchat: (Worldwide)": "13",
+        "instagram: (Worldwide)": "90"
+      },
+      "234": {
+        "Week": "28.05.17",
+        "snapchat: (Worldwide)": "13",
+        "instagram: (Worldwide)": "93"
+      },
+      "235": {
+        "Week": "04.06.17",
+        "snapchat: (Worldwide)": "13",
+        "instagram: (Worldwide)": "92"
+      },
+      "236": {
+        "Week": "11.06.17",
+        "snapchat: (Worldwide)": "13",
+        "instagram: (Worldwide)": "94"
+      },
+      "237": {
+        "Week": "18.06.17",
+        "snapchat: (Worldwide)": "19",
+        "instagram: (Worldwide)": "94"
+      },
+      "238": {
+        "Week": "25.06.17",
+        "snapchat: (Worldwide)": "19",
+        "instagram: (Worldwide)": "95"
+      },
+      "239": {
+        "Week": "02.07.17",
+        "snapchat: (Worldwide)": "16",
+        "instagram: (Worldwide)": "98"
+      },
+      "240": {
+        "Week": "09.07.17",
+        "snapchat: (Worldwide)": "16",
+        "instagram: (Worldwide)": "98"
+      },
+      "241": {
+        "Week": "16.07.17",
+        "snapchat: (Worldwide)": "16",
+        "instagram: (Worldwide)": "97"
+      },
+      "242": {
+        "Week": "23.07.17",
+        "snapchat: (Worldwide)": "16",
+        "instagram: (Worldwide)": "98"
+      },
+      "243": {
+        "Week": "30.07.17",
+        "snapchat: (Worldwide)": "14",
+        "instagram: (Worldwide)": "100"
+      },
+      "244": {
+        "Week": "06.08.17",
+        "snapchat: (Worldwide)": "14",
+        "instagram: (Worldwide)": "98"
+      },
+      "245": {
+        "Week": "13.08.17",
+        "snapchat: (Worldwide)": "13",
+        "instagram: (Worldwide)": "98"
+      },
+      "246": {
+        "Week": "20.08.17",
+        "snapchat: (Worldwide)": "12",
+        "instagram: (Worldwide)": "98"
+      },
+      "247": {
+        "Week": "27.08.17",
+        "snapchat: (Worldwide)": "13",
+        "instagram: (Worldwide)": "98"
+      },
+      "248": {
+        "Week": "03.09.17",
+        "snapchat: (Worldwide)": "12",
+        "instagram: (Worldwide)": "94"
+      },
+      "249": {
+        "Week": "10.09.17",
+        "snapchat: (Worldwide)": "12",
+        "instagram: (Worldwide)": "93"
+      },
+      "250": {
+        "Week": "17.09.17",
+        "snapchat: (Worldwide)": "12",
+        "instagram: (Worldwide)": "94"
+      },
+      "251": {
+        "Week": "24.09.17",
+        "snapchat: (Worldwide)": "12",
+        "instagram: (Worldwide)": "93"
+      },
+      "252": {
+        "Week": "01.10.17",
+        "snapchat: (Worldwide)": "12",
+        "instagram: (Worldwide)": "92"
+      },
+      "253": {
+        "Week": "08.10.17",
+        "snapchat: (Worldwide)": "12",
+        "instagram: (Worldwide)": "94"
+      },
+      "254": {
+        "Week": "15.10.17",
+        "snapchat: (Worldwide)": "11",
+        "instagram: (Worldwide)": "93"
+      },
+      "255": {
+        "Week": "22.10.17",
+        "snapchat: (Worldwide)": "12",
+        "instagram: (Worldwide)": "92"
+      },
+      "256": {
+        "Week": "29.10.17",
+        "snapchat: (Worldwide)": "12",
+        "instagram: (Worldwide)": "95"
+      },
+      "257": {
+        "Week": "05.11.17",
+        "snapchat: (Worldwide)": "20",
+        "instagram: (Worldwide)": "94"
+      },
+      "258": {
+        "Week": "12.11.17",
+        "snapchat: (Worldwide)": "12",
+        "instagram: (Worldwide)": "93"
+      },
+      "259": {
+        "Week": "19.11.17",
+        "snapchat: (Worldwide)": "12",
+        "instagram: (Worldwide)": "95"
+      },
+      "260": {
+        "Week": "26.11.17",
+        "snapchat: (Worldwide)": "12",
+        "instagram: (Worldwide)": "97"
+      }
+    },
+    "header": {
+      "Week": "Date(%d.%m.%y)",
+      "snapchat: (Worldwide)": "Numerical",
+      "instagram: (Worldwide)": "Numerical"
+    },
+    "author_id": 2
+  },
+  {
+    "title": "Ruby on rails versus Node JS",
+    "file_name": "search_ruby_on_rails_node_js.csv",
+    "rows": {
+      "0": {
+        "Week": "02.12.12",
+        "node js: (Worldwide)": "15",
+        "ruby on rails: (Worldwide)": "32"
+      },
+      "1": {
+        "Week": "09.12.12",
+        "node js: (Worldwide)": "15",
+        "ruby on rails: (Worldwide)": "31"
+      },
+      "2": {
+        "Week": "16.12.12",
+        "node js: (Worldwide)": "15",
+        "ruby on rails: (Worldwide)": "29"
+      },
+      "3": {
+        "Week": "23.12.12",
+        "node js: (Worldwide)": "11",
+        "ruby on rails: (Worldwide)": "24"
+      },
+      "4": {
+        "Week": "30.12.12",
+        "node js: (Worldwide)": "13",
+        "ruby on rails: (Worldwide)": "28"
+      },
+      "5": {
+        "Week": "06.01.13",
+        "node js: (Worldwide)": "15",
+        "ruby on rails: (Worldwide)": "38"
+      },
+      "6": {
+        "Week": "13.01.13",
+        "node js: (Worldwide)": "15",
+        "ruby on rails: (Worldwide)": "34"
+      },
+      "7": {
+        "Week": "20.01.13",
+        "node js: (Worldwide)": "15",
+        "ruby on rails: (Worldwide)": "33"
+      },
+      "8": {
+        "Week": "27.01.13",
+        "node js: (Worldwide)": "16",
+        "ruby on rails: (Worldwide)": "34"
+      },
+      "9": {
+        "Week": "03.02.13",
+        "node js: (Worldwide)": "16",
+        "ruby on rails: (Worldwide)": "33"
+      },
+      "10": {
+        "Week": "10.02.13",
+        "node js: (Worldwide)": "17",
+        "ruby on rails: (Worldwide)": "32"
+      },
+      "11": {
+        "Week": "17.02.13",
+        "node js: (Worldwide)": "18",
+        "ruby on rails: (Worldwide)": "32"
+      },
+      "12": {
+        "Week": "24.02.13",
+        "node js: (Worldwide)": "17",
+        "ruby on rails: (Worldwide)": "36"
+      },
+      "13": {
+        "Week": "03.03.13",
+        "node js: (Worldwide)": "18",
+        "ruby on rails: (Worldwide)": "35"
+      },
+      "14": {
+        "Week": "10.03.13",
+        "node js: (Worldwide)": "20",
+        "ruby on rails: (Worldwide)": "33"
+      },
+      "15": {
+        "Week": "17.03.13",
+        "node js: (Worldwide)": "20",
+        "ruby on rails: (Worldwide)": "35"
+      },
+      "16": {
+        "Week": "24.03.13",
+        "node js: (Worldwide)": "20",
+        "ruby on rails: (Worldwide)": "31"
+      },
+      "17": {
+        "Week": "31.03.13",
+        "node js: (Worldwide)": "19",
+        "ruby on rails: (Worldwide)": "34"
+      },
+      "18": {
+        "Week": "07.04.13",
+        "node js: (Worldwide)": "20",
+        "ruby on rails: (Worldwide)": "36"
+      },
+      "19": {
+        "Week": "14.04.13",
+        "node js: (Worldwide)": "19",
+        "ruby on rails: (Worldwide)": "35"
+      },
+      "20": {
+        "Week": "21.04.13",
+        "node js: (Worldwide)": "19",
+        "ruby on rails: (Worldwide)": "32"
+      },
+      "21": {
+        "Week": "28.04.13",
+        "node js: (Worldwide)": "18",
+        "ruby on rails: (Worldwide)": "32"
+      },
+      "22": {
+        "Week": "05.05.13",
+        "node js: (Worldwide)": "18",
+        "ruby on rails: (Worldwide)": "32"
+      },
+      "23": {
+        "Week": "12.05.13",
+        "node js: (Worldwide)": "21",
+        "ruby on rails: (Worldwide)": "33"
+      },
+      "24": {
+        "Week": "19.05.13",
+        "node js: (Worldwide)": "20",
+        "ruby on rails: (Worldwide)": "32"
+      },
+      "25": {
+        "Week": "26.05.13",
+        "node js: (Worldwide)": "19",
+        "ruby on rails: (Worldwide)": "33"
+      },
+      "26": {
+        "Week": "02.06.13",
+        "node js: (Worldwide)": "20",
+        "ruby on rails: (Worldwide)": "33"
+      },
+      "27": {
+        "Week": "09.06.13",
+        "node js: (Worldwide)": "20",
+        "ruby on rails: (Worldwide)": "32"
+      },
+      "28": {
+        "Week": "16.06.13",
+        "node js: (Worldwide)": "22",
+        "ruby on rails: (Worldwide)": "32"
+      },
+      "29": {
+        "Week": "23.06.13",
+        "node js: (Worldwide)": "23",
+        "ruby on rails: (Worldwide)": "35"
+      },
+      "30": {
+        "Week": "30.06.13",
+        "node js: (Worldwide)": "22",
+        "ruby on rails: (Worldwide)": "31"
+      },
+      "31": {
+        "Week": "07.07.13",
+        "node js: (Worldwide)": "25",
+        "ruby on rails: (Worldwide)": "31"
+      },
+      "32": {
+        "Week": "14.07.13",
+        "node js: (Worldwide)": "24",
+        "ruby on rails: (Worldwide)": "33"
+      },
+      "33": {
+        "Week": "21.07.13",
+        "node js: (Worldwide)": "20",
+        "ruby on rails: (Worldwide)": "33"
+      },
+      "34": {
+        "Week": "28.07.13",
+        "node js: (Worldwide)": "21",
+        "ruby on rails: (Worldwide)": "32"
+      },
+      "35": {
+        "Week": "04.08.13",
+        "node js: (Worldwide)": "24",
+        "ruby on rails: (Worldwide)": "32"
+      },
+      "36": {
+        "Week": "11.08.13",
+        "node js: (Worldwide)": "22",
+        "ruby on rails: (Worldwide)": "30"
+      },
+      "37": {
+        "Week": "18.08.13",
+        "node js: (Worldwide)": "23",
+        "ruby on rails: (Worldwide)": "30"
+      },
+      "38": {
+        "Week": "25.08.13",
+        "node js: (Worldwide)": "23",
+        "ruby on rails: (Worldwide)": "29"
+      },
+      "39": {
+        "Week": "01.09.13",
+        "node js: (Worldwide)": "23",
+        "ruby on rails: (Worldwide)": "30"
+      },
+      "40": {
+        "Week": "08.09.13",
+        "node js: (Worldwide)": "23",
+        "ruby on rails: (Worldwide)": "30"
+      },
+      "41": {
+        "Week": "15.09.13",
+        "node js: (Worldwide)": "22",
+        "ruby on rails: (Worldwide)": "28"
+      },
+      "42": {
+        "Week": "22.09.13",
+        "node js: (Worldwide)": "22",
+        "ruby on rails: (Worldwide)": "31"
+      },
+      "43": {
+        "Week": "29.09.13",
+        "node js: (Worldwide)": "22",
+        "ruby on rails: (Worldwide)": "29"
+      },
+      "44": {
+        "Week": "06.10.13",
+        "node js: (Worldwide)": "26",
+        "ruby on rails: (Worldwide)": "31"
+      },
+      "45": {
+        "Week": "13.10.13",
+        "node js: (Worldwide)": "26",
+        "ruby on rails: (Worldwide)": "30"
+      },
+      "46": {
+        "Week": "20.10.13",
+        "node js: (Worldwide)": "27",
+        "ruby on rails: (Worldwide)": "32"
+      },
+      "47": {
+        "Week": "27.10.13",
+        "node js: (Worldwide)": "27",
+        "ruby on rails: (Worldwide)": "29"
+      },
+      "48": {
+        "Week": "03.11.13",
+        "node js: (Worldwide)": "27",
+        "ruby on rails: (Worldwide)": "30"
+      },
+      "49": {
+        "Week": "10.11.13",
+        "node js: (Worldwide)": "28",
+        "ruby on rails: (Worldwide)": "32"
+      },
+      "50": {
+        "Week": "17.11.13",
+        "node js: (Worldwide)": "28",
+        "ruby on rails: (Worldwide)": "30"
+      },
+      "51": {
+        "Week": "24.11.13",
+        "node js: (Worldwide)": "29",
+        "ruby on rails: (Worldwide)": "27"
+      },
+      "52": {
+        "Week": "01.12.13",
+        "node js: (Worldwide)": "28",
+        "ruby on rails: (Worldwide)": "28"
+      },
+      "53": {
+        "Week": "08.12.13",
+        "node js: (Worldwide)": "29",
+        "ruby on rails: (Worldwide)": "29"
+      },
+      "54": {
+        "Week": "15.12.13",
+        "node js: (Worldwide)": "33",
+        "ruby on rails: (Worldwide)": "29"
+      },
+      "55": {
+        "Week": "22.12.13",
+        "node js: (Worldwide)": "25",
+        "ruby on rails: (Worldwide)": "23"
+      },
+      "56": {
+        "Week": "29.12.13",
+        "node js: (Worldwide)": "23",
+        "ruby on rails: (Worldwide)": "22"
+      },
+      "57": {
+        "Week": "05.01.14",
+        "node js: (Worldwide)": "31",
+        "ruby on rails: (Worldwide)": "29"
+      },
+      "58": {
+        "Week": "12.01.14",
+        "node js: (Worldwide)": "31",
+        "ruby on rails: (Worldwide)": "28"
+      },
+      "59": {
+        "Week": "19.01.14",
+        "node js: (Worldwide)": "31",
+        "ruby on rails: (Worldwide)": "29"
+      },
+      "60": {
+        "Week": "26.01.14",
+        "node js: (Worldwide)": "32",
+        "ruby on rails: (Worldwide)": "30"
+      },
+      "61": {
+        "Week": "02.02.14",
+        "node js: (Worldwide)": "30",
+        "ruby on rails: (Worldwide)": "30"
+      },
+      "62": {
+        "Week": "09.02.14",
+        "node js: (Worldwide)": "31",
+        "ruby on rails: (Worldwide)": "28"
+      },
+      "63": {
+        "Week": "16.02.14",
+        "node js: (Worldwide)": "35",
+        "ruby on rails: (Worldwide)": "31"
+      },
+      "64": {
+        "Week": "23.02.14",
+        "node js: (Worldwide)": "35",
+        "ruby on rails: (Worldwide)": "31"
+      },
+      "65": {
+        "Week": "02.03.14",
+        "node js: (Worldwide)": "34",
+        "ruby on rails: (Worldwide)": "31"
+      },
+      "66": {
+        "Week": "09.03.14",
+        "node js: (Worldwide)": "36",
+        "ruby on rails: (Worldwide)": "31"
+      },
+      "67": {
+        "Week": "16.03.14",
+        "node js: (Worldwide)": "35",
+        "ruby on rails: (Worldwide)": "29"
+      },
+      "68": {
+        "Week": "23.03.14",
+        "node js: (Worldwide)": "36",
+        "ruby on rails: (Worldwide)": "31"
+      },
+      "69": {
+        "Week": "30.03.14",
+        "node js: (Worldwide)": "37",
+        "ruby on rails: (Worldwide)": "32"
+      },
+      "70": {
+        "Week": "06.04.14",
+        "node js: (Worldwide)": "37",
+        "ruby on rails: (Worldwide)": "31"
+      },
+      "71": {
+        "Week": "13.04.14",
+        "node js: (Worldwide)": "36",
+        "ruby on rails: (Worldwide)": "30"
+      },
+      "72": {
+        "Week": "20.04.14",
+        "node js: (Worldwide)": "37",
+        "ruby on rails: (Worldwide)": "30"
+      },
+      "73": {
+        "Week": "27.04.14",
+        "node js: (Worldwide)": "36",
+        "ruby on rails: (Worldwide)": "28"
+      },
+      "74": {
+        "Week": "04.05.14",
+        "node js: (Worldwide)": "37",
+        "ruby on rails: (Worldwide)": "29"
+      },
+      "75": {
+        "Week": "11.05.14",
+        "node js: (Worldwide)": "36",
+        "ruby on rails: (Worldwide)": "31"
+      },
+      "76": {
+        "Week": "18.05.14",
+        "node js: (Worldwide)": "36",
+        "ruby on rails: (Worldwide)": "30"
+      },
+      "77": {
+        "Week": "25.05.14",
+        "node js: (Worldwide)": "32",
+        "ruby on rails: (Worldwide)": "29"
+      },
+      "78": {
+        "Week": "01.06.14",
+        "node js: (Worldwide)": "34",
+        "ruby on rails: (Worldwide)": "30"
+      },
+      "79": {
+        "Week": "08.06.14",
+        "node js: (Worldwide)": "34",
+        "ruby on rails: (Worldwide)": "28"
+      },
+      "80": {
+        "Week": "15.06.14",
+        "node js: (Worldwide)": "35",
+        "ruby on rails: (Worldwide)": "28"
+      },
+      "81": {
+        "Week": "22.06.14",
+        "node js: (Worldwide)": "36",
+        "ruby on rails: (Worldwide)": "29"
+      },
+      "82": {
+        "Week": "29.06.14",
+        "node js: (Worldwide)": "34",
+        "ruby on rails: (Worldwide)": "27"
+      },
+      "83": {
+        "Week": "06.07.14",
+        "node js: (Worldwide)": "35",
+        "ruby on rails: (Worldwide)": "28"
+      },
+      "84": {
+        "Week": "13.07.14",
+        "node js: (Worldwide)": "36",
+        "ruby on rails: (Worldwide)": "29"
+      },
+      "85": {
+        "Week": "20.07.14",
+        "node js: (Worldwide)": "36",
+        "ruby on rails: (Worldwide)": "29"
+      },
+      "86": {
+        "Week": "27.07.14",
+        "node js: (Worldwide)": "36",
+        "ruby on rails: (Worldwide)": "28"
+      },
+      "87": {
+        "Week": "03.08.14",
+        "node js: (Worldwide)": "38",
+        "ruby on rails: (Worldwide)": "44"
+      },
+      "88": {
+        "Week": "10.08.14",
+        "node js: (Worldwide)": "36",
+        "ruby on rails: (Worldwide)": "31"
+      },
+      "89": {
+        "Week": "17.08.14",
+        "node js: (Worldwide)": "37",
+        "ruby on rails: (Worldwide)": "30"
+      },
+      "90": {
+        "Week": "24.08.14",
+        "node js: (Worldwide)": "34",
+        "ruby on rails: (Worldwide)": "29"
+      },
+      "91": {
+        "Week": "31.08.14",
+        "node js: (Worldwide)": "37",
+        "ruby on rails: (Worldwide)": "27"
+      },
+      "92": {
+        "Week": "07.09.14",
+        "node js: (Worldwide)": "36",
+        "ruby on rails: (Worldwide)": "28"
+      },
+      "93": {
+        "Week": "14.09.14",
+        "node js: (Worldwide)": "37",
+        "ruby on rails: (Worldwide)": "29"
+      },
+      "94": {
+        "Week": "21.09.14",
+        "node js: (Worldwide)": "38",
+        "ruby on rails: (Worldwide)": "28"
+      },
+      "95": {
+        "Week": "28.09.14",
+        "node js: (Worldwide)": "38",
+        "ruby on rails: (Worldwide)": "27"
+      },
+      "96": {
+        "Week": "05.10.14",
+        "node js: (Worldwide)": "38",
+        "ruby on rails: (Worldwide)": "28"
+      },
+      "97": {
+        "Week": "12.10.14",
+        "node js: (Worldwide)": "38",
+        "ruby on rails: (Worldwide)": "28"
+      },
+      "98": {
+        "Week": "19.10.14",
+        "node js: (Worldwide)": "38",
+        "ruby on rails: (Worldwide)": "28"
+      },
+      "99": {
+        "Week": "26.10.14",
+        "node js: (Worldwide)": "38",
+        "ruby on rails: (Worldwide)": "26"
+      },
+      "100": {
+        "Week": "02.11.14",
+        "node js: (Worldwide)": "40",
+        "ruby on rails: (Worldwide)": "29"
+      },
+      "101": {
+        "Week": "09.11.14",
+        "node js: (Worldwide)": "40",
+        "ruby on rails: (Worldwide)": "28"
+      },
+      "102": {
+        "Week": "16.11.14",
+        "node js: (Worldwide)": "40",
+        "ruby on rails: (Worldwide)": "36"
+      },
+      "103": {
+        "Week": "23.11.14",
+        "node js: (Worldwide)": "37",
+        "ruby on rails: (Worldwide)": "41"
+      },
+      "104": {
+        "Week": "30.11.14",
+        "node js: (Worldwide)": "42",
+        "ruby on rails: (Worldwide)": "33"
+      },
+      "105": {
+        "Week": "07.12.14",
+        "node js: (Worldwide)": "40",
+        "ruby on rails: (Worldwide)": "29"
+      },
+      "106": {
+        "Week": "14.12.14",
+        "node js: (Worldwide)": "41",
+        "ruby on rails: (Worldwide)": "29"
+      },
+      "107": {
+        "Week": "21.12.14",
+        "node js: (Worldwide)": "34",
+        "ruby on rails: (Worldwide)": "23"
+      },
+      "108": {
+        "Week": "28.12.14",
+        "node js: (Worldwide)": "31",
+        "ruby on rails: (Worldwide)": "25"
+      },
+      "109": {
+        "Week": "04.01.15",
+        "node js: (Worldwide)": "38",
+        "ruby on rails: (Worldwide)": "28"
+      },
+      "110": {
+        "Week": "11.01.15",
+        "node js: (Worldwide)": "40",
+        "ruby on rails: (Worldwide)": "27"
+      },
+      "111": {
+        "Week": "18.01.15",
+        "node js: (Worldwide)": "41",
+        "ruby on rails: (Worldwide)": "29"
+      },
+      "112": {
+        "Week": "25.01.15",
+        "node js: (Worldwide)": "42",
+        "ruby on rails: (Worldwide)": "29"
+      },
+      "113": {
+        "Week": "01.02.15",
+        "node js: (Worldwide)": "43",
+        "ruby on rails: (Worldwide)": "30"
+      },
+      "114": {
+        "Week": "08.02.15",
+        "node js: (Worldwide)": "44",
+        "ruby on rails: (Worldwide)": "29"
+      },
+      "115": {
+        "Week": "15.02.15",
+        "node js: (Worldwide)": "44",
+        "ruby on rails: (Worldwide)": "30"
+      },
+      "116": {
+        "Week": "22.02.15",
+        "node js: (Worldwide)": "45",
+        "ruby on rails: (Worldwide)": "29"
+      },
+      "117": {
+        "Week": "01.03.15",
+        "node js: (Worldwide)": "44",
+        "ruby on rails: (Worldwide)": "29"
+      },
+      "118": {
+        "Week": "08.03.15",
+        "node js: (Worldwide)": "46",
+        "ruby on rails: (Worldwide)": "30"
+      },
+      "119": {
+        "Week": "15.03.15",
+        "node js: (Worldwide)": "49",
+        "ruby on rails: (Worldwide)": "29"
+      },
+      "120": {
+        "Week": "22.03.15",
+        "node js: (Worldwide)": "48",
+        "ruby on rails: (Worldwide)": "31"
+      },
+      "121": {
+        "Week": "29.03.15",
+        "node js: (Worldwide)": "46",
+        "ruby on rails: (Worldwide)": "28"
+      },
+      "122": {
+        "Week": "05.04.15",
+        "node js: (Worldwide)": "48",
+        "ruby on rails: (Worldwide)": "30"
+      },
+      "123": {
+        "Week": "12.04.15",
+        "node js: (Worldwide)": "48",
+        "ruby on rails: (Worldwide)": "30"
+      },
+      "124": {
+        "Week": "19.04.15",
+        "node js: (Worldwide)": "47",
+        "ruby on rails: (Worldwide)": "30"
+      },
+      "125": {
+        "Week": "26.04.15",
+        "node js: (Worldwide)": "46",
+        "ruby on rails: (Worldwide)": "30"
+      },
+      "126": {
+        "Week": "03.05.15",
+        "node js: (Worldwide)": "50",
+        "ruby on rails: (Worldwide)": "31"
+      },
+      "127": {
+        "Week": "10.05.15",
+        "node js: (Worldwide)": "50",
+        "ruby on rails: (Worldwide)": "28"
+      },
+      "128": {
+        "Week": "17.05.15",
+        "node js: (Worldwide)": "52",
+        "ruby on rails: (Worldwide)": "29"
+      },
+      "129": {
+        "Week": "24.05.15",
+        "node js: (Worldwide)": "47",
+        "ruby on rails: (Worldwide)": "30"
+      },
+      "130": {
+        "Week": "31.05.15",
+        "node js: (Worldwide)": "50",
+        "ruby on rails: (Worldwide)": "28"
+      },
+      "131": {
+        "Week": "07.06.15",
+        "node js: (Worldwide)": "51",
+        "ruby on rails: (Worldwide)": "28"
+      },
+      "132": {
+        "Week": "14.06.15",
+        "node js: (Worldwide)": "50",
+        "ruby on rails: (Worldwide)": "29"
+      },
+      "133": {
+        "Week": "21.06.15",
+        "node js: (Worldwide)": "51",
+        "ruby on rails: (Worldwide)": "29"
+      },
+      "134": {
+        "Week": "28.06.15",
+        "node js: (Worldwide)": "50",
+        "ruby on rails: (Worldwide)": "28"
+      },
+      "135": {
+        "Week": "05.07.15",
+        "node js: (Worldwide)": "52",
+        "ruby on rails: (Worldwide)": "28"
+      },
+      "136": {
+        "Week": "12.07.15",
+        "node js: (Worldwide)": "52",
+        "ruby on rails: (Worldwide)": "30"
+      },
+      "137": {
+        "Week": "19.07.15",
+        "node js: (Worldwide)": "51",
+        "ruby on rails: (Worldwide)": "30"
+      },
+      "138": {
+        "Week": "26.07.15",
+        "node js: (Worldwide)": "52",
+        "ruby on rails: (Worldwide)": "28"
+      },
+      "139": {
+        "Week": "02.08.15",
+        "node js: (Worldwide)": "52",
+        "ruby on rails: (Worldwide)": "27"
+      },
+      "140": {
+        "Week": "09.08.15",
+        "node js: (Worldwide)": "50",
+        "ruby on rails: (Worldwide)": "27"
+      },
+      "141": {
+        "Week": "16.08.15",
+        "node js: (Worldwide)": "52",
+        "ruby on rails: (Worldwide)": "27"
+      },
+      "142": {
+        "Week": "23.08.15",
+        "node js: (Worldwide)": "49",
+        "ruby on rails: (Worldwide)": "28"
+      },
+      "143": {
+        "Week": "30.08.15",
+        "node js: (Worldwide)": "53",
+        "ruby on rails: (Worldwide)": "27"
+      },
+      "144": {
+        "Week": "06.09.15",
+        "node js: (Worldwide)": "56",
+        "ruby on rails: (Worldwide)": "27"
+      },
+      "145": {
+        "Week": "13.09.15",
+        "node js: (Worldwide)": "57",
+        "ruby on rails: (Worldwide)": "26"
+      },
+      "146": {
+        "Week": "20.09.15",
+        "node js: (Worldwide)": "57",
+        "ruby on rails: (Worldwide)": "26"
+      },
+      "147": {
+        "Week": "27.09.15",
+        "node js: (Worldwide)": "54",
+        "ruby on rails: (Worldwide)": "27"
+      },
+      "148": {
+        "Week": "04.10.15",
+        "node js: (Worldwide)": "57",
+        "ruby on rails: (Worldwide)": "27"
+      },
+      "149": {
+        "Week": "11.10.15",
+        "node js: (Worldwide)": "58",
+        "ruby on rails: (Worldwide)": "26"
+      },
+      "150": {
+        "Week": "18.10.15",
+        "node js: (Worldwide)": "57",
+        "ruby on rails: (Worldwide)": "27"
+      },
+      "151": {
+        "Week": "25.10.15",
+        "node js: (Worldwide)": "61",
+        "ruby on rails: (Worldwide)": "26"
+      },
+      "152": {
+        "Week": "01.11.15",
+        "node js: (Worldwide)": "58",
+        "ruby on rails: (Worldwide)": "28"
+      },
+      "153": {
+        "Week": "08.11.15",
+        "node js: (Worldwide)": "54",
+        "ruby on rails: (Worldwide)": "26"
+      },
+      "154": {
+        "Week": "15.11.15",
+        "node js: (Worldwide)": "55",
+        "ruby on rails: (Worldwide)": "25"
+      },
+      "155": {
+        "Week": "22.11.15",
+        "node js: (Worldwide)": "59",
+        "ruby on rails: (Worldwide)": "24"
+      },
+      "156": {
+        "Week": "29.11.15",
+        "node js: (Worldwide)": "59",
+        "ruby on rails: (Worldwide)": "25"
+      },
+      "157": {
+        "Week": "06.12.15",
+        "node js: (Worldwide)": "61",
+        "ruby on rails: (Worldwide)": "25"
+      },
+      "158": {
+        "Week": "13.12.15",
+        "node js: (Worldwide)": "62",
+        "ruby on rails: (Worldwide)": "24"
+      },
+      "159": {
+        "Week": "20.12.15",
+        "node js: (Worldwide)": "55",
+        "ruby on rails: (Worldwide)": "22"
+      },
+      "160": {
+        "Week": "27.12.15",
+        "node js: (Worldwide)": "48",
+        "ruby on rails: (Worldwide)": "21"
+      },
+      "161": {
+        "Week": "03.01.16",
+        "node js: (Worldwide)": "56",
+        "ruby on rails: (Worldwide)": "24"
+      },
+      "162": {
+        "Week": "10.01.16",
+        "node js: (Worldwide)": "59",
+        "ruby on rails: (Worldwide)": "24"
+      },
+      "163": {
+        "Week": "17.01.16",
+        "node js: (Worldwide)": "60",
+        "ruby on rails: (Worldwide)": "25"
+      },
+      "164": {
+        "Week": "24.01.16",
+        "node js: (Worldwide)": "60",
+        "ruby on rails: (Worldwide)": "26"
+      },
+      "165": {
+        "Week": "31.01.16",
+        "node js: (Worldwide)": "63",
+        "ruby on rails: (Worldwide)": "26"
+      },
+      "166": {
+        "Week": "07.02.16",
+        "node js: (Worldwide)": "62",
+        "ruby on rails: (Worldwide)": "24"
+      },
+      "167": {
+        "Week": "14.02.16",
+        "node js: (Worldwide)": "64",
+        "ruby on rails: (Worldwide)": "26"
+      },
+      "168": {
+        "Week": "21.02.16",
+        "node js: (Worldwide)": "63",
+        "ruby on rails: (Worldwide)": "27"
+      },
+      "169": {
+        "Week": "28.02.16",
+        "node js: (Worldwide)": "62",
+        "ruby on rails: (Worldwide)": "27"
+      },
+      "170": {
+        "Week": "06.03.16",
+        "node js: (Worldwide)": "66",
+        "ruby on rails: (Worldwide)": "26"
+      },
+      "171": {
+        "Week": "13.03.16",
+        "node js: (Worldwide)": "66",
+        "ruby on rails: (Worldwide)": "24"
+      },
+      "172": {
+        "Week": "20.03.16",
+        "node js: (Worldwide)": "63",
+        "ruby on rails: (Worldwide)": "25"
+      },
+      "173": {
+        "Week": "27.03.16",
+        "node js: (Worldwide)": "64",
+        "ruby on rails: (Worldwide)": "24"
+      },
+      "174": {
+        "Week": "03.04.16",
+        "node js: (Worldwide)": "69",
+        "ruby on rails: (Worldwide)": "24"
+      },
+      "175": {
+        "Week": "10.04.16",
+        "node js: (Worldwide)": "69",
+        "ruby on rails: (Worldwide)": "24"
+      },
+      "176": {
+        "Week": "17.04.16",
+        "node js: (Worldwide)": "68",
+        "ruby on rails: (Worldwide)": "25"
+      },
+      "177": {
+        "Week": "24.04.16",
+        "node js: (Worldwide)": "71",
+        "ruby on rails: (Worldwide)": "24"
+      },
+      "178": {
+        "Week": "01.05.16",
+        "node js: (Worldwide)": "69",
+        "ruby on rails: (Worldwide)": "24"
+      },
+      "179": {
+        "Week": "08.05.16",
+        "node js: (Worldwide)": "70",
+        "ruby on rails: (Worldwide)": "26"
+      },
+      "180": {
+        "Week": "15.05.16",
+        "node js: (Worldwide)": "72",
+        "ruby on rails: (Worldwide)": "24"
+      },
+      "181": {
+        "Week": "22.05.16",
+        "node js: (Worldwide)": "71",
+        "ruby on rails: (Worldwide)": "24"
+      },
+      "182": {
+        "Week": "29.05.16",
+        "node js: (Worldwide)": "69",
+        "ruby on rails: (Worldwide)": "25"
+      },
+      "183": {
+        "Week": "05.06.16",
+        "node js: (Worldwide)": "71",
+        "ruby on rails: (Worldwide)": "24"
+      },
+      "184": {
+        "Week": "12.06.16",
+        "node js: (Worldwide)": "68",
+        "ruby on rails: (Worldwide)": "22"
+      },
+      "185": {
+        "Week": "19.06.16",
+        "node js: (Worldwide)": "72",
+        "ruby on rails: (Worldwide)": "23"
+      },
+      "186": {
+        "Week": "26.06.16",
+        "node js: (Worldwide)": "71",
+        "ruby on rails: (Worldwide)": "23"
+      },
+      "187": {
+        "Week": "03.07.16",
+        "node js: (Worldwide)": "69",
+        "ruby on rails: (Worldwide)": "21"
+      },
+      "188": {
+        "Week": "10.07.16",
+        "node js: (Worldwide)": "66",
+        "ruby on rails: (Worldwide)": "22"
+      },
+      "189": {
+        "Week": "17.07.16",
+        "node js: (Worldwide)": "68",
+        "ruby on rails: (Worldwide)": "22"
+      },
+      "190": {
+        "Week": "24.07.16",
+        "node js: (Worldwide)": "68",
+        "ruby on rails: (Worldwide)": "22"
+      },
+      "191": {
+        "Week": "31.07.16",
+        "node js: (Worldwide)": "69",
+        "ruby on rails: (Worldwide)": "22"
+      },
+      "192": {
+        "Week": "07.08.16",
+        "node js: (Worldwide)": "67",
+        "ruby on rails: (Worldwide)": "20"
+      },
+      "193": {
+        "Week": "14.08.16",
+        "node js: (Worldwide)": "57",
+        "ruby on rails: (Worldwide)": "19"
+      },
+      "194": {
+        "Week": "21.08.16",
+        "node js: (Worldwide)": "68",
+        "ruby on rails: (Worldwide)": "20"
+      },
+      "195": {
+        "Week": "28.08.16",
+        "node js: (Worldwide)": "68",
+        "ruby on rails: (Worldwide)": "20"
+      },
+      "196": {
+        "Week": "04.09.16",
+        "node js: (Worldwide)": "68",
+        "ruby on rails: (Worldwide)": "19"
+      },
+      "197": {
+        "Week": "11.09.16",
+        "node js: (Worldwide)": "68",
+        "ruby on rails: (Worldwide)": "20"
+      },
+      "198": {
+        "Week": "18.09.16",
+        "node js: (Worldwide)": "70",
+        "ruby on rails: (Worldwide)": "22"
+      },
+      "199": {
+        "Week": "25.09.16",
+        "node js: (Worldwide)": "72",
+        "ruby on rails: (Worldwide)": "20"
+      },
+      "200": {
+        "Week": "02.10.16",
+        "node js: (Worldwide)": "68",
+        "ruby on rails: (Worldwide)": "20"
+      },
+      "201": {
+        "Week": "09.10.16",
+        "node js: (Worldwide)": "69",
+        "ruby on rails: (Worldwide)": "19"
+      },
+      "202": {
+        "Week": "16.10.16",
+        "node js: (Worldwide)": "74",
+        "ruby on rails: (Worldwide)": "20"
+      },
+      "203": {
+        "Week": "23.10.16",
+        "node js: (Worldwide)": "74",
+        "ruby on rails: (Worldwide)": "20"
+      },
+      "204": {
+        "Week": "30.10.16",
+        "node js: (Worldwide)": "71",
+        "ruby on rails: (Worldwide)": "20"
+      },
+      "205": {
+        "Week": "06.11.16",
+        "node js: (Worldwide)": "77",
+        "ruby on rails: (Worldwide)": "21"
+      },
+      "206": {
+        "Week": "13.11.16",
+        "node js: (Worldwide)": "80",
+        "ruby on rails: (Worldwide)": "22"
+      },
+      "207": {
+        "Week": "20.11.16",
+        "node js: (Worldwide)": "77",
+        "ruby on rails: (Worldwide)": "21"
+      },
+      "208": {
+        "Week": "27.11.16",
+        "node js: (Worldwide)": "81",
+        "ruby on rails: (Worldwide)": "20"
+      },
+      "209": {
+        "Week": "04.12.16",
+        "node js: (Worldwide)": "79",
+        "ruby on rails: (Worldwide)": "22"
+      },
+      "210": {
+        "Week": "11.12.16",
+        "node js: (Worldwide)": "79",
+        "ruby on rails: (Worldwide)": "21"
+      },
+      "211": {
+        "Week": "18.12.16",
+        "node js: (Worldwide)": "81",
+        "ruby on rails: (Worldwide)": "19"
+      },
+      "212": {
+        "Week": "25.12.16",
+        "node js: (Worldwide)": "67",
+        "ruby on rails: (Worldwide)": "16"
+      },
+      "213": {
+        "Week": "01.01.17",
+        "node js: (Worldwide)": "74",
+        "ruby on rails: (Worldwide)": "19"
+      },
+      "214": {
+        "Week": "08.01.17",
+        "node js: (Worldwide)": "80",
+        "ruby on rails: (Worldwide)": "23"
+      },
+      "215": {
+        "Week": "15.01.17",
+        "node js: (Worldwide)": "84",
+        "ruby on rails: (Worldwide)": "22"
+      },
+      "216": {
+        "Week": "22.01.17",
+        "node js: (Worldwide)": "80",
+        "ruby on rails: (Worldwide)": "22"
+      },
+      "217": {
+        "Week": "29.01.17",
+        "node js: (Worldwide)": "84",
+        "ruby on rails: (Worldwide)": "21"
+      },
+      "218": {
+        "Week": "05.02.17",
+        "node js: (Worldwide)": "88",
+        "ruby on rails: (Worldwide)": "22"
+      },
+      "219": {
+        "Week": "12.02.17",
+        "node js: (Worldwide)": "88",
+        "ruby on rails: (Worldwide)": "22"
+      },
+      "220": {
+        "Week": "19.02.17",
+        "node js: (Worldwide)": "92",
+        "ruby on rails: (Worldwide)": "22"
+      },
+      "221": {
+        "Week": "26.02.17",
+        "node js: (Worldwide)": "95",
+        "ruby on rails: (Worldwide)": "23"
+      },
+      "222": {
+        "Week": "05.03.17",
+        "node js: (Worldwide)": "94",
+        "ruby on rails: (Worldwide)": "23"
+      },
+      "223": {
+        "Week": "12.03.17",
+        "node js: (Worldwide)": "94",
+        "ruby on rails: (Worldwide)": "21"
+      },
+      "224": {
+        "Week": "19.03.17",
+        "node js: (Worldwide)": "96",
+        "ruby on rails: (Worldwide)": "21"
+      },
+      "225": {
+        "Week": "26.03.17",
+        "node js: (Worldwide)": "95",
+        "ruby on rails: (Worldwide)": "21"
+      },
+      "226": {
+        "Week": "02.04.17",
+        "node js: (Worldwide)": "94",
+        "ruby on rails: (Worldwide)": "22"
+      },
+      "227": {
+        "Week": "09.04.17",
+        "node js: (Worldwide)": "95",
+        "ruby on rails: (Worldwide)": "20"
+      },
+      "228": {
+        "Week": "16.04.17",
+        "node js: (Worldwide)": "91",
+        "ruby on rails: (Worldwide)": "21"
+      },
+      "229": {
+        "Week": "23.04.17",
+        "node js: (Worldwide)": "93",
+        "ruby on rails: (Worldwide)": "22"
+      },
+      "230": {
+        "Week": "30.04.17",
+        "node js: (Worldwide)": "89",
+        "ruby on rails: (Worldwide)": "20"
+      },
+      "231": {
+        "Week": "07.05.17",
+        "node js: (Worldwide)": "92",
+        "ruby on rails: (Worldwide)": "21"
+      },
+      "232": {
+        "Week": "14.05.17",
+        "node js: (Worldwide)": "87",
+        "ruby on rails: (Worldwide)": "19"
+      },
+      "233": {
+        "Week": "21.05.17",
+        "node js: (Worldwide)": "89",
+        "ruby on rails: (Worldwide)": "19"
+      },
+      "234": {
+        "Week": "28.05.17",
+        "node js: (Worldwide)": "90",
+        "ruby on rails: (Worldwide)": "20"
+      },
+      "235": {
+        "Week": "04.06.17",
+        "node js: (Worldwide)": "87",
+        "ruby on rails: (Worldwide)": "21"
+      },
+      "236": {
+        "Week": "11.06.17",
+        "node js: (Worldwide)": "89",
+        "ruby on rails: (Worldwide)": "20"
+      },
+      "237": {
+        "Week": "18.06.17",
+        "node js: (Worldwide)": "90",
+        "ruby on rails: (Worldwide)": "21"
+      },
+      "238": {
+        "Week": "25.06.17",
+        "node js: (Worldwide)": "86",
+        "ruby on rails: (Worldwide)": "20"
+      },
+      "239": {
+        "Week": "02.07.17",
+        "node js: (Worldwide)": "89",
+        "ruby on rails: (Worldwide)": "19"
+      },
+      "240": {
+        "Week": "09.07.17",
+        "node js: (Worldwide)": "96",
+        "ruby on rails: (Worldwide)": "19"
+      },
+      "241": {
+        "Week": "16.07.17",
+        "node js: (Worldwide)": "95",
+        "ruby on rails: (Worldwide)": "19"
+      },
+      "242": {
+        "Week": "23.07.17",
+        "node js: (Worldwide)": "96",
+        "ruby on rails: (Worldwide)": "19"
+      },
+      "243": {
+        "Week": "30.07.17",
+        "node js: (Worldwide)": "95",
+        "ruby on rails: (Worldwide)": "20"
+      },
+      "244": {
+        "Week": "06.08.17",
+        "node js: (Worldwide)": "92",
+        "ruby on rails: (Worldwide)": "17"
+      },
+      "245": {
+        "Week": "13.08.17",
+        "node js: (Worldwide)": "85",
+        "ruby on rails: (Worldwide)": "17"
+      },
+      "246": {
+        "Week": "20.08.17",
+        "node js: (Worldwide)": "86",
+        "ruby on rails: (Worldwide)": "17"
+      },
+      "247": {
+        "Week": "27.08.17",
+        "node js: (Worldwide)": "88",
+        "ruby on rails: (Worldwide)": "17"
+      },
+      "248": {
+        "Week": "03.09.17",
+        "node js: (Worldwide)": "90",
+        "ruby on rails: (Worldwide)": "17"
+      },
+      "249": {
+        "Week": "10.09.17",
+        "node js: (Worldwide)": "94",
+        "ruby on rails: (Worldwide)": "18"
+      },
+      "250": {
+        "Week": "17.09.17",
+        "node js: (Worldwide)": "93",
+        "ruby on rails: (Worldwide)": "17"
+      },
+      "251": {
+        "Week": "24.09.17",
+        "node js: (Worldwide)": "91",
+        "ruby on rails: (Worldwide)": "17"
+      },
+      "252": {
+        "Week": "01.10.17",
+        "node js: (Worldwide)": "89",
+        "ruby on rails: (Worldwide)": "17"
+      },
+      "253": {
+        "Week": "08.10.17",
+        "node js: (Worldwide)": "91",
+        "ruby on rails: (Worldwide)": "17"
+      },
+      "254": {
+        "Week": "15.10.17",
+        "node js: (Worldwide)": "87",
+        "ruby on rails: (Worldwide)": "17"
+      },
+      "255": {
+        "Week": "22.10.17",
+        "node js: (Worldwide)": "95",
+        "ruby on rails: (Worldwide)": "18"
+      },
+      "256": {
+        "Week": "29.10.17",
+        "node js: (Worldwide)": "94",
+        "ruby on rails: (Worldwide)": "17"
+      },
+      "257": {
+        "Week": "05.11.17",
+        "node js: (Worldwide)": "99",
+        "ruby on rails: (Worldwide)": "18"
+      },
+      "258": {
+        "Week": "12.11.17",
+        "node js: (Worldwide)": "100",
+        "ruby on rails: (Worldwide)": "19"
+      },
+      "259": {
+        "Week": "19.11.17",
+        "node js: (Worldwide)": "93",
+        "ruby on rails: (Worldwide)": "17"
+      },
+      "260": {
+        "Week": "26.11.17",
+        "node js: (Worldwide)": "93",
+        "ruby on rails: (Worldwide)": "18"
+      }
+    },
+    "header": {
+      "Week": "Date(%d.%m.%y)",
+      "node js: (Worldwide)": "Numerical",
+      "ruby on rails: (Worldwide)": "Numerical"
+    },
+    "author_id": 2
+  },
+  {
+    "title": "Most popular technologies",
+    "file_name": "so_most_popular_thechnologies.csv",
+    "rows": {
+      "0": {
+        "Technology": "JavaScript",
+        "Popularity(%)": "62.5"
+      },
+      "1": {
+        "Technology": "SQL",
+        "Popularity(%)": "51.2"
+      },
+      "2": {
+        "Technology": "Java",
+        "Popularity(%)": "39.7"
+      },
+      "3": {
+        "Technology": "C#",
+        "Popularity(%)": "34.1"
+      },
+      "4": {
+        "Technology": "Python",
+        "Popularity(%)": "32"
+      },
+      "5": {
+        "Technology": "PHP",
+        "Popularity(%)": "28.1"
+      },
+      "6": {
+        "Technology": "C++",
+        "Popularity(%)": "22.3"
+      }
+    },
+    "header": {
+      "Technology": "Categorical",
+      "Popularity(%)": "Numerical"
+    },
+    "author_id": 2
+  },
+  {
+    "title": "Most popular developer role",
+    "file_name": "so_developer_type.csv",
+    "rows": {
+      "0": {
+        "Role": "Web dev",
+        "Popularity(%)": "72.6"
+      },
+      "1": {
+        "Role": "Desktop app",
+        "Popularity(%)": "28.9"
+      },
+      "2": {
+        "Role": "Mobile dev",
+        "Popularity(%)": "23"
+      },
+      "3": {
+        "Role": "Database admin",
+        "Popularity(%)": "14.4"
+      }
+    },
+    "header": {
+      "Role": "Categorical",
+      "Popularity(%)": "Numerical"
+    },
+    "author_id": 2
+  }
+]

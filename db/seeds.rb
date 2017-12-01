@@ -12,8 +12,29 @@ datasets = []
 
 demoDataJson = ActiveSupport::JSON.decode(File.read('db/seeds/datasets/demo_data.json'))
 demoDataJson.each do |row|
-  datasets = Dataset.create(row)
+  datasets << Dataset.create(row)
 end
+
+hcornilleauJson = ActiveSupport::JSON.decode(File.read('db/seeds/datasets/hcornilleau.json'))
+hcornilleauJson.each do |row|
+  datasets << Dataset.create(row)
+end
+
+mblewisJson = ActiveSupport::JSON.decode(File.read('db/seeds/datasets/mblewis.json'))
+mblewisJson.each do |row|
+  datasets << Dataset.create(row)
+end
+
+lorisgiggsJson = ActiveSupport::JSON.decode(File.read('db/seeds/datasets/lorisgiggs.json'))
+lorisgiggsJson.each do |row|
+  datasets << Dataset.create(row)
+end
+
+msuffieldJson = ActiveSupport::JSON.decode(File.read('db/seeds/datasets/msuffield.json'))
+msuffieldJson.each do |row|
+  datasets << Dataset.create(row)
+end
+
 
 populationChart = ActiveSupport::JSON.decode(File.read('db/seeds/charts/population.json'))
 Chart.create(populationChart)

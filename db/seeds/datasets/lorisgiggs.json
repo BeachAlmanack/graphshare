@@ -1,0 +1,955 @@
+[{
+    "title": "World cup and football",
+    "file_name": "search_world_cup_football.csv",
+    "rows": {
+      "0": {
+        "Month": "2004-01",
+        "football: (Worldwide)": "20",
+        "world cup: (Worldwide)": "1"
+      },
+      "1": {
+        "Month": "2004-02",
+        "football: (Worldwide)": "18",
+        "world cup: (Worldwide)": "1"
+      },
+      "2": {
+        "Month": "2004-03",
+        "football: (Worldwide)": "17",
+        "world cup: (Worldwide)": "1"
+      },
+      "3": {
+        "Month": "2004-04",
+        "football: (Worldwide)": "17",
+        "world cup: (Worldwide)": "1"
+      },
+      "4": {
+        "Month": "2004-05",
+        "football: (Worldwide)": "18",
+        "world cup: (Worldwide)": "2"
+      },
+      "5": {
+        "Month": "2004-06",
+        "football: (Worldwide)": "21",
+        "world cup: (Worldwide)": "2"
+      },
+      "6": {
+        "Month": "2004-07",
+        "football: (Worldwide)": "20",
+        "world cup: (Worldwide)": "1"
+      },
+      "7": {
+        "Month": "2004-08",
+        "football: (Worldwide)": "29",
+        "world cup: (Worldwide)": "2"
+      },
+      "8": {
+        "Month": "2004-09",
+        "football: (Worldwide)": "39",
+        "world cup: (Worldwide)": "3"
+      },
+      "9": {
+        "Month": "2004-10",
+        "football: (Worldwide)": "34",
+        "world cup: (Worldwide)": "1"
+      },
+      "10": {
+        "Month": "2004-11",
+        "football: (Worldwide)": "33",
+        "world cup: (Worldwide)": "1"
+      },
+      "11": {
+        "Month": "2004-12",
+        "football: (Worldwide)": "24",
+        "world cup: (Worldwide)": "1"
+      },
+      "12": {
+        "Month": "2005-01",
+        "football: (Worldwide)": "22",
+        "world cup: (Worldwide)": "1"
+      },
+      "13": {
+        "Month": "2005-02",
+        "football: (Worldwide)": "19",
+        "world cup: (Worldwide)": "1"
+      },
+      "14": {
+        "Month": "2005-03",
+        "football: (Worldwide)": "17",
+        "world cup: (Worldwide)": "2"
+      },
+      "15": {
+        "Month": "2005-04",
+        "football: (Worldwide)": "18",
+        "world cup: (Worldwide)": "1"
+      },
+      "16": {
+        "Month": "2005-05",
+        "football: (Worldwide)": "18",
+        "world cup: (Worldwide)": "1"
+      },
+      "17": {
+        "Month": "2005-06",
+        "football: (Worldwide)": "18",
+        "world cup: (Worldwide)": "2"
+      },
+      "18": {
+        "Month": "2005-07",
+        "football: (Worldwide)": "20",
+        "world cup: (Worldwide)": "1"
+      },
+      "19": {
+        "Month": "2005-08",
+        "football: (Worldwide)": "31",
+        "world cup: (Worldwide)": "1"
+      },
+      "20": {
+        "Month": "2005-09",
+        "football: (Worldwide)": "41",
+        "world cup: (Worldwide)": "2"
+      },
+      "21": {
+        "Month": "2005-10",
+        "football: (Worldwide)": "38",
+        "world cup: (Worldwide)": "2"
+      },
+      "22": {
+        "Month": "2005-11",
+        "football: (Worldwide)": "35",
+        "world cup: (Worldwide)": "3"
+      },
+      "23": {
+        "Month": "2005-12",
+        "football: (Worldwide)": "26",
+        "world cup: (Worldwide)": "4"
+      },
+      "24": {
+        "Month": "2006-01",
+        "football: (Worldwide)": "23",
+        "world cup: (Worldwide)": "3"
+      },
+      "25": {
+        "Month": "2006-02",
+        "football: (Worldwide)": "19",
+        "world cup: (Worldwide)": "3"
+      },
+      "26": {
+        "Month": "2006-03",
+        "football: (Worldwide)": "17",
+        "world cup: (Worldwide)": "3"
+      },
+      "27": {
+        "Month": "2006-04",
+        "football: (Worldwide)": "19",
+        "world cup: (Worldwide)": "5"
+      },
+      "28": {
+        "Month": "2006-05",
+        "football: (Worldwide)": "22",
+        "world cup: (Worldwide)": "13"
+      },
+      "29": {
+        "Month": "2006-06",
+        "football: (Worldwide)": "36",
+        "world cup: (Worldwide)": "77"
+      },
+      "30": {
+        "Month": "2006-07",
+        "football: (Worldwide)": "24",
+        "world cup: (Worldwide)": "21"
+      },
+      "31": {
+        "Month": "2006-08",
+        "football: (Worldwide)": "32",
+        "world cup: (Worldwide)": "2"
+      },
+      "32": {
+        "Month": "2006-09",
+        "football: (Worldwide)": "44",
+        "world cup: (Worldwide)": "2"
+      },
+      "33": {
+        "Month": "2006-10",
+        "football: (Worldwide)": "37",
+        "world cup: (Worldwide)": "1"
+      },
+      "34": {
+        "Month": "2006-11",
+        "football: (Worldwide)": "34",
+        "world cup: (Worldwide)": "2"
+      },
+      "35": {
+        "Month": "2006-12",
+        "football: (Worldwide)": "25",
+        "world cup: (Worldwide)": "1"
+      },
+      "36": {
+        "Month": "2007-01",
+        "football: (Worldwide)": "22",
+        "world cup: (Worldwide)": "2"
+      },
+      "37": {
+        "Month": "2007-02",
+        "football: (Worldwide)": "18",
+        "world cup: (Worldwide)": "2"
+      },
+      "38": {
+        "Month": "2007-03",
+        "football: (Worldwide)": "16",
+        "world cup: (Worldwide)": "8"
+      },
+      "39": {
+        "Month": "2007-04",
+        "football: (Worldwide)": "17",
+        "world cup: (Worldwide)": "4"
+      },
+      "40": {
+        "Month": "2007-05",
+        "football: (Worldwide)": "18",
+        "world cup: (Worldwide)": "1"
+      },
+      "41": {
+        "Month": "2007-06",
+        "football: (Worldwide)": "17",
+        "world cup: (Worldwide)": "2"
+      },
+      "42": {
+        "Month": "2007-07",
+        "football: (Worldwide)": "20",
+        "world cup: (Worldwide)": "2"
+      },
+      "43": {
+        "Month": "2007-08",
+        "football: (Worldwide)": "32",
+        "world cup: (Worldwide)": "2"
+      },
+      "44": {
+        "Month": "2007-09",
+        "football: (Worldwide)": "45",
+        "world cup: (Worldwide)": "9"
+      },
+      "45": {
+        "Month": "2007-10",
+        "football: (Worldwide)": "37",
+        "world cup: (Worldwide)": "5"
+      },
+      "46": {
+        "Month": "2007-11",
+        "football: (Worldwide)": "33",
+        "world cup: (Worldwide)": "2"
+      },
+      "47": {
+        "Month": "2007-12",
+        "football: (Worldwide)": "26",
+        "world cup: (Worldwide)": "1"
+      },
+      "48": {
+        "Month": "2008-01",
+        "football: (Worldwide)": "22",
+        "world cup: (Worldwide)": "1"
+      },
+      "49": {
+        "Month": "2008-02",
+        "football: (Worldwide)": "18",
+        "world cup: (Worldwide)": "1"
+      },
+      "50": {
+        "Month": "2008-03",
+        "football: (Worldwide)": "17",
+        "world cup: (Worldwide)": "1"
+      },
+      "51": {
+        "Month": "2008-04",
+        "football: (Worldwide)": "17",
+        "world cup: (Worldwide)": "1"
+      },
+      "52": {
+        "Month": "2008-05",
+        "football: (Worldwide)": "17",
+        "world cup: (Worldwide)": "1"
+      },
+      "53": {
+        "Month": "2008-06",
+        "football: (Worldwide)": "20",
+        "world cup: (Worldwide)": "2"
+      },
+      "54": {
+        "Month": "2008-07",
+        "football: (Worldwide)": "19",
+        "world cup: (Worldwide)": "1"
+      },
+      "55": {
+        "Month": "2008-08",
+        "football: (Worldwide)": "32",
+        "world cup: (Worldwide)": "1"
+      },
+      "56": {
+        "Month": "2008-09",
+        "football: (Worldwide)": "41",
+        "world cup: (Worldwide)": "1"
+      },
+      "57": {
+        "Month": "2008-10",
+        "football: (Worldwide)": "35",
+        "world cup: (Worldwide)": "1"
+      },
+      "58": {
+        "Month": "2008-11",
+        "football: (Worldwide)": "36",
+        "world cup: (Worldwide)": "1"
+      },
+      "59": {
+        "Month": "2008-12",
+        "football: (Worldwide)": "26",
+        "world cup: (Worldwide)": "1"
+      },
+      "60": {
+        "Month": "2009-01",
+        "football: (Worldwide)": "22",
+        "world cup: (Worldwide)": "1"
+      },
+      "61": {
+        "Month": "2009-02",
+        "football: (Worldwide)": "18",
+        "world cup: (Worldwide)": "1"
+      },
+      "62": {
+        "Month": "2009-03",
+        "football: (Worldwide)": "17",
+        "world cup: (Worldwide)": "1"
+      },
+      "63": {
+        "Month": "2009-04",
+        "football: (Worldwide)": "19",
+        "world cup: (Worldwide)": "1"
+      },
+      "64": {
+        "Month": "2009-05",
+        "football: (Worldwide)": "18",
+        "world cup: (Worldwide)": "1"
+      },
+      "65": {
+        "Month": "2009-06",
+        "football: (Worldwide)": "17",
+        "world cup: (Worldwide)": "4"
+      },
+      "66": {
+        "Month": "2009-07",
+        "football: (Worldwide)": "19",
+        "world cup: (Worldwide)": "1"
+      },
+      "67": {
+        "Month": "2009-08",
+        "football: (Worldwide)": "32",
+        "world cup: (Worldwide)": "1"
+      },
+      "68": {
+        "Month": "2009-09",
+        "football: (Worldwide)": "45",
+        "world cup: (Worldwide)": "2"
+      },
+      "69": {
+        "Month": "2009-10",
+        "football: (Worldwide)": "38",
+        "world cup: (Worldwide)": "2"
+      },
+      "70": {
+        "Month": "2009-11",
+        "football: (Worldwide)": "37",
+        "world cup: (Worldwide)": "2"
+      },
+      "71": {
+        "Month": "2009-12",
+        "football: (Worldwide)": "28",
+        "world cup: (Worldwide)": "3"
+      },
+      "72": {
+        "Month": "2010-01",
+        "football: (Worldwide)": "24",
+        "world cup: (Worldwide)": "2"
+      },
+      "73": {
+        "Month": "2010-02",
+        "football: (Worldwide)": "21",
+        "world cup: (Worldwide)": "2"
+      },
+      "74": {
+        "Month": "2010-03",
+        "football: (Worldwide)": "19",
+        "world cup: (Worldwide)": "3"
+      },
+      "75": {
+        "Month": "2010-04",
+        "football: (Worldwide)": "20",
+        "world cup: (Worldwide)": "4"
+      },
+      "76": {
+        "Month": "2010-05",
+        "football: (Worldwide)": "20",
+        "world cup: (Worldwide)": "11"
+      },
+      "77": {
+        "Month": "2010-06",
+        "football: (Worldwide)": "30",
+        "world cup: (Worldwide)": "77"
+      },
+      "78": {
+        "Month": "2010-07",
+        "football: (Worldwide)": "24",
+        "world cup: (Worldwide)": "27"
+      },
+      "79": {
+        "Month": "2010-08",
+        "football: (Worldwide)": "32",
+        "world cup: (Worldwide)": "3"
+      },
+      "80": {
+        "Month": "2010-09",
+        "football: (Worldwide)": "47",
+        "world cup: (Worldwide)": "2"
+      },
+      "81": {
+        "Month": "2010-10",
+        "football: (Worldwide)": "40",
+        "world cup: (Worldwide)": "2"
+      },
+      "82": {
+        "Month": "2010-11",
+        "football: (Worldwide)": "39",
+        "world cup: (Worldwide)": "1"
+      },
+      "83": {
+        "Month": "2010-12",
+        "football: (Worldwide)": "28",
+        "world cup: (Worldwide)": "3"
+      },
+      "84": {
+        "Month": "2011-01",
+        "football: (Worldwide)": "26",
+        "world cup: (Worldwide)": "2"
+      },
+      "85": {
+        "Month": "2011-02",
+        "football: (Worldwide)": "20",
+        "world cup: (Worldwide)": "7"
+      },
+      "86": {
+        "Month": "2011-03",
+        "football: (Worldwide)": "16",
+        "world cup: (Worldwide)": "10"
+      },
+      "87": {
+        "Month": "2011-04",
+        "football: (Worldwide)": "18",
+        "world cup: (Worldwide)": "5"
+      },
+      "88": {
+        "Month": "2011-05",
+        "football: (Worldwide)": "17",
+        "world cup: (Worldwide)": "2"
+      },
+      "89": {
+        "Month": "2011-06",
+        "football: (Worldwide)": "16",
+        "world cup: (Worldwide)": "2"
+      },
+      "90": {
+        "Month": "2011-07",
+        "football: (Worldwide)": "19",
+        "world cup: (Worldwide)": "5"
+      },
+      "91": {
+        "Month": "2011-08",
+        "football: (Worldwide)": "32",
+        "world cup: (Worldwide)": "3"
+      },
+      "92": {
+        "Month": "2011-09",
+        "football: (Worldwide)": "46",
+        "world cup: (Worldwide)": "7"
+      },
+      "93": {
+        "Month": "2011-10",
+        "football: (Worldwide)": "41",
+        "world cup: (Worldwide)": "5"
+      },
+      "94": {
+        "Month": "2011-11",
+        "football: (Worldwide)": "38",
+        "world cup: (Worldwide)": "2"
+      },
+      "95": {
+        "Month": "2011-12",
+        "football: (Worldwide)": "28",
+        "world cup: (Worldwide)": "1"
+      },
+      "96": {
+        "Month": "2012-01",
+        "football: (Worldwide)": "24",
+        "world cup: (Worldwide)": "1"
+      },
+      "97": {
+        "Month": "2012-02",
+        "football: (Worldwide)": "19",
+        "world cup: (Worldwide)": "1"
+      },
+      "98": {
+        "Month": "2012-03",
+        "football: (Worldwide)": "17",
+        "world cup: (Worldwide)": "1"
+      },
+      "99": {
+        "Month": "2012-04",
+        "football: (Worldwide)": "19",
+        "world cup: (Worldwide)": "1"
+      },
+      "100": {
+        "Month": "2012-05",
+        "football: (Worldwide)": "17",
+        "world cup: (Worldwide)": "1"
+      },
+      "101": {
+        "Month": "2012-06",
+        "football: (Worldwide)": "20",
+        "world cup: (Worldwide)": "2"
+      },
+      "102": {
+        "Month": "2012-07",
+        "football: (Worldwide)": "19",
+        "world cup: (Worldwide)": "1"
+      },
+      "103": {
+        "Month": "2012-08",
+        "football: (Worldwide)": "31",
+        "world cup: (Worldwide)": "2"
+      },
+      "104": {
+        "Month": "2012-09",
+        "football: (Worldwide)": "50",
+        "world cup: (Worldwide)": "4"
+      },
+      "105": {
+        "Month": "2012-10",
+        "football: (Worldwide)": "40",
+        "world cup: (Worldwide)": "2"
+      },
+      "106": {
+        "Month": "2012-11",
+        "football: (Worldwide)": "40",
+        "world cup: (Worldwide)": "1"
+      },
+      "107": {
+        "Month": "2012-12",
+        "football: (Worldwide)": "29",
+        "world cup: (Worldwide)": "1"
+      },
+      "108": {
+        "Month": "2013-01",
+        "football: (Worldwide)": "24",
+        "world cup: (Worldwide)": "1"
+      },
+      "109": {
+        "Month": "2013-02",
+        "football: (Worldwide)": "19",
+        "world cup: (Worldwide)": "1"
+      },
+      "110": {
+        "Month": "2013-03",
+        "football: (Worldwide)": "17",
+        "world cup: (Worldwide)": "2"
+      },
+      "111": {
+        "Month": "2013-04",
+        "football: (Worldwide)": "17",
+        "world cup: (Worldwide)": "1"
+      },
+      "112": {
+        "Month": "2013-05",
+        "football: (Worldwide)": "16",
+        "world cup: (Worldwide)": "1"
+      },
+      "113": {
+        "Month": "2013-06",
+        "football: (Worldwide)": "15",
+        "world cup: (Worldwide)": "3"
+      },
+      "114": {
+        "Month": "2013-07",
+        "football: (Worldwide)": "17",
+        "world cup: (Worldwide)": "2"
+      },
+      "115": {
+        "Month": "2013-08",
+        "football: (Worldwide)": "35",
+        "world cup: (Worldwide)": "1"
+      },
+      "116": {
+        "Month": "2013-09",
+        "football: (Worldwide)": "50",
+        "world cup: (Worldwide)": "2"
+      },
+      "117": {
+        "Month": "2013-10",
+        "football: (Worldwide)": "40",
+        "world cup: (Worldwide)": "3"
+      },
+      "118": {
+        "Month": "2013-11",
+        "football: (Worldwide)": "40",
+        "world cup: (Worldwide)": "3"
+      },
+      "119": {
+        "Month": "2013-12",
+        "football: (Worldwide)": "29",
+        "world cup: (Worldwide)": "3"
+      },
+      "120": {
+        "Month": "2014-01",
+        "football: (Worldwide)": "23",
+        "world cup: (Worldwide)": "2"
+      },
+      "121": {
+        "Month": "2014-02",
+        "football: (Worldwide)": "18",
+        "world cup: (Worldwide)": "2"
+      },
+      "122": {
+        "Month": "2014-03",
+        "football: (Worldwide)": "16",
+        "world cup: (Worldwide)": "6"
+      },
+      "123": {
+        "Month": "2014-04",
+        "football: (Worldwide)": "17",
+        "world cup: (Worldwide)": "4"
+      },
+      "124": {
+        "Month": "2014-05",
+        "football: (Worldwide)": "17",
+        "world cup: (Worldwide)": "8"
+      },
+      "125": {
+        "Month": "2014-06",
+        "football: (Worldwide)": "25",
+        "world cup: (Worldwide)": "100"
+      },
+      "126": {
+        "Month": "2014-07",
+        "football: (Worldwide)": "21",
+        "world cup: (Worldwide)": "46"
+      },
+      "127": {
+        "Month": "2014-08",
+        "football: (Worldwide)": "34",
+        "world cup: (Worldwide)": "3"
+      },
+      "128": {
+        "Month": "2014-09",
+        "football: (Worldwide)": "47",
+        "world cup: (Worldwide)": "3"
+      },
+      "129": {
+        "Month": "2014-10",
+        "football: (Worldwide)": "41",
+        "world cup: (Worldwide)": "2"
+      },
+      "130": {
+        "Month": "2014-11",
+        "football: (Worldwide)": "43",
+        "world cup: (Worldwide)": "2"
+      },
+      "131": {
+        "Month": "2014-12",
+        "football: (Worldwide)": "29",
+        "world cup: (Worldwide)": "2"
+      },
+      "132": {
+        "Month": "2015-01",
+        "football: (Worldwide)": "24",
+        "world cup: (Worldwide)": "3"
+      },
+      "133": {
+        "Month": "2015-02",
+        "football: (Worldwide)": "17",
+        "world cup: (Worldwide)": "11"
+      },
+      "134": {
+        "Month": "2015-03",
+        "football: (Worldwide)": "15",
+        "world cup: (Worldwide)": "15"
+      },
+      "135": {
+        "Month": "2015-04",
+        "football: (Worldwide)": "15",
+        "world cup: (Worldwide)": "2"
+      },
+      "136": {
+        "Month": "2015-05",
+        "football: (Worldwide)": "15",
+        "world cup: (Worldwide)": "2"
+      },
+      "137": {
+        "Month": "2015-06",
+        "football: (Worldwide)": "14",
+        "world cup: (Worldwide)": "6"
+      },
+      "138": {
+        "Month": "2015-07",
+        "football: (Worldwide)": "15",
+        "world cup: (Worldwide)": "4"
+      },
+      "139": {
+        "Month": "2015-08",
+        "football: (Worldwide)": "29",
+        "world cup: (Worldwide)": "2"
+      },
+      "140": {
+        "Month": "2015-09",
+        "football: (Worldwide)": "54",
+        "world cup: (Worldwide)": "6"
+      },
+      "141": {
+        "Month": "2015-10",
+        "football: (Worldwide)": "46",
+        "world cup: (Worldwide)": "7"
+      },
+      "142": {
+        "Month": "2015-11",
+        "football: (Worldwide)": "43",
+        "world cup: (Worldwide)": "2"
+      },
+      "143": {
+        "Month": "2015-12",
+        "football: (Worldwide)": "29",
+        "world cup: (Worldwide)": "1"
+      },
+      "144": {
+        "Month": "2016-01",
+        "football: (Worldwide)": "24",
+        "world cup: (Worldwide)": "1"
+      },
+      "145": {
+        "Month": "2016-02",
+        "football: (Worldwide)": "18",
+        "world cup: (Worldwide)": "2"
+      },
+      "146": {
+        "Month": "2016-03",
+        "football: (Worldwide)": "15",
+        "world cup: (Worldwide)": "8"
+      },
+      "147": {
+        "Month": "2016-04",
+        "football: (Worldwide)": "17",
+        "world cup: (Worldwide)": "2"
+      },
+      "148": {
+        "Month": "2016-05",
+        "football: (Worldwide)": "16",
+        "world cup: (Worldwide)": "1"
+      },
+      "149": {
+        "Month": "2016-06",
+        "football: (Worldwide)": "19",
+        "world cup: (Worldwide)": "2"
+      },
+      "150": {
+        "Month": "2016-07",
+        "football: (Worldwide)": "17",
+        "world cup: (Worldwide)": "1"
+      },
+      "151": {
+        "Month": "2016-08",
+        "football: (Worldwide)": "28",
+        "world cup: (Worldwide)": "1"
+      },
+      "152": {
+        "Month": "2016-09",
+        "football: (Worldwide)": "55",
+        "world cup: (Worldwide)": "3"
+      },
+      "153": {
+        "Month": "2016-10",
+        "football: (Worldwide)": "48",
+        "world cup: (Worldwide)": "2"
+      },
+      "154": {
+        "Month": "2016-11",
+        "football: (Worldwide)": "42",
+        "world cup: (Worldwide)": "2"
+      },
+      "155": {
+        "Month": "2016-12",
+        "football: (Worldwide)": "29",
+        "world cup: (Worldwide)": "1"
+      },
+      "156": {
+        "Month": "2017-01",
+        "football: (Worldwide)": "23",
+        "world cup: (Worldwide)": "1"
+      },
+      "157": {
+        "Month": "2017-02",
+        "football: (Worldwide)": "16",
+        "world cup: (Worldwide)": "1"
+      },
+      "158": {
+        "Month": "2017-03",
+        "football: (Worldwide)": "14",
+        "world cup: (Worldwide)": "2"
+      },
+      "159": {
+        "Month": "2017-04",
+        "football: (Worldwide)": "16",
+        "world cup: (Worldwide)": "1"
+      },
+      "160": {
+        "Month": "2017-05",
+        "football: (Worldwide)": "14",
+        "world cup: (Worldwide)": "1"
+      },
+      "161": {
+        "Month": "2017-06",
+        "football: (Worldwide)": "13",
+        "world cup: (Worldwide)": "3"
+      },
+      "162": {
+        "Month": "2017-07",
+        "football: (Worldwide)": "15",
+        "world cup: (Worldwide)": "3"
+      },
+      "163": {
+        "Month": "2017-08",
+        "football: (Worldwide)": "28",
+        "world cup: (Worldwide)": "1"
+      },
+      "164": {
+        "Month": "2017-09",
+        "football: (Worldwide)": "55",
+        "world cup: (Worldwide)": "2"
+      },
+      "165": {
+        "Month": "2017-10",
+        "football: (Worldwide)": "46",
+        "world cup: (Worldwide)": "5"
+      },
+      "166": {
+        "Month": "2017-11",
+        "football: (Worldwide)": "46",
+        "world cup: (Worldwide)": "3"
+      }
+    },
+    "header": {
+      "Month": "Date(%Y-%m)",
+      "football: (Worldwide)": "Numerical",
+      "world cup: (Worldwide)": "Numerical"
+    },
+    "author_id": 3
+  },
+{
+  "title": "Forbes most valuable soccer teams",
+  "file_name": "forbes_most_valuable_soccer_teams.csv",
+  "rows": {
+    "0": {
+      "Team": "Annual average(mil)",
+      "Arsenal": "89",
+      "Chelsea": "148",
+      "Juventus": "52",
+      "Barcelona": "233",
+      "Liverpool": "82",
+      "Real Madrid": "216",
+      "Bayern Munich": "109",
+      "Manchester City": "77",
+      "Manchester United": "214",
+      "Tottenham Hotspur": "74"
+    }
+  },
+  "header": {
+    "Team": "Categorical",
+    "Arsenal": "Numerical",
+    "Chelsea": "Numerical",
+    "Juventus": "Numerical",
+    "Barcelona": "Numerical",
+    "Liverpool": "Numerical",
+    "Real Madrid": "Numerical",
+    "Bayern Munich": "Numerical",
+    "Manchester City": "Numerical",
+    "Manchester United": "Numerical",
+    "Tottenham Hotspur": "Numerical"
+  },
+  "author_id": 3
+},
+{
+  "title": "ATP Age",
+  "file_name": "atp_ranking_age.csv",
+  "rows": {
+    "0": {
+      "Age": "Age",
+      "Marin Cilic": "29.00",
+      "Rafael Nadal": "31.00",
+      "Dominic Thiem": "24.00",
+      "Roger Federer": "36.00",
+      "Grigor Dimitrov": "26.00",
+      "Alexander Zverev": "20.00"
+    }
+  },
+  "header": {
+    "Player": "Categorical",
+    "Marin Cilic": "Numerical",
+    "Rafael Nadal": "Numerical",
+    "Dominic Thiem": "Numerical",
+    "Roger Federer": "Numerical",
+    "Grigor Dimitrov": "Numerical",
+    "Alexander Zverev": "Numerical"
+  },
+  "author_id": 3
+},
+{
+  "title": "ATP Ranking points",
+  "file_name": "atp_ranking_points.csv",
+  "rows": {
+    "0": {
+      "Points": "Points",
+      "Marin Cilic": "3805.00",
+      "Rafael Nadal": "10645.00",
+      "Dominic Thiem": "4015.00",
+      "Roger Federer": "9605.00",
+      "Grigor Dimitrov": "5150.00",
+      "Alexander Zverev": "4610.00"
+    }
+  },
+  "header": {
+    "Player": "Categorical",
+    "Marin Cilic": "Numerical",
+    "Rafael Nadal": "Numerical",
+    "Dominic Thiem": "Numerical",
+    "Roger Federer": "Numerical",
+    "Grigor Dimitrov": "Numerical",
+    "Alexander Zverev": "Numerical"
+  },
+  "author_id": 3
+},
+{
+  "title": "ATP Ranking tournaments",
+  "file_name": "atp_ranking_tournament.csv",
+  "rows": {
+    "0": {
+      "Tournament Played": "Tournament Played",
+      "Marin Cilic": "22.00",
+      "Rafael Nadal": "18.00",
+      "Dominic Thiem": "27.00",
+      "Roger Federer": "17.00",
+      "Grigor Dimitrov": "23.00",
+      "Alexander Zverev": "25.00"
+    }
+  },
+  "header": {
+    "Player": "Categorical",
+    "Marin Cilic": "Numerical",
+    "Rafael Nadal": "Numerical",
+    "Dominic Thiem": "Numerical",
+    "Roger Federer": "Numerical",
+    "Grigor Dimitrov": "Numerical",
+    "Alexander Zverev": "Numerical"
+  },
+  "author_id": 3
+}]

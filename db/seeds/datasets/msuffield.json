@@ -1,0 +1,1279 @@
+[{
+  "title": "Air travel",
+  "file_name": "airtravel.csv",
+  "rows": {
+    "0": {
+      "1958": "340",
+      "1959": "360",
+      "1960": "417",
+      "Month": "JAN"
+    },
+    "1": {
+      "1958": "318",
+      "1959": "342",
+      "1960": "391",
+      "Month": "FEB"
+    },
+    "2": {
+      "1958": "362",
+      "1959": "406",
+      "1960": "419",
+      "Month": "MAR"
+    },
+    "3": {
+      "1958": "348",
+      "1959": "396",
+      "1960": "461",
+      "Month": "APR"
+    },
+    "4": {
+      "1958": "363",
+      "1959": "420",
+      "1960": "472",
+      "Month": "MAY"
+    },
+    "5": {
+      "1958": "435",
+      "1959": "472",
+      "1960": "535",
+      "Month": "JUN"
+    },
+    "6": {
+      "1958": "491",
+      "1959": "548",
+      "1960": "622",
+      "Month": "JUL"
+    },
+    "7": {
+      "1958": "505",
+      "1959": "559",
+      "1960": "606",
+      "Month": "AUG"
+    },
+    "8": {
+      "1958": "404",
+      "1959": "463",
+      "1960": "508",
+      "Month": "SEP"
+    },
+    "9": {
+      "1958": "359",
+      "1959": "407",
+      "1960": "461",
+      "Month": "OCT"
+    },
+    "10": {
+      "1958": "310",
+      "1959": "362",
+      "1960": "390",
+      "Month": "NOV"
+    },
+    "11": {
+      "1958": "337",
+      "1959": "405",
+      "1960": "432",
+      "Month": "DEC"
+    }
+  },
+  "header": {
+    "1958": "Numerical",
+    "1959": "Numerical",
+    "1960": "Numerical",
+    "Month": "Categorical"
+  },
+  "author_id": 4
+}, {
+  "title": "Earth flatters",
+  "file_name": "search_earth_is_flat.csv",
+  "rows": {
+    "0": {
+      "Week": "02.12.12",
+      "the earth is flat: (Worldwide)": "6"
+    },
+    "1": {
+      "Week": "09.12.12",
+      "the earth is flat: (Worldwide)": "6"
+    },
+    "2": {
+      "Week": "16.12.12",
+      "the earth is flat: (Worldwide)": "5"
+    },
+    "3": {
+      "Week": "23.12.12",
+      "the earth is flat: (Worldwide)": "2"
+    },
+    "4": {
+      "Week": "30.12.12",
+      "the earth is flat: (Worldwide)": "4"
+    },
+    "5": {
+      "Week": "06.01.13",
+      "the earth is flat: (Worldwide)": "5"
+    },
+    "6": {
+      "Week": "13.01.13",
+      "the earth is flat: (Worldwide)": "4"
+    },
+    "7": {
+      "Week": "20.01.13",
+      "the earth is flat: (Worldwide)": "5"
+    },
+    "8": {
+      "Week": "27.01.13",
+      "the earth is flat: (Worldwide)": "5"
+    },
+    "9": {
+      "Week": "03.02.13",
+      "the earth is flat: (Worldwide)": "4"
+    },
+    "10": {
+      "Week": "10.02.13",
+      "the earth is flat: (Worldwide)": "5"
+    },
+    "11": {
+      "Week": "17.02.13",
+      "the earth is flat: (Worldwide)": "4"
+    },
+    "12": {
+      "Week": "24.02.13",
+      "the earth is flat: (Worldwide)": "5"
+    },
+    "13": {
+      "Week": "03.03.13",
+      "the earth is flat: (Worldwide)": "6"
+    },
+    "14": {
+      "Week": "10.03.13",
+      "the earth is flat: (Worldwide)": "4"
+    },
+    "15": {
+      "Week": "17.03.13",
+      "the earth is flat: (Worldwide)": "6"
+    },
+    "16": {
+      "Week": "24.03.13",
+      "the earth is flat: (Worldwide)": "4"
+    },
+    "17": {
+      "Week": "31.03.13",
+      "the earth is flat: (Worldwide)": "4"
+    },
+    "18": {
+      "Week": "07.04.13",
+      "the earth is flat: (Worldwide)": "5"
+    },
+    "19": {
+      "Week": "14.04.13",
+      "the earth is flat: (Worldwide)": "6"
+    },
+    "20": {
+      "Week": "21.04.13",
+      "the earth is flat: (Worldwide)": "5"
+    },
+    "21": {
+      "Week": "28.04.13",
+      "the earth is flat: (Worldwide)": "5"
+    },
+    "22": {
+      "Week": "05.05.13",
+      "the earth is flat: (Worldwide)": "3"
+    },
+    "23": {
+      "Week": "12.05.13",
+      "the earth is flat: (Worldwide)": "4"
+    },
+    "24": {
+      "Week": "19.05.13",
+      "the earth is flat: (Worldwide)": "4"
+    },
+    "25": {
+      "Week": "26.05.13",
+      "the earth is flat: (Worldwide)": "4"
+    },
+    "26": {
+      "Week": "02.06.13",
+      "the earth is flat: (Worldwide)": "4"
+    },
+    "27": {
+      "Week": "09.06.13",
+      "the earth is flat: (Worldwide)": "4"
+    },
+    "28": {
+      "Week": "16.06.13",
+      "the earth is flat: (Worldwide)": "4"
+    },
+    "29": {
+      "Week": "23.06.13",
+      "the earth is flat: (Worldwide)": "4"
+    },
+    "30": {
+      "Week": "30.06.13",
+      "the earth is flat: (Worldwide)": "3"
+    },
+    "31": {
+      "Week": "07.07.13",
+      "the earth is flat: (Worldwide)": "4"
+    },
+    "32": {
+      "Week": "14.07.13",
+      "the earth is flat: (Worldwide)": "3"
+    },
+    "33": {
+      "Week": "21.07.13",
+      "the earth is flat: (Worldwide)": "2"
+    },
+    "34": {
+      "Week": "28.07.13",
+      "the earth is flat: (Worldwide)": "3"
+    },
+    "35": {
+      "Week": "04.08.13",
+      "the earth is flat: (Worldwide)": "4"
+    },
+    "36": {
+      "Week": "11.08.13",
+      "the earth is flat: (Worldwide)": "3"
+    },
+    "37": {
+      "Week": "18.08.13",
+      "the earth is flat: (Worldwide)": "5"
+    },
+    "38": {
+      "Week": "25.08.13",
+      "the earth is flat: (Worldwide)": "4"
+    },
+    "39": {
+      "Week": "01.09.13",
+      "the earth is flat: (Worldwide)": "5"
+    },
+    "40": {
+      "Week": "08.09.13",
+      "the earth is flat: (Worldwide)": "6"
+    },
+    "41": {
+      "Week": "15.09.13",
+      "the earth is flat: (Worldwide)": "6"
+    },
+    "42": {
+      "Week": "22.09.13",
+      "the earth is flat: (Worldwide)": "6"
+    },
+    "43": {
+      "Week": "29.09.13",
+      "the earth is flat: (Worldwide)": "7"
+    },
+    "44": {
+      "Week": "06.10.13",
+      "the earth is flat: (Worldwide)": "7"
+    },
+    "45": {
+      "Week": "13.10.13",
+      "the earth is flat: (Worldwide)": "6"
+    },
+    "46": {
+      "Week": "20.10.13",
+      "the earth is flat: (Worldwide)": "6"
+    },
+    "47": {
+      "Week": "27.10.13",
+      "the earth is flat: (Worldwide)": "5"
+    },
+    "48": {
+      "Week": "03.11.13",
+      "the earth is flat: (Worldwide)": "5"
+    },
+    "49": {
+      "Week": "10.11.13",
+      "the earth is flat: (Worldwide)": "4"
+    },
+    "50": {
+      "Week": "17.11.13",
+      "the earth is flat: (Worldwide)": "5"
+    },
+    "51": {
+      "Week": "24.11.13",
+      "the earth is flat: (Worldwide)": "4"
+    },
+    "52": {
+      "Week": "01.12.13",
+      "the earth is flat: (Worldwide)": "4"
+    },
+    "53": {
+      "Week": "08.12.13",
+      "the earth is flat: (Worldwide)": "6"
+    },
+    "54": {
+      "Week": "15.12.13",
+      "the earth is flat: (Worldwide)": "6"
+    },
+    "55": {
+      "Week": "22.12.13",
+      "the earth is flat: (Worldwide)": "3"
+    },
+    "56": {
+      "Week": "29.12.13",
+      "the earth is flat: (Worldwide)": "3"
+    },
+    "57": {
+      "Week": "05.01.14",
+      "the earth is flat: (Worldwide)": "5"
+    },
+    "58": {
+      "Week": "12.01.14",
+      "the earth is flat: (Worldwide)": "4"
+    },
+    "59": {
+      "Week": "19.01.14",
+      "the earth is flat: (Worldwide)": "6"
+    },
+    "60": {
+      "Week": "26.01.14",
+      "the earth is flat: (Worldwide)": "5"
+    },
+    "61": {
+      "Week": "02.02.14",
+      "the earth is flat: (Worldwide)": "5"
+    },
+    "62": {
+      "Week": "09.02.14",
+      "the earth is flat: (Worldwide)": "4"
+    },
+    "63": {
+      "Week": "16.02.14",
+      "the earth is flat: (Worldwide)": "5"
+    },
+    "64": {
+      "Week": "23.02.14",
+      "the earth is flat: (Worldwide)": "6"
+    },
+    "65": {
+      "Week": "02.03.14",
+      "the earth is flat: (Worldwide)": "4"
+    },
+    "66": {
+      "Week": "09.03.14",
+      "the earth is flat: (Worldwide)": "4"
+    },
+    "67": {
+      "Week": "16.03.14",
+      "the earth is flat: (Worldwide)": "6"
+    },
+    "68": {
+      "Week": "23.03.14",
+      "the earth is flat: (Worldwide)": "4"
+    },
+    "69": {
+      "Week": "30.03.14",
+      "the earth is flat: (Worldwide)": "6"
+    },
+    "70": {
+      "Week": "06.04.14",
+      "the earth is flat: (Worldwide)": "5"
+    },
+    "71": {
+      "Week": "13.04.14",
+      "the earth is flat: (Worldwide)": "5"
+    },
+    "72": {
+      "Week": "20.04.14",
+      "the earth is flat: (Worldwide)": "5"
+    },
+    "73": {
+      "Week": "27.04.14",
+      "the earth is flat: (Worldwide)": "5"
+    },
+    "74": {
+      "Week": "04.05.14",
+      "the earth is flat: (Worldwide)": "5"
+    },
+    "75": {
+      "Week": "11.05.14",
+      "the earth is flat: (Worldwide)": "4"
+    },
+    "76": {
+      "Week": "18.05.14",
+      "the earth is flat: (Worldwide)": "4"
+    },
+    "77": {
+      "Week": "25.05.14",
+      "the earth is flat: (Worldwide)": "3"
+    },
+    "78": {
+      "Week": "01.06.14",
+      "the earth is flat: (Worldwide)": "4"
+    },
+    "79": {
+      "Week": "08.06.14",
+      "the earth is flat: (Worldwide)": "4"
+    },
+    "80": {
+      "Week": "15.06.14",
+      "the earth is flat: (Worldwide)": "3"
+    },
+    "81": {
+      "Week": "22.06.14",
+      "the earth is flat: (Worldwide)": "3"
+    },
+    "82": {
+      "Week": "29.06.14",
+      "the earth is flat: (Worldwide)": "3"
+    },
+    "83": {
+      "Week": "06.07.14",
+      "the earth is flat: (Worldwide)": "3"
+    },
+    "84": {
+      "Week": "13.07.14",
+      "the earth is flat: (Worldwide)": "4"
+    },
+    "85": {
+      "Week": "20.07.14",
+      "the earth is flat: (Worldwide)": "3"
+    },
+    "86": {
+      "Week": "27.07.14",
+      "the earth is flat: (Worldwide)": "3"
+    },
+    "87": {
+      "Week": "03.08.14",
+      "the earth is flat: (Worldwide)": "3"
+    },
+    "88": {
+      "Week": "10.08.14",
+      "the earth is flat: (Worldwide)": "3"
+    },
+    "89": {
+      "Week": "17.08.14",
+      "the earth is flat: (Worldwide)": "3"
+    },
+    "90": {
+      "Week": "24.08.14",
+      "the earth is flat: (Worldwide)": "5"
+    },
+    "91": {
+      "Week": "31.08.14",
+      "the earth is flat: (Worldwide)": "6"
+    },
+    "92": {
+      "Week": "07.09.14",
+      "the earth is flat: (Worldwide)": "8"
+    },
+    "93": {
+      "Week": "14.09.14",
+      "the earth is flat: (Worldwide)": "6"
+    },
+    "94": {
+      "Week": "21.09.14",
+      "the earth is flat: (Worldwide)": "5"
+    },
+    "95": {
+      "Week": "28.09.14",
+      "the earth is flat: (Worldwide)": "7"
+    },
+    "96": {
+      "Week": "05.10.14",
+      "the earth is flat: (Worldwide)": "7"
+    },
+    "97": {
+      "Week": "12.10.14",
+      "the earth is flat: (Worldwide)": "7"
+    },
+    "98": {
+      "Week": "19.10.14",
+      "the earth is flat: (Worldwide)": "5"
+    },
+    "99": {
+      "Week": "26.10.14",
+      "the earth is flat: (Worldwide)": "5"
+    },
+    "100": {
+      "Week": "02.11.14",
+      "the earth is flat: (Worldwide)": "5"
+    },
+    "101": {
+      "Week": "09.11.14",
+      "the earth is flat: (Worldwide)": "4"
+    },
+    "102": {
+      "Week": "16.11.14",
+      "the earth is flat: (Worldwide)": "4"
+    },
+    "103": {
+      "Week": "23.11.14",
+      "the earth is flat: (Worldwide)": "3"
+    },
+    "104": {
+      "Week": "30.11.14",
+      "the earth is flat: (Worldwide)": "5"
+    },
+    "105": {
+      "Week": "07.12.14",
+      "the earth is flat: (Worldwide)": "7"
+    },
+    "106": {
+      "Week": "14.12.14",
+      "the earth is flat: (Worldwide)": "4"
+    },
+    "107": {
+      "Week": "21.12.14",
+      "the earth is flat: (Worldwide)": "3"
+    },
+    "108": {
+      "Week": "28.12.14",
+      "the earth is flat: (Worldwide)": "3"
+    },
+    "109": {
+      "Week": "04.01.15",
+      "the earth is flat: (Worldwide)": "5"
+    },
+    "110": {
+      "Week": "11.01.15",
+      "the earth is flat: (Worldwide)": "5"
+    },
+    "111": {
+      "Week": "18.01.15",
+      "the earth is flat: (Worldwide)": "6"
+    },
+    "112": {
+      "Week": "25.01.15",
+      "the earth is flat: (Worldwide)": "6"
+    },
+    "113": {
+      "Week": "01.02.15",
+      "the earth is flat: (Worldwide)": "6"
+    },
+    "114": {
+      "Week": "08.02.15",
+      "the earth is flat: (Worldwide)": "6"
+    },
+    "115": {
+      "Week": "15.02.15",
+      "the earth is flat: (Worldwide)": "7"
+    },
+    "116": {
+      "Week": "22.02.15",
+      "the earth is flat: (Worldwide)": "7"
+    },
+    "117": {
+      "Week": "01.03.15",
+      "the earth is flat: (Worldwide)": "6"
+    },
+    "118": {
+      "Week": "08.03.15",
+      "the earth is flat: (Worldwide)": "6"
+    },
+    "119": {
+      "Week": "15.03.15",
+      "the earth is flat: (Worldwide)": "7"
+    },
+    "120": {
+      "Week": "22.03.15",
+      "the earth is flat: (Worldwide)": "6"
+    },
+    "121": {
+      "Week": "29.03.15",
+      "the earth is flat: (Worldwide)": "6"
+    },
+    "122": {
+      "Week": "05.04.15",
+      "the earth is flat: (Worldwide)": "6"
+    },
+    "123": {
+      "Week": "12.04.15",
+      "the earth is flat: (Worldwide)": "6"
+    },
+    "124": {
+      "Week": "19.04.15",
+      "the earth is flat: (Worldwide)": "6"
+    },
+    "125": {
+      "Week": "26.04.15",
+      "the earth is flat: (Worldwide)": "6"
+    },
+    "126": {
+      "Week": "03.05.15",
+      "the earth is flat: (Worldwide)": "6"
+    },
+    "127": {
+      "Week": "10.05.15",
+      "the earth is flat: (Worldwide)": "7"
+    },
+    "128": {
+      "Week": "17.05.15",
+      "the earth is flat: (Worldwide)": "6"
+    },
+    "129": {
+      "Week": "24.05.15",
+      "the earth is flat: (Worldwide)": "6"
+    },
+    "130": {
+      "Week": "31.05.15",
+      "the earth is flat: (Worldwide)": "7"
+    },
+    "131": {
+      "Week": "07.06.15",
+      "the earth is flat: (Worldwide)": "7"
+    },
+    "132": {
+      "Week": "14.06.15",
+      "the earth is flat: (Worldwide)": "7"
+    },
+    "133": {
+      "Week": "21.06.15",
+      "the earth is flat: (Worldwide)": "8"
+    },
+    "134": {
+      "Week": "28.06.15",
+      "the earth is flat: (Worldwide)": "9"
+    },
+    "135": {
+      "Week": "05.07.15",
+      "the earth is flat: (Worldwide)": "8"
+    },
+    "136": {
+      "Week": "12.07.15",
+      "the earth is flat: (Worldwide)": "6"
+    },
+    "137": {
+      "Week": "19.07.15",
+      "the earth is flat: (Worldwide)": "8"
+    },
+    "138": {
+      "Week": "26.07.15",
+      "the earth is flat: (Worldwide)": "7"
+    },
+    "139": {
+      "Week": "02.08.15",
+      "the earth is flat: (Worldwide)": "7"
+    },
+    "140": {
+      "Week": "09.08.15",
+      "the earth is flat: (Worldwide)": "10"
+    },
+    "141": {
+      "Week": "16.08.15",
+      "the earth is flat: (Worldwide)": "10"
+    },
+    "142": {
+      "Week": "23.08.15",
+      "the earth is flat: (Worldwide)": "10"
+    },
+    "143": {
+      "Week": "30.08.15",
+      "the earth is flat: (Worldwide)": "13"
+    },
+    "144": {
+      "Week": "06.09.15",
+      "the earth is flat: (Worldwide)": "10"
+    },
+    "145": {
+      "Week": "13.09.15",
+      "the earth is flat: (Worldwide)": "11"
+    },
+    "146": {
+      "Week": "20.09.15",
+      "the earth is flat: (Worldwide)": "12"
+    },
+    "147": {
+      "Week": "27.09.15",
+      "the earth is flat: (Worldwide)": "14"
+    },
+    "148": {
+      "Week": "04.10.15",
+      "the earth is flat: (Worldwide)": "13"
+    },
+    "149": {
+      "Week": "11.10.15",
+      "the earth is flat: (Worldwide)": "12"
+    },
+    "150": {
+      "Week": "18.10.15",
+      "the earth is flat: (Worldwide)": "13"
+    },
+    "151": {
+      "Week": "25.10.15",
+      "the earth is flat: (Worldwide)": "12"
+    },
+    "152": {
+      "Week": "01.11.15",
+      "the earth is flat: (Worldwide)": "13"
+    },
+    "153": {
+      "Week": "08.11.15",
+      "the earth is flat: (Worldwide)": "14"
+    },
+    "154": {
+      "Week": "15.11.15",
+      "the earth is flat: (Worldwide)": "15"
+    },
+    "155": {
+      "Week": "22.11.15",
+      "the earth is flat: (Worldwide)": "13"
+    },
+    "156": {
+      "Week": "29.11.15",
+      "the earth is flat: (Worldwide)": "14"
+    },
+    "157": {
+      "Week": "06.12.15",
+      "the earth is flat: (Worldwide)": "15"
+    },
+    "158": {
+      "Week": "13.12.15",
+      "the earth is flat: (Worldwide)": "14"
+    },
+    "159": {
+      "Week": "20.12.15",
+      "the earth is flat: (Worldwide)": "15"
+    },
+    "160": {
+      "Week": "27.12.15",
+      "the earth is flat: (Worldwide)": "14"
+    },
+    "161": {
+      "Week": "03.01.16",
+      "the earth is flat: (Worldwide)": "17"
+    },
+    "162": {
+      "Week": "10.01.16",
+      "the earth is flat: (Worldwide)": "17"
+    },
+    "163": {
+      "Week": "17.01.16",
+      "the earth is flat: (Worldwide)": "15"
+    },
+    "164": {
+      "Week": "24.01.16",
+      "the earth is flat: (Worldwide)": "85"
+    },
+    "165": {
+      "Week": "31.01.16",
+      "the earth is flat: (Worldwide)": "37"
+    },
+    "166": {
+      "Week": "07.02.16",
+      "the earth is flat: (Worldwide)": "22"
+    },
+    "167": {
+      "Week": "14.02.16",
+      "the earth is flat: (Worldwide)": "19"
+    },
+    "168": {
+      "Week": "21.02.16",
+      "the earth is flat: (Worldwide)": "20"
+    },
+    "169": {
+      "Week": "28.02.16",
+      "the earth is flat: (Worldwide)": "17"
+    },
+    "170": {
+      "Week": "06.03.16",
+      "the earth is flat: (Worldwide)": "17"
+    },
+    "171": {
+      "Week": "13.03.16",
+      "the earth is flat: (Worldwide)": "15"
+    },
+    "172": {
+      "Week": "20.03.16",
+      "the earth is flat: (Worldwide)": "16"
+    },
+    "173": {
+      "Week": "27.03.16",
+      "the earth is flat: (Worldwide)": "17"
+    },
+    "174": {
+      "Week": "03.04.16",
+      "the earth is flat: (Worldwide)": "16"
+    },
+    "175": {
+      "Week": "10.04.16",
+      "the earth is flat: (Worldwide)": "20"
+    },
+    "176": {
+      "Week": "17.04.16",
+      "the earth is flat: (Worldwide)": "18"
+    },
+    "177": {
+      "Week": "24.04.16",
+      "the earth is flat: (Worldwide)": "19"
+    },
+    "178": {
+      "Week": "01.05.16",
+      "the earth is flat: (Worldwide)": "17"
+    },
+    "179": {
+      "Week": "08.05.16",
+      "the earth is flat: (Worldwide)": "18"
+    },
+    "180": {
+      "Week": "15.05.16",
+      "the earth is flat: (Worldwide)": "19"
+    },
+    "181": {
+      "Week": "22.05.16",
+      "the earth is flat: (Worldwide)": "19"
+    },
+    "182": {
+      "Week": "29.05.16",
+      "the earth is flat: (Worldwide)": "18"
+    },
+    "183": {
+      "Week": "05.06.16",
+      "the earth is flat: (Worldwide)": "23"
+    },
+    "184": {
+      "Week": "12.06.16",
+      "the earth is flat: (Worldwide)": "26"
+    },
+    "185": {
+      "Week": "19.06.16",
+      "the earth is flat: (Worldwide)": "19"
+    },
+    "186": {
+      "Week": "26.06.16",
+      "the earth is flat: (Worldwide)": "17"
+    },
+    "187": {
+      "Week": "03.07.16",
+      "the earth is flat: (Worldwide)": "16"
+    },
+    "188": {
+      "Week": "10.07.16",
+      "the earth is flat: (Worldwide)": "17"
+    },
+    "189": {
+      "Week": "17.07.16",
+      "the earth is flat: (Worldwide)": "18"
+    },
+    "190": {
+      "Week": "24.07.16",
+      "the earth is flat: (Worldwide)": "19"
+    },
+    "191": {
+      "Week": "31.07.16",
+      "the earth is flat: (Worldwide)": "17"
+    },
+    "192": {
+      "Week": "07.08.16",
+      "the earth is flat: (Worldwide)": "17"
+    },
+    "193": {
+      "Week": "14.08.16",
+      "the earth is flat: (Worldwide)": "16"
+    },
+    "194": {
+      "Week": "21.08.16",
+      "the earth is flat: (Worldwide)": "21"
+    },
+    "195": {
+      "Week": "28.08.16",
+      "the earth is flat: (Worldwide)": "22"
+    },
+    "196": {
+      "Week": "04.09.16",
+      "the earth is flat: (Worldwide)": "21"
+    },
+    "197": {
+      "Week": "11.09.16",
+      "the earth is flat: (Worldwide)": "22"
+    },
+    "198": {
+      "Week": "18.09.16",
+      "the earth is flat: (Worldwide)": "18"
+    },
+    "199": {
+      "Week": "25.09.16",
+      "the earth is flat: (Worldwide)": "18"
+    },
+    "200": {
+      "Week": "02.10.16",
+      "the earth is flat: (Worldwide)": "20"
+    },
+    "201": {
+      "Week": "09.10.16",
+      "the earth is flat: (Worldwide)": "19"
+    },
+    "202": {
+      "Week": "16.10.16",
+      "the earth is flat: (Worldwide)": "18"
+    },
+    "203": {
+      "Week": "23.10.16",
+      "the earth is flat: (Worldwide)": "20"
+    },
+    "204": {
+      "Week": "30.10.16",
+      "the earth is flat: (Worldwide)": "19"
+    },
+    "205": {
+      "Week": "06.11.16",
+      "the earth is flat: (Worldwide)": "17"
+    },
+    "206": {
+      "Week": "13.11.16",
+      "the earth is flat: (Worldwide)": "21"
+    },
+    "207": {
+      "Week": "20.11.16",
+      "the earth is flat: (Worldwide)": "17"
+    },
+    "208": {
+      "Week": "27.11.16",
+      "the earth is flat: (Worldwide)": "21"
+    },
+    "209": {
+      "Week": "04.12.16",
+      "the earth is flat: (Worldwide)": "19"
+    },
+    "210": {
+      "Week": "11.12.16",
+      "the earth is flat: (Worldwide)": "22"
+    },
+    "211": {
+      "Week": "18.12.16",
+      "the earth is flat: (Worldwide)": "19"
+    },
+    "212": {
+      "Week": "25.12.16",
+      "the earth is flat: (Worldwide)": "21"
+    },
+    "213": {
+      "Week": "01.01.17",
+      "the earth is flat: (Worldwide)": "23"
+    },
+    "214": {
+      "Week": "08.01.17",
+      "the earth is flat: (Worldwide)": "24"
+    },
+    "215": {
+      "Week": "15.01.17",
+      "the earth is flat: (Worldwide)": "22"
+    },
+    "216": {
+      "Week": "22.01.17",
+      "the earth is flat: (Worldwide)": "22"
+    },
+    "217": {
+      "Week": "29.01.17",
+      "the earth is flat: (Worldwide)": "22"
+    },
+    "218": {
+      "Week": "05.02.17",
+      "the earth is flat: (Worldwide)": "25"
+    },
+    "219": {
+      "Week": "12.02.17",
+      "the earth is flat: (Worldwide)": "68"
+    },
+    "220": {
+      "Week": "19.02.17",
+      "the earth is flat: (Worldwide)": "100"
+    },
+    "221": {
+      "Week": "26.02.17",
+      "the earth is flat: (Worldwide)": "46"
+    },
+    "222": {
+      "Week": "05.03.17",
+      "the earth is flat: (Worldwide)": "36"
+    },
+    "223": {
+      "Week": "12.03.17",
+      "the earth is flat: (Worldwide)": "30"
+    },
+    "224": {
+      "Week": "19.03.17",
+      "the earth is flat: (Worldwide)": "62"
+    },
+    "225": {
+      "Week": "26.03.17",
+      "the earth is flat: (Worldwide)": "40"
+    },
+    "226": {
+      "Week": "02.04.17",
+      "the earth is flat: (Worldwide)": "33"
+    },
+    "227": {
+      "Week": "09.04.17",
+      "the earth is flat: (Worldwide)": "35"
+    },
+    "228": {
+      "Week": "16.04.17",
+      "the earth is flat: (Worldwide)": "38"
+    },
+    "229": {
+      "Week": "23.04.17",
+      "the earth is flat: (Worldwide)": "44"
+    },
+    "230": {
+      "Week": "30.04.17",
+      "the earth is flat: (Worldwide)": "31"
+    },
+    "231": {
+      "Week": "07.05.17",
+      "the earth is flat: (Worldwide)": "39"
+    },
+    "232": {
+      "Week": "14.05.17",
+      "the earth is flat: (Worldwide)": "36"
+    },
+    "233": {
+      "Week": "21.05.17",
+      "the earth is flat: (Worldwide)": "33"
+    },
+    "234": {
+      "Week": "28.05.17",
+      "the earth is flat: (Worldwide)": "38"
+    },
+    "235": {
+      "Week": "04.06.17",
+      "the earth is flat: (Worldwide)": "34"
+    },
+    "236": {
+      "Week": "11.06.17",
+      "the earth is flat: (Worldwide)": "32"
+    },
+    "237": {
+      "Week": "18.06.17",
+      "the earth is flat: (Worldwide)": "28"
+    },
+    "238": {
+      "Week": "25.06.17",
+      "the earth is flat: (Worldwide)": "26"
+    },
+    "239": {
+      "Week": "02.07.17",
+      "the earth is flat: (Worldwide)": "28"
+    },
+    "240": {
+      "Week": "09.07.17",
+      "the earth is flat: (Worldwide)": "28"
+    },
+    "241": {
+      "Week": "16.07.17",
+      "the earth is flat: (Worldwide)": "29"
+    },
+    "242": {
+      "Week": "23.07.17",
+      "the earth is flat: (Worldwide)": "31"
+    },
+    "243": {
+      "Week": "30.07.17",
+      "the earth is flat: (Worldwide)": "33"
+    },
+    "244": {
+      "Week": "06.08.17",
+      "the earth is flat: (Worldwide)": "31"
+    },
+    "245": {
+      "Week": "13.08.17",
+      "the earth is flat: (Worldwide)": "31"
+    },
+    "246": {
+      "Week": "20.08.17",
+      "the earth is flat: (Worldwide)": "48"
+    },
+    "247": {
+      "Week": "27.08.17",
+      "the earth is flat: (Worldwide)": "29"
+    },
+    "248": {
+      "Week": "03.09.17",
+      "the earth is flat: (Worldwide)": "31"
+    },
+    "249": {
+      "Week": "10.09.17",
+      "the earth is flat: (Worldwide)": "32"
+    },
+    "250": {
+      "Week": "17.09.17",
+      "the earth is flat: (Worldwide)": "40"
+    },
+    "251": {
+      "Week": "24.09.17",
+      "the earth is flat: (Worldwide)": "47"
+    },
+    "252": {
+      "Week": "01.10.17",
+      "the earth is flat: (Worldwide)": "36"
+    },
+    "253": {
+      "Week": "08.10.17",
+      "the earth is flat: (Worldwide)": "36"
+    },
+    "254": {
+      "Week": "15.10.17",
+      "the earth is flat: (Worldwide)": "32"
+    },
+    "255": {
+      "Week": "22.10.17",
+      "the earth is flat: (Worldwide)": "33"
+    },
+    "256": {
+      "Week": "29.10.17",
+      "the earth is flat: (Worldwide)": "39"
+    },
+    "257": {
+      "Week": "05.11.17",
+      "the earth is flat: (Worldwide)": "32"
+    },
+    "258": {
+      "Week": "12.11.17",
+      "the earth is flat: (Worldwide)": "42"
+    },
+    "259": {
+      "Week": "19.11.17",
+      "the earth is flat: (Worldwide)": "62"
+    },
+    "260": {
+      "Week": "26.11.17",
+      "the earth is flat: (Worldwide)": "73"
+    }
+  },
+  "header": {
+    "Week": "Date(%d.%m.%y)",
+    "the earth is flat: (Worldwide)": "Numerical"
+  },
+  "author_id": 4
+},
+{
+  "title": "BioStats",
+  "file_name": "biostats.csv",
+  "rows": {
+    "0": {
+      "Age": "41",
+      "Sex": "M",
+      "Name": "Alex",
+      "Height (in)": "74",
+      "Weight (lbs)": "170"
+    },
+    "1": {
+      "Age": "42",
+      "Sex": "M",
+      "Name": "Bert",
+      "Height (in)": "68",
+      "Weight (lbs)": "166"
+    },
+    "2": {
+      "Age": "32",
+      "Sex": "M",
+      "Name": "Carl",
+      "Height (in)": "70",
+      "Weight (lbs)": "155"
+    },
+    "3": {
+      "Age": "39",
+      "Sex": "M",
+      "Name": "Dave",
+      "Height (in)": "72",
+      "Weight (lbs)": "167"
+    },
+    "4": {
+      "Age": "30",
+      "Sex": "F",
+      "Name": "Elly",
+      "Height (in)": "66",
+      "Weight (lbs)": "124"
+    },
+    "5": {
+      "Age": "33",
+      "Sex": "F",
+      "Name": "Fran",
+      "Height (in)": "66",
+      "Weight (lbs)": "115"
+    },
+    "6": {
+      "Age": "26",
+      "Sex": "F",
+      "Name": "Gwen",
+      "Height (in)": "64",
+      "Weight (lbs)": "121"
+    },
+    "7": {
+      "Age": "30",
+      "Sex": "M",
+      "Name": "Hank",
+      "Height (in)": "71",
+      "Weight (lbs)": "158"
+    },
+    "8": {
+      "Age": "53",
+      "Sex": "M",
+      "Name": "Ivan",
+      "Height (in)": "72",
+      "Weight (lbs)": "175"
+    },
+    "9": {
+      "Age": "32",
+      "Sex": "M",
+      "Name": "Jake",
+      "Height (in)": "69",
+      "Weight (lbs)": "143"
+    },
+    "10": {
+      "Age": "47",
+      "Sex": "F",
+      "Name": "Kate",
+      "Height (in)": "69",
+      "Weight (lbs)": "139"
+    },
+    "11": {
+      "Age": "34",
+      "Sex": "M",
+      "Name": "Luke",
+      "Height (in)": "72",
+      "Weight (lbs)": "163"
+    },
+    "12": {
+      "Age": "23",
+      "Sex": "F",
+      "Name": "Myra",
+      "Height (in)": "62",
+      "Weight (lbs)": "98"
+    },
+    "13": {
+      "Age": "36",
+      "Sex": "M",
+      "Name": "Neil",
+      "Height (in)": "75",
+      "Weight (lbs)": "160"
+    },
+    "14": {
+      "Age": "38",
+      "Sex": "M",
+      "Name": "Omar",
+      "Height (in)": "70",
+      "Weight (lbs)": "145"
+    },
+    "15": {
+      "Age": "31",
+      "Sex": "F",
+      "Name": "Page",
+      "Height (in)": "67",
+      "Weight (lbs)": "135"
+    },
+    "16": {
+      "Age": "29",
+      "Sex": "M",
+      "Name": "Quin",
+      "Height (in)": "71",
+      "Weight (lbs)": "176"
+    },
+    "17": {
+      "Age": "28",
+      "Sex": "F",
+      "Name": "Ruth",
+      "Height (in)": "65",
+      "Weight (lbs)": "131"
+    }
+  },
+  "header": {
+    "Age": "Numerical",
+    "Sex": "Categorical",
+    "Name": "Categorical",
+    "Height (in)": "Numerical",
+    "Weight (lbs)": "Numerical"
+  },
+  "author_id": 4
+}]
