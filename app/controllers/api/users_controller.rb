@@ -15,7 +15,7 @@ class Api::UsersController < ApplicationController
   end
 
   def top
-    sql = ('SELECT users.* FROM posts JOIN users ON author_id=users.id GROUP BY users.id ORDER BY COUNT(posts.id) DESC LIMIT 10')
+    sql = ('SELECT users.* FROM posts JOIN users ON author_id=users.id JOIN likes ON likes.post_id=posts.id GROUP BY users.id ORDER BY COUNT(posts.id) DESC LIMIT 10')
     @users = User.find_by_sql(sql)
     render :top
   end

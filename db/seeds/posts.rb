@@ -1,0 +1,21 @@
+Post.create!([
+  {title: "Bitcoin surpasses meme", description: "This is fantastic news. The searches for the term bitcoin have finally surpassed the searches for the term meme. Watch your portfolios!", postable_type: "Chart", postable_id: 4, author_id: 1, created_at: rand(Date.civil(2017, 10, 10)..Date.civil(2017, 11, 29))},
+  {title: "Amazon and Google", description: "Look at that close race on Google and Amazon prices.", postable_type: "Chart", postable_id: 1, author_id: 1, created_at: rand(Date.civil(2017, 10, 10)..Date.civil(2017, 11, 29))},
+  {title: "Up and Up", description: "I think this is self explanatory", postable_type: "Chart", postable_id: 2, author_id: 1, created_at: rand(Date.civil(2017, 10, 10)..Date.civil(2017, 11, 29))},
+  {title: "Bitcoin prices", description: "When will this stop?", postable_type: "Chart", postable_id: 3, author_id: 1, created_at: rand(Date.civil(2017, 10, 10)..Date.civil(2017, 11, 29))},
+  {title: "S&P and tech stocks", description: "If anyone wants to analyse the tech stocks. I am a bit lost.", postable_type: "Dataset", postable_id: 6, author_id: 1, created_at: rand(Date.civil(2017, 10, 10)..Date.civil(2017, 11, 29))},
+  {title: "My most valuable dataset", description: "", postable_type: "Dataset", postable_id: 4, author_id: 1, created_at: rand(Date.civil(2017, 10, 10)..Date.civil(2017, 11, 29))},
+  {title: "Popularity of dev roles", description: "Confirming my thoughts. WEB DEV FOR THE WIN!", postable_type: "Chart", postable_id: 5, author_id: 2, created_at: rand(Date.civil(2017, 10, 10)..Date.civil(2017, 11, 29))},
+  {title: "InstaCrush", description: "Snapchat is in struggle. Will it come back?", postable_type: "Chart", postable_id: 9, author_id: 2, created_at: rand(Date.civil(2017, 10, 10)..Date.civil(2017, 11, 29))},
+  {title: "Trends in the backend world", description: "Is ruby being derailed by node js?", postable_type: "Chart", postable_id: 8, author_id: 2, created_at: rand(Date.civil(2017, 10, 10)..Date.civil(2017, 11, 29))},
+  {title: "Javascript's popularity", description: "Is Javascript the English of programming?", postable_type: "Chart", postable_id: 6, author_id: 2, created_at: rand(Date.civil(2017, 10, 10)..Date.civil(2017, 11, 29))},
+  {title: "Languages popularity", description: "Anyone has a good explanation for these popularity?", postable_type: "Dataset", postable_id: 9, author_id: 2, created_at: rand(Date.civil(2017, 10, 10)..Date.civil(2017, 11, 29))},
+  {title: "Node JS and Ruby on Rails", description: "Who can predict what the next months will be like?", postable_type: "Dataset", postable_id: 8, author_id: 2, created_at: rand(Date.civil(2017, 10, 10)..Date.civil(2017, 11, 29))},
+  {title: "The World Cup makes soccer great", description: "", postable_type: "Chart", postable_id: 12, author_id: 3, created_at: rand(Date.civil(2017, 10, 10)..Date.civil(2017, 11, 29))},
+  {title: "Not really playing on the same field?", description: "Huge gaps in valuations of soccer teams", postable_type: "Chart", postable_id: 14, author_id: 3, created_at: rand(Date.civil(2017, 10, 10)..Date.civil(2017, 11, 29))},
+  {title: "Forbes Most Valuable Soccer Teams", description: "There is some great information in that dataset", postable_type: "Dataset", postable_id: 12, author_id: 3, created_at: rand(Date.civil(2017, 10, 10)..Date.civil(2017, 11, 29))},
+  {title: "I knew it!", description: "More and more people realising that I was right. The earth is flat!", postable_type: "Chart", postable_id: 13, author_id: 4, created_at: rand(Date.civil(2017, 10, 10)..Date.civil(2017, 11, 29))},
+  {title: "People I know", description: "I like comparing people I know. Won't tell you who they are though.", postable_type: "Chart", postable_id: 16, author_id: 4, created_at: rand(Date.civil(2017, 10, 10)..Date.civil(2017, 11, 29))},
+  {title: "Airlines in the 60s", description: "The most important information is beautiful information.", postable_type: "Chart", postable_id: 15, author_id: 4, created_at: rand(Date.civil(2017, 10, 10)..Date.civil(2017, 11, 29))},
+  {title: "My friends", description: "I have a wide array of friends. And they are of different ages. Do you think that's interesting? Give me a like!", postable_type: "Chart", postable_id: 17, author_id: 4, created_at: rand(Date.civil(2017, 10, 10)..Date.civil(2017, 11, 29))}
+])

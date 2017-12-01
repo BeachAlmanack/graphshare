@@ -883,7 +883,6 @@
   "file_name": "atp_ranking_age.csv",
   "rows": {
     "0": {
-      "Age": "Age",
       "Marin Cilic": "29.00",
       "Rafael Nadal": "31.00",
       "Dominic Thiem": "24.00",
@@ -893,7 +892,6 @@
     }
   },
   "header": {
-    "Player": "Categorical",
     "Marin Cilic": "Numerical",
     "Rafael Nadal": "Numerical",
     "Dominic Thiem": "Numerical",
@@ -908,7 +906,6 @@
   "file_name": "atp_ranking_points.csv",
   "rows": {
     "0": {
-      "Points": "Points",
       "Marin Cilic": "3805.00",
       "Rafael Nadal": "10645.00",
       "Dominic Thiem": "4015.00",
@@ -918,7 +915,6 @@
     }
   },
   "header": {
-    "Player": "Categorical",
     "Marin Cilic": "Numerical",
     "Rafael Nadal": "Numerical",
     "Dominic Thiem": "Numerical",
@@ -933,7 +929,6 @@
   "file_name": "atp_ranking_tournament.csv",
   "rows": {
     "0": {
-      "Tournament Played": "Tournament Played",
       "Marin Cilic": "22.00",
       "Rafael Nadal": "18.00",
       "Dominic Thiem": "27.00",
@@ -943,7 +938,6 @@
     }
   },
   "header": {
-    "Player": "Categorical",
     "Marin Cilic": "Numerical",
     "Rafael Nadal": "Numerical",
     "Dominic Thiem": "Numerical",
