@@ -1,4 +1,5 @@
 import { connect } from 'react-redux';
+import { omitBy } from 'lodash';
 import { withRouter } from 'react-router-dom';
 import ChartCreator from './chart_creator';
 import { fetchDataset, fetchDatasets } from '../../../actions/datasets_actions';
@@ -6,7 +7,7 @@ import { receiveChart, saveChart } from '../../../actions/chart_actions';
 
 const mapStateToProps = (state, ownProps) => (
   {
-    datasets: state.entities.datasets,
+    datasets: omitBy(state.entities.datasets, d => d.author_id !== state.session.currentUser.id),
     currentUserId: state.session.currentUser.id,
     selectedDataset: ownProps.match.params.dataId,
   });
