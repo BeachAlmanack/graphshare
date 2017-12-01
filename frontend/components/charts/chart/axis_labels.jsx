@@ -13,7 +13,7 @@ export default function ({leftAxis, bottomAxis, width, height}) {
     <text
       x="0"
       y="0"
-      transform={`translate(10, ${(height / 2)}), rotate(-90)`}
+      transform={`translate(15, ${(height / 2)}), rotate(-90)`}
       textAnchor="middle">
         {leftAxis}
     </text>

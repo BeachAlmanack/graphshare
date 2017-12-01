@@ -10,6 +10,7 @@ class Signup extends React.Component {
     };
     this.handleChange = this.handleChange.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
+    this.handleDemoLogin = this.handleDemoLogin.bind(this);
   }
 
   componentDidMount() {
@@ -29,9 +30,19 @@ class Signup extends React.Component {
     this.props.signup(this.state);
   }
 
+  handleDemoLogin(event) {
+    event.preventDefault();
+    this.props.login({
+      username: 'demo',
+      password: 'password',
+    });
+  }
+
   render() {
     return (
       <div className="signup-page">
+        
+       
         <div className="form-container">
           <form className="form">
             <h2 className="form-title">Sign Up</h2>
@@ -63,6 +74,9 @@ class Signup extends React.Component {
               />
             </label>
             <button onClick={this.handleSubmit} className="form-button">Sign Up!</button>
+            <hr />
+            <label>Want to test the website?</label>
+            <button onClick={this.handleDemoLogin} className="form-button-outline">Demo Log In</button>
           </form>
           {
             (this.props.errors.length > 0) ? (

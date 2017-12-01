@@ -33,12 +33,12 @@
 
 .header-right {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
   align-items: center;
   width: 100%;
 }
 .user-info {
-  width: 100%;
+  min-width: 250px;
 }
 
 .nav-links {
