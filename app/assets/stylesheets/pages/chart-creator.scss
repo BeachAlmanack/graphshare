@@ -58,6 +58,11 @@
     }
 }
 
+.chart-placeholder {
+  margin-top: 150px;
+  text-align: center;
+}
+
 
 .column-names {
   padding: 0px;
@@ -69,7 +74,7 @@
     justify-content: space-between;
     background-color: $lightest-gray;
     color: black;
-    cursor: pointer;
+    cursor: move;
     vertical-align: center;
     position: relative;
   }
@@ -138,6 +143,13 @@
   
 }
 
+.errors {
+  margin-top: 10px;
+  margin-right: 120px;
+  display: block;
+  color: $red;
+}
+
 .new-chart {
   margin-left: 10px;
   padding: 20px;
@@ -181,4 +193,10 @@
   right: 0px;
   text-align: center;
   width: 100px;
+}
+
+.loading-save {
+  position: absolute;
+  top: 125%;
+  right: 35px;
 }

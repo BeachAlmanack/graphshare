@@ -21,6 +21,8 @@ class ChartCreator extends React.Component {
       yAxisName: '',
       chartType: ChartType.LINE,
       chart: undefined,
+      errors: '',
+      disableSave: false,
     };
 
     this.handleDatasetChange = this.handleDatasetChange.bind(this);
@@ -77,6 +79,7 @@ class ChartCreator extends React.Component {
     if (chart.data.axis.x && chart.data.axis.y.length > 0) {
       this.setState({
         chart,
+        errors: '',
       });
     } else {
       this.setState({
@@ -98,6 +101,7 @@ class ChartCreator extends React.Component {
       xAxis: [],
       yAxis: [],
       chart: undefined,
+      errors: '',
     });
     if (chosenDataset && !this.props.datasets[chosenDataset.value].rows) {
       this.props.fetchDataset(chosenDataset.value);
@@ -126,7 +130,25 @@ class ChartCreator extends React.Component {
     };
   }
 
-  saveChart() {
+  saveChart(event) {
+    event.preventDefault();
+    const errors = [];
+    if (!this.state.chart) {
+      errors.push('please create a chart first by dragging one column in the x axis and at least one column in the y axis');
+    }
+    if (!this.state.title) {
+      errors.push('you need a title for your chart');
+    }
+    if (errors.length > 0) {
+      errors[0] = errors[0].charAt(0).toUpperCase() + errors[0].slice(1);
+      this.setState({
+        errors: errors.join(' and '),
+      });
+      return;
+    }
+    this.setState({
+      disableSave: true,
+    });
     this.props.saveChart(this.state.chart).then(payload => this.props.history.push(`/charts/${payload.chart.id}`));
   }
 
@@ -141,7 +163,7 @@ class ChartCreator extends React.Component {
     const options = ids.map(id => ({ value: id, label: datasets[id].title }));
     const itemsX = this.state.xAxis;
     const itemsY = this.state.yAxis;
-
+    console.log(this.state.errors);
     return (
       <div className="chart-creator-menu">
         
@@ -182,8 +204,14 @@ class ChartCreator extends React.Component {
           <label htmlFor="title"> Title:
             <input id="title" type="text" value={this.state.title} onChange={this.handleInputChange('title')} placeholder="Chart Title" />
           </label>
-          {this.state.chart ? <Chart chart={this.state.chart} height={300} /> : <div className="chart-container" style={{ height: 350 }}> Chart </div>}
-          <button onClick={this.saveChart} className="chart-save">Save </button>
+          {this.state.chart ? <Chart chart={this.state.chart} height={300} /> : <div className="chart-container" style={{ height: 350 }}> <p className="chart-placeholder"> Chart </p> </div>}
+          <p className="errors">{ this.state.errors }</p>
+          {!this.state.disableSave ? <button onClick={this.saveChart} className="chart-save">Save </button> :
+            <div className="loading-save">
+              <div className="double-bounce1"></div>
+              <div className="double-bounce2"></div>
+            </div>}
+          
         </div>
       </div>
     );
