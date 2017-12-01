@@ -143,6 +143,18 @@
   
 }
 
+.refused {
+  background-color: $red;
+  color: white;
+}
+
+.accepted {
+  background-color: $green;
+  color: white;
+}
+
+
+
 .errors {
   margin-top: 10px;
   margin-right: 120px;

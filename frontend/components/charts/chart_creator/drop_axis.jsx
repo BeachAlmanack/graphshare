@@ -7,13 +7,16 @@ class DropAxis extends React.Component {
       connectDropTarget,
       items,
       removeItem,
+      isOver,
+      canDrop,
     } = this.props;
-
+    const accepted = isOver && canDrop;
+    const refused = isOver && !canDrop;
     return connectDropTarget((
-      <div className="drop">
+      <div className={`drop ${refused ? 'refused' : ''} ${accepted ? 'accepted' : ''}`}>
         {
           items.length > 0 ?
-        <ul className="column-names">
+            <ul className="column-names">
           {
             items.map(item => (
               <li key={item.name}>
@@ -38,6 +41,15 @@ const spec = {
     props.addItem(monitor.getItem());
     return { moved: true };
   },
+
+  canDrop(props, monitor) {
+    // You can disallow drop based on props or item
+    if (props.items.length === props.maxItem) {
+      return false;
+    }
+    return true;
+  },
+
 };
 
 function collect(connect, monitor) {
@@ -48,7 +60,7 @@ function collect(connect, monitor) {
   };
 }
 
-export default (type, items, onDrop, removeItem) => {
+export default (type, items, onDrop, removeItem, maxItem) => {
   const DropSquare = DropTarget(type, spec, collect)(DropAxis);
-  return <DropSquare items={items} addItem={onDrop} removeItem={removeItem} />;
+  return <DropSquare items={items} maxItem={maxItem} addItem={onDrop} removeItem={removeItem} />;
 };

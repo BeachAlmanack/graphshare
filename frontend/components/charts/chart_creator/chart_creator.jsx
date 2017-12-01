@@ -163,7 +163,6 @@ class ChartCreator extends React.Component {
     const options = ids.map(id => ({ value: id, label: datasets[id].title }));
     const itemsX = this.state.xAxis;
     const itemsY = this.state.yAxis;
-    console.log(this.state.errors);
     return (
       <div className="chart-creator-menu">
         
@@ -193,11 +192,11 @@ class ChartCreator extends React.Component {
         <div className="dataset-drops">
           <div>
             <h2>X Axis</h2> <input type="text" placeholder="Axis Name" value={this.state.xAxisName} onChange={this.handleInputChange('xAxisName')} />
-            {DropAxis(DataType.ALL, itemsX, item => this.handleDrop('xAxis', item), this.removeItem('xAxis'))}
+            {DropAxis(DataType.ALL, itemsX, item => this.handleDrop('xAxis', item), this.removeItem('xAxis'), 1)}
           </div>
           <div>
             <h2>Y Axis</h2> <input type="text" placeholder="Axis Name" value={this.state.yAxisName} onChange={this.handleInputChange('yAxisName')} />
-            {DropAxis(DataType.NUMERICAL, itemsY, item => this.handleDrop('yAxis', item), this.removeItem('yAxis'))}
+            {DropAxis(DataType.NUMERICAL, itemsY, item => this.handleDrop('yAxis', item), this.removeItem('yAxis'), 4)}
           </div>
         </div>
         <div className="new-chart">
@@ -211,7 +210,6 @@ class ChartCreator extends React.Component {
               <div className="double-bounce1"></div>
               <div className="double-bounce2"></div>
             </div>}
-          
         </div>
       </div>
     );
