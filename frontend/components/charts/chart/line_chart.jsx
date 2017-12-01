@@ -16,14 +16,14 @@ class LineChart extends React.Component {
     const marginLeft = 30;
     
     const rows = rawRows.sort((x, y) => ascending(x[this.props.data.axis.x], y[this.props.data.axis.x]));
-    const [scaleX, scaleY] = Scale(this.props.data, width, height);
+    const [scaleX, scaleY] = Scale(this.props.data, rows, width, height);
 
     this.props.data.axis.y.forEach((columName, idx) => {
       const lineFunction = line()
         .x(d => scaleX(d[this.props.data.axis.x]))
         .y(d => scaleY(d[columName]));
 
-      const path = (<path d={lineFunction(rows)} className="line" key={columName} transform={`translate(${marginLeft}, 0)`} className={`color-stroke-${idx}`} />);
+      const path = (<path d={lineFunction(rows)} className="line" key={columName} transform={`translate(${marginLeft}, 0)`} className={`color-stroke-${idx + 1}`} />);
       paths.push(path);
     });
 

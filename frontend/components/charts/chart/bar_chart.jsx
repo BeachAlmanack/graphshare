@@ -11,7 +11,7 @@ const Rects = (rows, bandWidth, xcb, ycb, index, height) => (
       width={bandWidth}
       height={height - 30 - ycb(row)}
       transform={`translate(${(xcb(row) + (bandWidth * index)) + 30}, ${ycb(row)})`}
-      className={`color-fill-${index}`}
+      className={`color-fill-${index + 1}`}
     />
   ))
 );
@@ -25,7 +25,7 @@ class BarChart extends React.Component {
     const marginLeft = 30;
 
     const rows = values(this.props.data.rows);
-    const [scaleX, scaleY] = Scale(this.props.data, width, height, true);
+    const [scaleX, scaleY] = Scale(this.props.data, rows, width, height, true);
     
     const numberOfBars = this.props.data.axis.y.length;
     let rotate = false;

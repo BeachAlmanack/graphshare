@@ -32,82 +32,30 @@
   }
 }
 
-// Chart colors
-.color-fill-0 {
-  fill: $blue;
-}
+$chart-colors: ($blue, $green, $orange, $red, rgb(159, 37, 175), rgb(30, 156, 194));
 
-.color-fill-1 {
-  fill: $green;
-}
+@for $i from 1 through length($chart-colors) {
+  $c: nth($chart-colors, $i);
 
-.color-fill-2 {
-  fill: $orange;
-}
+  .color-#{$i} {
+    color: $c;
+  }
 
-.color-fill-3 {
-  fill: rgb(142, 31, 156);
-}
+  .color-fill-#{$i} {
+    fill: $c;
+  }
 
-.color-fill-4 {
-  fill: $red;
-}
+  .color-stroke-#{$i} {
+    stroke: $c;
+    fill: none;
+  }
 
-.color-fill-5 {
-  fill: rgb(30, 156, 194);
-}
-
-.color-0 {
-  color: $blue;
-}
-
-.color-1 {
-  color: $green;
-}
-
-.color-2 {
-  color: $orange;
-}
-
-.color-3 {
-  color: rgb(142, 31, 156);
-}
-
-.color-4 {
-  color: $red;
-}
-
-.color-5 {
-  color: rgb(30, 156, 194);
-}
-
-.color-stroke-0 {
-  stroke: $blue;
-  fill: none;
-}
-
-.color-stroke-1 {
-  stroke: $green;
-  fill: none;
-}
-
-.color-stroke-2 {
-  stroke: $orange;
-  fill: none;
+  @for $j from 1 through 15 {
+    $c2: darken($c, 20);
+    .color-pie-#{$i}-#{$j} {
+      fill: lighten($c2, ($j * 2.5));
+    }
+  }
 }
 
 
-.color-stroke-3 {
-  stroke: rgb(142, 31, 156);
-  fill: none;
-}
-
-.color-stroke-4 {
-  stroke: $red;
-  fill: none;
-}
-
-.color-stroke-5 {
-  stroke: rgb(30, 156, 194);
-  fill: none;
-}

@@ -67,7 +67,7 @@ class Chart extends React.Component {
                 {
                   chart.data.axis.y.map((label, idx) => (
                     <li key={label}>
-                      <i className={`fa fa-square color-${idx}`} aria-hidden="true" />{label}
+                      <i className={`fa fa-square color-${idx + 1}`} aria-hidden="true" />{label}
                     </li>
                   ))
                 }

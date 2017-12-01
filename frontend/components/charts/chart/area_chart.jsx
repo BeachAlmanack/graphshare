@@ -5,6 +5,7 @@ import { values } from 'lodash';
 import Axis from './axis';
 import AxisLabels from './axis_labels';
 import Scale from './scale';
+import * as DataType from '../../../utils/constants/data_types';
 
 class AreaChart extends React.Component {
   render() {
@@ -14,11 +15,10 @@ class AreaChart extends React.Component {
     const width = this.props.width;
     const height = this.props.height;
     const marginLeft = 30;
-
+    
     const rows = rawRows.sort((x, y) => ascending(x[this.props.data.axis.x], y[this.props.data.axis.x]));
-    const [scaleX, scaleY] = Scale(this.props.data, width, height);
 
-
+    const [scaleX, scaleY] = Scale(this.props.data, rows, width, height);
 
     this.props.data.axis.y.forEach((columName, idx) => {
       
@@ -27,7 +27,7 @@ class AreaChart extends React.Component {
         .y1(d => scaleY(d[columName]))
         .y0(scaleY.range()[0]);
 
-      const path = (<path d={lineFunction(rows)} key={columName} transform={`translate(${marginLeft}, 0)`} className={`color-fill-${idx}`} />);
+      const path = (<path d={lineFunction(rows)} key={columName} transform={`translate(${marginLeft}, 0)`} className={`color-fill-${idx + 1}`} />);
       paths.push(path);
     });
 

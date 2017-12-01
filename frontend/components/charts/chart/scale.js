@@ -3,9 +3,7 @@ import { max, min } from 'd3-array';
 import { values } from 'lodash';
 import * as DataType from '../../../utils/constants/data_types';
 
-const scales = (data, width, height, band = false) => {
-
-  const rows = values(data.rows);
+const scales = (data, rows, width, height, band = false) => {
   const innerWidth = width - 30;
   const innerHeight = height - 30;
   let scaleX;
