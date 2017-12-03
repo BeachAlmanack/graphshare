@@ -6,7 +6,7 @@ const initialState = {};
 
 const likesReducer = (state = initialState, action) => {
   Object.freeze(state);
-  let newState = undefined;
+  let newState = {};
   switch (action.type) {
     case RECEIVE_POSTS:
       newState = action.likes.reduce((acc, el) => {

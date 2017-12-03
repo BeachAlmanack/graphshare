@@ -1,12 +1,12 @@
+import { clone } from 'lodash';
 import { RECEIVE_POSTS } from '../../actions/post_actions';
 import { RECEIVE_LIKE, REMOVE_LIKE } from '../../actions/like_actions';
-import { clone } from 'lodash';
 
 const initialState = {};
 
 const postsReducer = (state = initialState, action) => {
   Object.freeze(state);
-  let newState = undefined;
+  let newState = {};
   switch (action.type) {
     case RECEIVE_POSTS:
       newState = action.posts.reduce((acc, el) => {

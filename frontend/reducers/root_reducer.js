@@ -13,7 +13,7 @@ const combinedReducers = combineReducers({
 
 export default (state, action) => {
   if (action.type === LOGOUT_CURRENT_USER) {
-    state = undefined
+    return combinedReducers(undefined, action);
   }
   return combinedReducers(state, action);
 };
