@@ -6,7 +6,8 @@ import * as DataType from '../../../utils/constants/data_types';
 const scales = (data, rows, width, height, band = false) => {
   const innerWidth = width - 30;
   const innerHeight = height - 30;
-  let scaleX;
+  
+  let scaleX = undefined;
 
   if (band) {
     const domain = rows.map(row => row[data.axis.x]);

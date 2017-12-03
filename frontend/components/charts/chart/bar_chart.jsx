@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import { values } from 'lodash';
 import Axis from './axis';
 import Scale from './scale';
@@ -16,35 +17,43 @@ const Rects = (rows, bandWidth, xcb, ycb, index, height) => (
   ))
 );
 
-class BarChart extends React.Component {
+const BarChart = ({ data, width, height }) => {
+  const marginLeft = 30;
+  const marginBottom = 30;
   
-  render() {
-    this.bars = [];
-    const width = this.props.width;
-    const height = this.props.height;
-    const marginLeft = 30;
+  const rows = values(data.rows);
+  const { axisNames } = data;
+  const [scaleX, scaleY] = Scale(data, rows, width, height, true);
 
-    const rows = values(this.props.data.rows);
-    const [scaleX, scaleY] = Scale(this.props.data, rows, width, height, true);
-    
-    const numberOfBars = this.props.data.axis.y.length;
-    let rotate = false;
-    this.props.data.axis.y.forEach((columName, idx) => {
-      const seriesRect = Rects(rows, (scaleX.bandwidth() / numberOfBars), (row => scaleX(row[this.props.data.axis.x])), (row => scaleY(row[columName])), idx, height);
-      rotate = (seriesRect.length > 8);
-      this.bars = this.bars.concat(seriesRect);
-    });
-    this.yAxis = <Axis scale={scaleY} axis="y" width={width - 30} height={height - 30} />;
-    this.xAxis = <Axis scale={scaleX} axis="x" width={width - 30} height={height - 30} />;
-    return (
-      <svg width={width} height={height} className="chart">
-        {this.xAxis}
-        {this.yAxis}
-        {this.bars.map(bar => bar)}
-        <AxisLabels bottomAxis={this.props.data.axisNames.x} leftAxis={this.props.data.axisNames.y} width={width} height={height} />
-      </svg>
-    );
-  }
-}
+  const xAxisColumn = data.axis.x;
+  const yAxisColumns = data.axis.y;
+  
+  const numberOfBars = yAxisColumns.length;
+
+  let bars = [];
+
+  data.axis.y.forEach((columName, idx) => {
+    const seriesRects = Rects(rows, (scaleX.bandwidth() / numberOfBars), (row => scaleX(row[xAxisColumn])), (row => scaleY(row[columName])), idx, height);
+    bars = bars.concat(seriesRects);
+  });
+
+  const yAxis = <Axis scale={scaleY} axis="y" width={width - marginLeft} height={height - marginBottom} />;
+  const xAxis = <Axis scale={scaleX} axis="x" width={width - marginLeft} height={height - marginBottom} />;
+  return (
+    <svg width={width} height={height} className="chart">
+      {xAxis}
+      {yAxis}
+      {bars.map(bar => bar)}
+      <AxisLabels bottomAxis={axisNames.x} leftAxis={axisNames.y} width={width} height={height} />
+    </svg>
+  );
+};
+
+BarChart.propTypes = {
+  width: PropTypes.number.isRequired,
+  height: PropTypes.number.isRequired,
+  data: PropTypes.objectOf(Object).isRequired,
+};
+
 
 export default BarChart;

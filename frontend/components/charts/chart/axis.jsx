@@ -24,8 +24,9 @@ class Axis extends React.Component {
   }
 
   render() {
-    const translate = (this.props.axis === 'y') ? 'translate(50, 0)' : `translate(30, ${this.props.height})`;
-    return <g className="axis" ref={node => this.node = node} height={this.props.height} width={this.props.width} transform={translate} />;
+    const { width, height } = this.props;
+    const translate = (this.props.axis === 'y') ? 'translate(50, 0)' : `translate(30, ${height})`;
+    return <g className="axis" ref={node => this.node = node } height={height} width={width} transform={translate} />;
   }
 }
 
